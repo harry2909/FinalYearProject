@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fc22cbdc-2e8c-408c-8571-01a42d49a401" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Models/Student.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_04_12_145943_create_students_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/AddStudentTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/AddStudentTest.php" afterDir="false" />
-    </list>
+    <list default="true" id="fc22cbdc-2e8c-408c-8571-01a42d49a401" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -166,7 +162,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1618234965732</updated>
-      <workItem from="1618234967236" duration="3450000" />
+      <workItem from="1618234967236" duration="3802000" />
     </task>
     <servers />
   </component>
@@ -193,22 +189,22 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1181" y="273" key="FileChooserDialogImpl/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618239238842" />
-    <state width="1875" height="281" key="GridCell.Tab.0.bottom" timestamp="1618239681965">
+    <state width="1875" height="281" key="GridCell.Tab.0.bottom" timestamp="1618240058675">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1875" height="281" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618239681965" />
-    <state width="1875" height="281" key="GridCell.Tab.0.center" timestamp="1618239681965">
+    <state width="1875" height="281" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618240058675" />
+    <state width="1875" height="281" key="GridCell.Tab.0.center" timestamp="1618240058675">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1875" height="281" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618239681965" />
-    <state width="1875" height="281" key="GridCell.Tab.0.left" timestamp="1618239681965">
+    <state width="1875" height="281" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618240058675" />
+    <state width="1875" height="281" key="GridCell.Tab.0.left" timestamp="1618240058675">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1875" height="281" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618239681965" />
-    <state width="1875" height="281" key="GridCell.Tab.0.right" timestamp="1618239681965">
+    <state width="1875" height="281" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618240058675" />
+    <state width="1875" height="281" key="GridCell.Tab.0.right" timestamp="1618240058675">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1875" height="281" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618239681965" />
+    <state width="1875" height="281" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618240058675" />
     <state x="-1369" y="251" key="Vcs.Push.Dialog.v2" timestamp="1618235266070">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>

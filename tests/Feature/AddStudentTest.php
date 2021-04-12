@@ -8,6 +8,8 @@ use Tests\TestCase;
 
 class AddStudentTest extends TestCase
 {
+    use RefreshDatabase;
+
     /** @test */
     public function addStudentToDB()
     {

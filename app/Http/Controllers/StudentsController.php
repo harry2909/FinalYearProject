@@ -6,5 +6,7 @@ use Illuminate\Http\Request;
 
 class StudentsController extends Controller
 {
-    //
+    public function store(){
+
+    }
 }

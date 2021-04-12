@@ -10,6 +10,9 @@ class AddStudentTest extends TestCase
     /** @test */
     public function addStudentToDB()
     {
+        // to get underlying error
+        $this->withoutExceptionHandling();
+
         $response = $this->post('/students' , [
             'name' => 'Example Student Name',
             'id' => 'Example student ID',

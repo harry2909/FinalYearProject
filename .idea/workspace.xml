@@ -141,13 +141,17 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="PHPUnit.AddStudentTest.testStudentIDValidation">
+  <component name="RunManager" selected="PHPUnit.AddStudentTest.removeStudentFromDB">
     <configuration name="AddStudentTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Feature\AddStudentTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/AddStudentTest.php" scope="Class" />
       <method v="2" />
     </configuration>
     <configuration name="AddStudentTest.addStudentToDB" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Feature\AddStudentTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/AddStudentTest.php" method="addStudentToDB" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="AddStudentTest.removeStudentFromDB" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\AddStudentTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/AddStudentTest.php" method="removeStudentFromDB" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="AddStudentTest.testStudentIDValidation" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
@@ -164,6 +168,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.AddStudentTest.removeStudentFromDB" />
         <item itemvalue="PHPUnit.AddStudentTest.testStudentIDValidation" />
         <item itemvalue="PHPUnit.AddStudentTest" />
         <item itemvalue="PHPUnit.AddStudentTest.addStudentToDB" />

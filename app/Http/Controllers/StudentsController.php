@@ -16,8 +16,15 @@ class StudentsController extends Controller
             'address' => 'required',
             'telephone' => 'required',
             'year' => 'required',
-    ]);
+        ]);
 
         Student::create($data);
+    }
+
+    public function destroy(int $id)
+    {
+
+
+
     }
 }

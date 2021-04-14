@@ -46,4 +46,22 @@ class AddStudentTest extends TestCase
 
 
     }
+
+    public function testStudentIDValidation(){
+        //$this->withoutExceptionHandling();
+
+        $response = $this->post('/students' , [
+            'name' => 'Example student name',
+            'studentid' => '',
+            'address' => 'Example student address',
+            'telephone' => '75625845240',
+            'year' => '8'
+        ]);
+
+        $response->assertSessionHasErrors('studentid');
+
+
+
+
+    }
 }

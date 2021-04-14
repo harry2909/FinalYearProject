@@ -11,7 +11,7 @@ class StudentsController extends Controller
     {
         Student::create([
             'name' => request('name'),
-            'id' => request('id'),
+            'studentid' => request('studentid'),
             'address' => request('address'),
             'telephone' => request('telephone'),
             'year' => request('year')

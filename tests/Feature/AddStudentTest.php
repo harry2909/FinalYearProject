@@ -18,10 +18,10 @@ class AddStudentTest extends TestCase
 
         $response = $this->post('/students' , [
             'name' => 'Example Student Name',
-            'id' => 'Example student ID',
+            'studentid' => '1872',
             'address' => 'Example student address',
-            'telephone' => 'Example student telephone',
-            'year' => 'Example student year'
+            'telephone' => '75625845240',
+            'year' => '8'
         ]);
 
         $response->assertOk();

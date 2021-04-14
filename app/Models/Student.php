@@ -9,9 +9,9 @@ class Student extends Model
 {
     protected $fillable = [
         'name',
-        'id',
+        'studentid',
         'address',
         'telephone',
-        'year',
+        'year'
     ];
 }

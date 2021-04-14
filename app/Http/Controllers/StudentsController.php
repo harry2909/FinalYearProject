@@ -26,4 +26,17 @@ class StudentsController extends Controller
 //        $data = Student::find($id);
 //        $data->delete();
 //    }
+
+    public function update(Student $student){
+
+        $data = request()->validate([
+            'name' => 'required',
+            'studentid' => 'required',
+            'address' => 'required',
+            'telephone' => 'required',
+            'year' => 'required',
+        ]);
+
+
+    }
 }

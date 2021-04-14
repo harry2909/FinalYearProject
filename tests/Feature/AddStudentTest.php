@@ -92,7 +92,9 @@ class AddStudentTest extends TestCase
             'year' => '8'
         ]);
 
-        $response = $this->patch('/students', [
+        $student = Student::first();
+
+        $response = $this->patch('/students/' . $student->id, [
             'name' => 'New name'
         ]);
 

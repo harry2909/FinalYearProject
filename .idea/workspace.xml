@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="fc22cbdc-2e8c-408c-8571-01a42d49a401" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/StudentsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/StudentsController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Student.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Student.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_04_12_145943_create_students_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_04_12_145943_create_students_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/AddStudentTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/AddStudentTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,7 +145,7 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="PHPUnit.AddStudentTest.addStudentToDB">
+  <component name="RunManager" selected="PHPUnit.AddStudentTest.testStudentNameValidation">
     <configuration name="AddStudentTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Feature\AddStudentTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/AddStudentTest.php" scope="Class" />
       <method v="2" />
@@ -151,12 +154,17 @@
       <TestRunner class="Tests\Feature\AddStudentTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/AddStudentTest.php" method="addStudentToDB" scope="Method" />
       <method v="2" />
     </configuration>
+    <configuration name="AddStudentTest.testStudentNameValidation" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\AddStudentTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/AddStudentTest.php" method="testStudentNameValidation" scope="Method" />
+      <method v="2" />
+    </configuration>
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.AddStudentTest.testStudentNameValidation" />
         <item itemvalue="PHPUnit.AddStudentTest.addStudentToDB" />
         <item itemvalue="PHPUnit.AddStudentTest" />
       </list>
@@ -171,7 +179,7 @@
       <option name="presentableId" value="Default" />
       <updated>1618234965732</updated>
       <workItem from="1618234967236" duration="4541000" />
-      <workItem from="1618411956762" duration="777000" />
+      <workItem from="1618411956762" duration="1073000" />
     </task>
     <servers />
   </component>

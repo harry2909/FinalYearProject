@@ -27,4 +27,23 @@ class AddStudentTest extends TestCase
         $response->assertOk();
         $this->assertCount(1, Student::all());
     }
+
+    /** @test */
+    public function testStudentNameValidation(){
+        $this->withoutExceptionHandling();
+
+        $response = $this->post('/students' , [
+            'name' => '',
+            'studentid' => '1872',
+            'address' => 'Example student address',
+            'telephone' => '75625845240',
+            'year' => '8'
+        ]);
+
+        $response->assertSessionHasErrors('name');
+
+
+
+
+    }
 }

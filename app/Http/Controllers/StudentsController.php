@@ -9,12 +9,11 @@ class StudentsController extends Controller
 {
     public function store()
     {
-        Student::create([
-            'name' => request('name'),
-            'studentid' => request('studentid'),
-            'address' => request('address'),
-            'telephone' => request('telephone'),
-            'year' => request('year')
-        ]);
+
+        $data = request->validate([
+            'title' => 'required'
+    ]);
+
+        Student::create($data);
     }
 }

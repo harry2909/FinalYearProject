@@ -37,6 +37,8 @@ class StudentsController extends Controller
             'year' => 'required',
         ]);
 
+        $student->update($data);
+
 
     }
 }

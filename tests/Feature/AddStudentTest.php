@@ -95,7 +95,11 @@ class AddStudentTest extends TestCase
         $student = Student::first();
 
         $response = $this->patch('/students/' . $student->id, [
-            'name' => 'New name'
+            'name' => 'New name',
+            'studentid' => '1872',
+            'address' => 'Example student address',
+            'telephone' => '75625845240',
+            'year' => '8'
         ]);
 
         $this->assertEquals('New name', Student::first()->name);

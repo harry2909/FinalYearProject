@@ -16,7 +16,7 @@ class AddStudentTest extends TestCase
         // to get underlying error
         $this->withoutExceptionHandling();
 
-        $response = $this->post('/students' , [
+        $response = $this->post('/students', [
             'name' => 'Example Student Name',
             'studentid' => '1872',
             'address' => 'Example student address',
@@ -29,10 +29,11 @@ class AddStudentTest extends TestCase
     }
 
     /** @test */
-    public function testStudentNameValidation(){
+    public function testStudentNameValidation()
+    {
         //$this->withoutExceptionHandling();
 
-        $response = $this->post('/students' , [
+        $response = $this->post('/students', [
             'name' => '',
             'studentid' => '1872',
             'address' => 'Example student address',
@@ -43,15 +44,14 @@ class AddStudentTest extends TestCase
         $response->assertSessionHasErrors('name');
 
 
-
-
     }
 
     /** @test */
-    public function testStudentIDValidation(){
+    public function testStudentIDValidation()
+    {
         //$this->withoutExceptionHandling();
 
-        $response = $this->post('/students' , [
+        $response = $this->post('/students', [
             'name' => 'Example student name',
             'studentid' => '',
             'address' => 'Example student address',
@@ -77,4 +77,24 @@ class AddStudentTest extends TestCase
 //        $response->assertOk();
 //        $this->assertCount(0, Student::all());
 //    }
+
+    /** @test */
+    public function updateStudent()
+    {
+
+        $this->post('/students', [
+            'name' => 'Example Student Name',
+            'studentid' => '1872',
+            'address' => 'Example student address',
+            'telephone' => '75625845240',
+            'year' => '8'
+        ]);
+
+        $response = $this->patch([
+            'name' => 'New name'
+        ]);
+
+        $this->assertEquals('New name', Book::first());
+
+    }
 }

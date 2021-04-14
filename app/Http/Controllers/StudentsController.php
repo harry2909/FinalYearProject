@@ -21,10 +21,9 @@ class StudentsController extends Controller
         Student::create($data);
     }
 
-    public function destroy(int $id)
-    {
-
-
-
-    }
+//    public function destroy($id)
+//    {
+//        $data = Student::find($id);
+//        $data->delete();
+//    }
 }

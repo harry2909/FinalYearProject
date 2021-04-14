@@ -65,16 +65,16 @@ class AddStudentTest extends TestCase
     }
 
     /** @test */
-    public function removeStudentFromDB()
-    {
-        // to get underlying error
-        $this->withoutExceptionHandling();
-
-        $response = $this->delete('/students/{student}' , [
-            'id' => '1'
-        ]);
-
-        $response->assertOk();
-        $this->assertCount(0, Student::all());
-    }
+//    public function removeStudentFromDB()
+//    {
+//        // to get underlying error
+//        $this->withoutExceptionHandling();
+//
+//        $response = $this->delete('/students/{student}' , [
+//            'id' => '1'
+//        ]);
+//
+//        $response->assertOk();
+//        $this->assertCount(0, Student::all());
+//    }
 }

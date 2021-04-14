@@ -4,9 +4,6 @@
     <list default="true" id="fc22cbdc-2e8c-408c-8571-01a42d49a401" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/StudentsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/StudentsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Student.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Student.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_04_12_145943_create_students_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_04_12_145943_create_students_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/AddStudentTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/AddStudentTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,7 +176,7 @@
       <option name="presentableId" value="Default" />
       <updated>1618234965732</updated>
       <workItem from="1618234967236" duration="4541000" />
-      <workItem from="1618411956762" duration="1073000" />
+      <workItem from="1618411956762" duration="1784000" />
     </task>
     <servers />
   </component>

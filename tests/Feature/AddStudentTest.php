@@ -30,7 +30,7 @@ class AddStudentTest extends TestCase
 
     /** @test */
     public function testStudentNameValidation(){
-        $this->withoutExceptionHandling();
+        //$this->withoutExceptionHandling();
 
         $response = $this->post('/students' , [
             'name' => '',

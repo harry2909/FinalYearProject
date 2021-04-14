@@ -10,8 +10,8 @@ class StudentsController extends Controller
     public function store()
     {
 
-        $data = request->validate([
-            'title' => 'required'
+        $data = request()->validate([
+            'name' => 'required',
     ]);
 
         Student::create($data);

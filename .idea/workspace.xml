@@ -142,7 +142,7 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="PHPUnit.AddStudentTest.testStudentNameValidation">
+  <component name="RunManager" selected="PHPUnit.AddStudentTest.addStudentToDB">
     <configuration name="AddStudentTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Feature\AddStudentTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/AddStudentTest.php" scope="Class" />
       <method v="2" />
@@ -161,8 +161,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="PHPUnit.AddStudentTest.testStudentNameValidation" />
         <item itemvalue="PHPUnit.AddStudentTest.addStudentToDB" />
+        <item itemvalue="PHPUnit.AddStudentTest.testStudentNameValidation" />
         <item itemvalue="PHPUnit.AddStudentTest" />
       </list>
     </recent_temporary>

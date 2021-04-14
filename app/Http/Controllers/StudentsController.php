@@ -12,6 +12,10 @@ class StudentsController extends Controller
 
         $data = request()->validate([
             'name' => 'required',
+            'studentid' => 'required',
+            'address' => 'required',
+            'telephone' => 'required',
+            'year' => 'required',
     ]);
 
         Student::create($data);

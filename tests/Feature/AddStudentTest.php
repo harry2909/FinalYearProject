@@ -82,6 +82,8 @@ class AddStudentTest extends TestCase
     public function updateStudent()
     {
 
+        $this->withoutExceptionHandling();
+
         $this->post('/students', [
             'name' => 'Example Student Name',
             'studentid' => '1872',
@@ -90,11 +92,11 @@ class AddStudentTest extends TestCase
             'year' => '8'
         ]);
 
-        $response = $this->patch([
+        $response = $this->patch('/students', [
             'name' => 'New name'
         ]);
 
-        $this->assertEquals('New name', Book::first());
+        $this->assertEquals('New name', Student::first()->name);
 
     }
 }

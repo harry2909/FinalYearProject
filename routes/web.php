@@ -15,4 +15,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::post('/students', '\App\Http\Controllers\StudentsController@store');
 
-Route::delete('/students/{student}', '\App\Http\Controllers\StudentsController@destroy');
+Route::patch('/students', '\App\Http\Controllers\StudentsController@update');

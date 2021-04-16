@@ -12,7 +12,7 @@ class StudentsController extends Controller
 
         $student = Student::create($this->validateRequest());
 
-        return redirect('/students/' . $student->id);
+        return redirect($student->path());
 
     }
 
@@ -21,7 +21,7 @@ class StudentsController extends Controller
 
         $student->update($this->validateRequest());
 
-        return redirect('/students/' . $student->id);
+        return redirect($student->path());
 
     }
 

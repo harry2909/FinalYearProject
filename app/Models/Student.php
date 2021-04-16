@@ -14,4 +14,9 @@ class Student extends Model
         'telephone',
         'year'
     ];
+
+    public function path()
+    {
+        return '/students/' . $this->id;
+    }
 }

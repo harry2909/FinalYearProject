@@ -27,9 +27,8 @@ class AddStudentTest extends TestCase
 
         $student = Student::first();
 
-        $response->assertOk();
         $this->assertCount(1, Student::all());
-        $response->assertRedirect('/students/' . $student->id);
+        $response->assertRedirect($student->path());
     }
 
     /** @test */
@@ -84,7 +83,7 @@ class AddStudentTest extends TestCase
         $student = Student::first();
         $this->assertCount(1, Student::all());
 
-        $response = $this->delete('/students/' . $student->id);
+        $response = $this->delete($student->path());
 
         $this->assertCount(0, Student::all());
         $response->assertRedirect('/students');
@@ -106,7 +105,7 @@ class AddStudentTest extends TestCase
 
         $student = Student::first();
 
-        $response = $this->patch('/students/' . $student->id, [
+        $response = $this->patch($student->path(), [
             'name' => 'New name',
             'studentid' => '1872',
             'address' => 'Example student address',
@@ -115,7 +114,7 @@ class AddStudentTest extends TestCase
         ]);
 
         $this->assertEquals('New name', Student::first()->name);
-        $response->assertRedirect('/students/' . $student->id);
+        $response->assertRedirect($student->path());
 
     }
 }

@@ -10,9 +10,7 @@ class StudentsController extends Controller
     public function store()
     {
 
-        $data = $this->validateRequest();
-
-        Student::create($data);
+        Student::create($this->validateRequest());
     }
 
 //    public function destroy($id)
@@ -23,10 +21,7 @@ class StudentsController extends Controller
 
     public function update(Student $student){
 
-        $data = $this->validateRequest();
-
-        $student->update($data);
-
+        $student->update($this->validateRequest());
 
     }
 

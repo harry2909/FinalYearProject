@@ -65,18 +65,24 @@ class AddStudentTest extends TestCase
     }
 
     /** @test */
-//    public function removeStudentFromDB()
-//    {
-//        // to get underlying error
-//        $this->withoutExceptionHandling();
-//
-//        $response = $this->delete('/students/{student}' , [
-//            'id' => '1'
-//        ]);
-//
-//        $response->assertOk();
-//        $this->assertCount(0, Student::all());
-//    }
+    public function removeStudentFromDB()
+    {
+        $this->withoutExceptionHandling();
+
+        $this->post('/students', [
+            'name' => 'Example Student Name',
+            'studentid' => '1872',
+            'address' => 'Example student address',
+            'telephone' => '75625845240',
+            'year' => '8'
+        ]);
+
+        $student = Student::first();
+
+        $response = $this->delete('/students/' . $student->id);
+
+        $this->assertCount(0, Student::all());
+    }
 
     /** @test */
     public function updateStudent()

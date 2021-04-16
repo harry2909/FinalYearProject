@@ -29,7 +29,7 @@ Route::post('/students', function (Request $request) {
     return Student::create($request->all);
 });
 
-Route::put($studentRoute, function (Request $request, $id) {
+Route::patch($studentRoute, function (Request $request, $id) {
     $student = Student::findOrFail($id);
     $student->update($request->all());
 });

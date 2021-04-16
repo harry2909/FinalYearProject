@@ -13,13 +13,8 @@ class StudentsController extends Controller
         Student::create($this->validateRequest());
     }
 
-//    public function destroy($id)
-//    {
-//        $data = Student::find($id);
-//        $data->delete();
-//    }
-
-    public function update(Student $student){
+    public function update(Student $student)
+    {
 
         $student->update($this->validateRequest());
 

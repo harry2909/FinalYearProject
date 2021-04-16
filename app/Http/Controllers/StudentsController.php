@@ -10,13 +10,7 @@ class StudentsController extends Controller
     public function store()
     {
 
-        $data = request()->validate([
-            'name' => 'required',
-            'studentid' => 'required',
-            'address' => 'required',
-            'telephone' => 'required',
-            'year' => 'required',
-        ]);
+        $data = $this->validateRequest();
 
         Student::create($data);
     }
@@ -29,16 +23,24 @@ class StudentsController extends Controller
 
     public function update(Student $student){
 
-        $data = request()->validate([
+        $data = $this->validateRequest();
+
+        $student->update($data);
+
+
+    }
+
+    /**
+     * @return array
+     */
+    public function validateRequest(): array
+    {
+        return request()->validate([
             'name' => 'required',
             'studentid' => 'required',
             'address' => 'required',
             'telephone' => 'required',
             'year' => 'required',
         ]);
-
-        $student->update($data);
-
-
     }
 }

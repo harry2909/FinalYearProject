@@ -169,17 +169,17 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="PHPUnit.TeacherManagementTest.updateTeacher">
+  <component name="RunManager" selected="PHPUnit.TeacherManagementTest.showTeacherTest">
     <configuration name="StudentManagementTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Feature\StudentManagementTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/StudentManagementTest.php" scope="Class" />
       <method v="2" />
     </configuration>
-    <configuration name="StudentManagementTest.removeStudentFromDB" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\StudentManagementTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/StudentManagementTest.php" method="removeStudentFromDB" scope="Method" />
+    <configuration name="StudentManagementTest.showStudentTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\StudentManagementTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/StudentManagementTest.php" method="showStudentTest" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="TeacherManagementTest.removeTeacherFromDB" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\TeacherManagementTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/TeacherManagementTest.php" method="removeTeacherFromDB" scope="Method" />
+    <configuration name="TeacherManagementTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\TeacherManagementTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/TeacherManagementTest.php" scope="Class" />
       <method v="2" />
     </configuration>
     <configuration name="TeacherManagementTest.showTeacherTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
@@ -196,11 +196,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="PHPUnit.TeacherManagementTest.updateTeacher" />
         <item itemvalue="PHPUnit.TeacherManagementTest.showTeacherTest" />
-        <item itemvalue="PHPUnit.TeacherManagementTest.removeTeacherFromDB" />
-        <item itemvalue="PHPUnit.StudentManagementTest.removeStudentFromDB" />
+        <item itemvalue="PHPUnit.TeacherManagementTest" />
+        <item itemvalue="PHPUnit.StudentManagementTest.showStudentTest" />
         <item itemvalue="PHPUnit.StudentManagementTest" />
+        <item itemvalue="PHPUnit.TeacherManagementTest.updateTeacher" />
       </list>
     </recent_temporary>
   </component>

@@ -117,7 +117,7 @@ class TeacherManagementTest extends TestCase
         $response = $this->get($teacher->teacherPath());
 
         $this->assertCount(1, Teacher::all());
-        $response->assertRedirect('/teachers/' . 1);
+        $response->assertRedirect($teacher->teacherPath());
 
     }
 }

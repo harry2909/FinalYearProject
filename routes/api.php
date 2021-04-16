@@ -14,6 +14,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
+
+
+Route::post('/students', '\App\Http\Controllers\StudentsController@store');
+
+Route::patch('/students/{student}', '\App\Http\Controllers\StudentsController@update');
+

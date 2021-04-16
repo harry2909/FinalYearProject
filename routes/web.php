@@ -13,6 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::post('/students', '\App\Http\Controllers\StudentsController@store');
-
-Route::patch('/students/{student}', '\App\Http\Controllers\StudentsController@update');
+Route::get('/', function () {
+    return view('welcome');
+});

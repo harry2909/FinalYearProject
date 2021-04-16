@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fc22cbdc-2e8c-408c-8571-01a42d49a401" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/StudentsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/StudentsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/AddStudentTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/AddStudentTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,6 +141,8 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../component-3-harry2909" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="PHPUnit.AddStudentTest.updateStudent">
@@ -187,7 +189,9 @@
       <option name="presentableId" value="Default" />
       <updated>1618234965732</updated>
       <workItem from="1618234967236" duration="4541000" />
-      <workItem from="1618411956762" duration="3657000" />
+      <workItem from="1618411956762" duration="3755000" />
+      <workItem from="1618566632750" duration="1450000" />
+      <workItem from="1618568764711" duration="1980000" />
     </task>
     <servers />
   </component>
@@ -206,30 +210,42 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1247" y="161" key="#PHP/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618238705590" />
+    <state x="-1221" y="386" key="#Project_Settings" timestamp="1618568944301">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1221" y="386" key="#Project_Settings/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618568944301" />
     <state x="-1200" y="179" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1618238251087">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1200" y="179" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618238251087" />
+    <state x="-1214" y="373" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1618568989625">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1214" y="373" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618568989625" />
     <state x="-1181" y="273" key="FileChooserDialogImpl" timestamp="1618414602912">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1181" y="273" key="FileChooserDialogImpl/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618414602912" />
-    <state width="1875" height="281" key="GridCell.Tab.0.bottom" timestamp="1618416051987">
+    <state width="1875" height="281" key="GridCell.Tab.0.bottom" timestamp="1618416156286">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1875" height="281" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618416051987" />
-    <state width="1875" height="281" key="GridCell.Tab.0.center" timestamp="1618416051987">
+    <state width="1875" height="281" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618416156286" />
+    <state width="1875" height="281" key="GridCell.Tab.0.center" timestamp="1618416156286">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1875" height="281" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618416051987" />
-    <state width="1875" height="281" key="GridCell.Tab.0.left" timestamp="1618416051987">
+    <state width="1875" height="281" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618416156286" />
+    <state width="1875" height="281" key="GridCell.Tab.0.left" timestamp="1618416156286">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1875" height="281" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618416051987" />
-    <state width="1875" height="281" key="GridCell.Tab.0.right" timestamp="1618416051987">
+    <state width="1875" height="281" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618416156286" />
+    <state width="1875" height="281" key="GridCell.Tab.0.right" timestamp="1618416156286">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1875" height="281" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618416051987" />
+    <state width="1875" height="281" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618416156286" />
+    <state x="-1460" y="163" key="SettingsEditor" timestamp="1618568747503">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1460" y="163" key="SettingsEditor/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618568747503" />
     <state x="-1369" y="251" key="Vcs.Push.Dialog.v2" timestamp="1618235266070">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>

@@ -3,6 +3,7 @@
 namespace Tests\Feature;
 
 use App\Models\Student;
+use App\Models\Teacher;
 use Database\Seeders\StudentSeeder;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
@@ -19,8 +20,10 @@ class SeederTest extends TestCase
         $this->withoutExceptionHandling();
 
         Artisan::call('db:seed StudentSeeder');
+        Artisan::call('db:seed TeacherSeeder');
 
         $this->assertCount(50, Student::all());
+        $this->assertCount(50, Teacher::all());
 
     }
 

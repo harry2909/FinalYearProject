@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Models\Student;
-use Illuminate\Http\Request;
 
 class StudentsController extends Controller
 {
@@ -29,6 +28,11 @@ class StudentsController extends Controller
 
         return redirect($student->path());
 
+    }
+
+    public function view(Student $student)
+    {
+        return redirect($student->path());
     }
 
     public function delete(Student $student)

@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+$studentID = '/students/{student}';
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -21,8 +23,8 @@ Route::get('/students', '\App\Http\Controllers\StudentsController@index');
 
 Route::post('/students', '\App\Http\Controllers\StudentsController@store');
 
-Route::get('/students/{student}', '\App\Http\Controllers\StudentsController@store');
+Route::get($studentID, '\App\Http\Controllers\StudentsController@view');
 
-Route::patch('/students/{student}', '\App\Http\Controllers\StudentsController@update');
+Route::patch($studentID, '\App\Http\Controllers\StudentsController@update');
 
-Route::delete('/students/{student}', '\App\Http\Controllers\StudentsController@delete');
+Route::delete($studentID, '\App\Http\Controllers\StudentsController@delete');

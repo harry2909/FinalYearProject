@@ -19,7 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc22cbdc-2e8c-408c-8571-01a42d49a401" name="Default Changelist" comment="" />
+    <list default="true" id="fc22cbdc-2e8c-408c-8571-01a42d49a401" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/database/seeders/StudentSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/SeederTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/SeederTest.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -163,9 +166,13 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="PHPUnit.TeacherManagementTest.showTeacherTest">
-    <configuration name="StudentManagementTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\StudentManagementTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/StudentManagementTest.php" scope="Class" />
+  <component name="RunManager" selected="PHPUnit.SeederTest">
+    <configuration name="SeederTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\SeederTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/SeederTest.php" scope="Class" />
+      <method v="2" />
+    </configuration>
+    <configuration name="SeederTest.SeederWorks" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\SeederTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/SeederTest.php" method="SeederWorks" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="StudentManagementTest.showStudentTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
@@ -180,21 +187,17 @@
       <TestRunner class="Tests\Feature\TeacherManagementTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/TeacherManagementTest.php" method="showTeacherTest" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="TeacherManagementTest.updateTeacher" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\TeacherManagementTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/TeacherManagementTest.php" method="updateTeacher" scope="Method" />
-      <method v="2" />
-    </configuration>
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.SeederTest" />
+        <item itemvalue="PHPUnit.SeederTest.SeederWorks" />
         <item itemvalue="PHPUnit.TeacherManagementTest.showTeacherTest" />
         <item itemvalue="PHPUnit.TeacherManagementTest" />
         <item itemvalue="PHPUnit.StudentManagementTest.showStudentTest" />
-        <item itemvalue="PHPUnit.StudentManagementTest" />
-        <item itemvalue="PHPUnit.TeacherManagementTest.updateTeacher" />
       </list>
     </recent_temporary>
   </component>
@@ -330,7 +333,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618586370158</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Setting up test for seeder now">
+      <created>1618586531294</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1618586531294</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -366,7 +376,8 @@
     <MESSAGE value="Beginning to create a separate controller and routes for teachers." />
     <MESSAGE value="Test for storing teacher is working" />
     <MESSAGE value="All tests passing correctly" />
-    <option name="LAST_COMMIT_MESSAGE" value="All tests passing correctly" />
+    <MESSAGE value="Setting up test for seeder now" />
+    <option name="LAST_COMMIT_MESSAGE" value="Setting up test for seeder now" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1206" y="342" key="#Notifications" timestamp="1618237799755">
@@ -398,34 +409,34 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1214" y="373" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618568989625" />
-    <state x="485" y="87" key="CommitChangelistDialog2" timestamp="1618586369433">
+    <state x="485" y="87" key="CommitChangelistDialog2" timestamp="1618586530622">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="485" y="87" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618586369433" />
+    <state x="485" y="87" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618586530622" />
     <state x="-1181" y="273" key="FileChooserDialogImpl" timestamp="1618414602912">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1181" y="273" key="FileChooserDialogImpl/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618414602912" />
-    <state width="1875" height="281" key="GridCell.Tab.0.bottom" timestamp="1618586372057">
+    <state width="1875" height="281" key="GridCell.Tab.0.bottom" timestamp="1618586782105">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1875" height="281" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618416156286" />
-    <state width="1875" height="281" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618586372057" />
-    <state width="1875" height="281" key="GridCell.Tab.0.center" timestamp="1618586372057">
+    <state width="1875" height="281" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618586782105" />
+    <state width="1875" height="281" key="GridCell.Tab.0.center" timestamp="1618586782105">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1875" height="281" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618416156286" />
-    <state width="1875" height="281" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618586372057" />
-    <state width="1875" height="281" key="GridCell.Tab.0.left" timestamp="1618586372057">
+    <state width="1875" height="281" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618586782105" />
+    <state width="1875" height="281" key="GridCell.Tab.0.left" timestamp="1618586782104">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1875" height="281" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618416156286" />
-    <state width="1875" height="281" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618586372057" />
-    <state width="1875" height="281" key="GridCell.Tab.0.right" timestamp="1618586372057">
+    <state width="1875" height="281" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618586782104" />
+    <state width="1875" height="281" key="GridCell.Tab.0.right" timestamp="1618586782105">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1875" height="281" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618416156286" />
-    <state width="1875" height="281" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618586372057" />
+    <state width="1875" height="281" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618586782105" />
     <state x="774" y="452" key="ReplaceDuplicatesPrompt" timestamp="1618571710668">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

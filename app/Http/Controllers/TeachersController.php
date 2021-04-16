@@ -7,6 +7,11 @@ use Illuminate\Http\Request;
 
 class TeachersController extends Controller
 {
+    public function index()
+    {
+        return Teacher::all();
+    }
+
     public function store()
     {
 
@@ -14,6 +19,27 @@ class TeachersController extends Controller
 
         return redirect($teacher->teacherPath());
 
+    }
+
+    public function update(Teacher $teacher)
+    {
+
+        $teacher->update($this->validateRequest());
+
+        return redirect($teacher->teacherPath());
+
+    }
+
+    public function view(Teacher $teacher)
+    {
+        return redirect($teacher->teacherPath());
+    }
+
+    public function delete(Teacher $teacher)
+    {
+        $teacher->delete();
+
+        return redirect('/teachers');
     }
 
     /**

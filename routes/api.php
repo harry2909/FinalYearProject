@@ -1,6 +1,7 @@
 <?php
 
 use App\Models\Student;
+use App\Models\Teacher;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -36,6 +37,32 @@ Route::patch($studentRoute, function (Request $request, $id) {
 
 Route::delete($studentRoute, function ($id) {
     Student::find($id)->delete();
+
+    return 204;
+});
+
+
+$teacherRoute = '/teachers/{id}';
+
+Route::get('/teachers', function () {
+    return Teacher::all();
+});
+
+Route::get($teacherRoute, function ($id) {
+    return Teacher::find($id);
+});
+
+Route::post('/teachers', function (Request $request) {
+    return Teacher::create($request->all);
+});
+
+Route::patch($teacherRoute, function (Request $request, $id) {
+    $teacher = Teacher::findOrFail($id);
+    $teacher->update($request->all());
+});
+
+Route::delete($teacherRoute, function ($id) {
+    Teacher::find($id)->delete();
 
     return 204;
 });

@@ -29,4 +29,14 @@ Route::patch($studentID, '\App\Http\Controllers\StudentsController@update');
 
 Route::delete($studentID, '\App\Http\Controllers\StudentsController@delete');
 
+$teacherID = '/teachers/{teacher}';
+
 Route::post('/teachers', '\App\Http\Controllers\TeachersController@store');
+
+Route::get('/teachers', '\App\Http\Controllers\TeachersController@index');
+
+Route::get($teacherID, '\App\Http\Controllers\TeachersController@view');
+
+Route::patch($teacherID, '\App\Http\Controllers\TeachersController@update');
+
+Route::delete($teacherID, '\App\Http\Controllers\TeachersController@delete');

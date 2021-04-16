@@ -17,6 +17,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/students', '\App\Http\Controllers\StudentsController@index');
+
 Route::post('/students', '\App\Http\Controllers\StudentsController@store');
 
 Route::patch('/students/{student}', '\App\Http\Controllers\StudentsController@update');

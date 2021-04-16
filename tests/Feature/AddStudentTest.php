@@ -18,7 +18,7 @@ class AddStudentTest extends TestCase
 
         $response = $this->get('/students');
 
-        $response->assertRedirect('/students');
+        $response->assertStatus(200);
     }
 
     /** @test */

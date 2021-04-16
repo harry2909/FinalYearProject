@@ -20,8 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc22cbdc-2e8c-408c-8571-01a42d49a401" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/database/seeders/TeacherSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/SeederTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/SeederTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +37,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP from XAMPP">
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.4">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/brick/math" />
       <path value="$PROJECT_DIR$/vendor/sebastian/version" />
@@ -175,16 +176,16 @@
       <TestRunner class="Tests\Feature\SeederTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/SeederTest.php" method="SeederWorks" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="StudentManagementTest.showStudentTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\StudentManagementTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/StudentManagementTest.php" method="showStudentTest" scope="Method" />
+    <configuration name="StudentManagementTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\StudentManagementTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/StudentManagementTest.php" scope="Class" />
+      <method v="2" />
+    </configuration>
+    <configuration name="StudentManagementTest.showAllStudents" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\StudentManagementTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/StudentManagementTest.php" method="showAllStudents" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="TeacherManagementTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Feature\TeacherManagementTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/TeacherManagementTest.php" scope="Class" />
-      <method v="2" />
-    </configuration>
-    <configuration name="TeacherManagementTest.showTeacherTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\TeacherManagementTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/TeacherManagementTest.php" method="showTeacherTest" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -194,10 +195,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="PHPUnit.SeederTest" />
-        <item itemvalue="PHPUnit.SeederTest.SeederWorks" />
-        <item itemvalue="PHPUnit.TeacherManagementTest.showTeacherTest" />
         <item itemvalue="PHPUnit.TeacherManagementTest" />
-        <item itemvalue="PHPUnit.StudentManagementTest.showStudentTest" />
+        <item itemvalue="PHPUnit.StudentManagementTest" />
+        <item itemvalue="PHPUnit.StudentManagementTest.showAllStudents" />
+        <item itemvalue="PHPUnit.SeederTest.SeederWorks" />
       </list>
     </recent_temporary>
   </component>
@@ -370,6 +371,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -396,14 +398,19 @@
     <option name="LAST_COMMIT_MESSAGE" value="Seeder is working correctly." />
   </component>
   <component name="WindowStateProjectService">
+    <state x="377" y="110" key="#CLI_Interpreters" timestamp="1618611802572">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="377" y="110" key="#CLI_Interpreters/0.0.1280.800@0.0.1280.800" timestamp="1618611802572" />
     <state x="-1206" y="342" key="#Notifications" timestamp="1618237799755">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1206" y="342" key="#Notifications/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618237799755" />
-    <state x="-1247" y="161" key="#PHP" timestamp="1618238705590">
-      <screen x="-1920" y="0" width="1920" height="1040" />
+    <state x="389" y="0" key="#PHP" timestamp="1618611809448">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="-1247" y="161" key="#PHP/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618238705590" />
+    <state x="389" y="0" key="#PHP/0.0.1280.800@0.0.1280.800" timestamp="1618611809448" />
     <state x="-1221" y="386" key="#Project_Settings" timestamp="1618568944301">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
@@ -433,26 +440,30 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1181" y="273" key="FileChooserDialogImpl/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618414602912" />
-    <state width="1875" height="281" key="GridCell.Tab.0.bottom" timestamp="1618587112246">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1236" height="212" key="GridCell.Tab.0.bottom" timestamp="1618611812596">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state width="1875" height="281" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618416156286" />
     <state width="1875" height="281" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618587112246" />
-    <state width="1875" height="281" key="GridCell.Tab.0.center" timestamp="1618587112246">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1236" height="212" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1618611812596" />
+    <state width="1236" height="212" key="GridCell.Tab.0.center" timestamp="1618611812594">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state width="1875" height="281" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618416156286" />
     <state width="1875" height="281" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618587112246" />
-    <state width="1875" height="281" key="GridCell.Tab.0.left" timestamp="1618587112246">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1236" height="212" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1618611812594" />
+    <state width="1236" height="212" key="GridCell.Tab.0.left" timestamp="1618611812593">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state width="1875" height="281" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618416156286" />
     <state width="1875" height="281" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618587112246" />
-    <state width="1875" height="281" key="GridCell.Tab.0.right" timestamp="1618587112246">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1236" height="212" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1618611812593" />
+    <state width="1236" height="212" key="GridCell.Tab.0.right" timestamp="1618611812595">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state width="1875" height="281" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618416156286" />
     <state width="1875" height="281" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618587112246" />
+    <state width="1236" height="212" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1618611812595" />
     <state x="774" y="452" key="ReplaceDuplicatesPrompt" timestamp="1618571710668">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

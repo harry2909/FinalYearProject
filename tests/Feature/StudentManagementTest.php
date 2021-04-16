@@ -14,7 +14,7 @@ class StudentManagementTest extends TestCase
     public function showAllStudents()
     {
         // to get underlying error
-        $this->withoutExceptionHandling();
+        //$this->withoutExceptionHandling();
 
         $response = $this->get('/students');
 

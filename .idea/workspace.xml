@@ -166,7 +166,7 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="PHPUnit.SeederTest">
+  <component name="RunManager" selected="PHPUnit.SeederTest.SeederWorks">
     <configuration name="SeederTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Feature\SeederTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/SeederTest.php" scope="Class" />
       <method v="2" />
@@ -193,8 +193,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="PHPUnit.SeederTest" />
         <item itemvalue="PHPUnit.SeederTest.SeederWorks" />
+        <item itemvalue="PHPUnit.SeederTest" />
         <item itemvalue="PHPUnit.TeacherManagementTest.showTeacherTest" />
         <item itemvalue="PHPUnit.TeacherManagementTest" />
         <item itemvalue="PHPUnit.StudentManagementTest.showStudentTest" />

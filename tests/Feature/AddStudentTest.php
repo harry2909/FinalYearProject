@@ -78,6 +78,7 @@ class AddStudentTest extends TestCase
         ]);
 
         $student = Student::first();
+        $this->assertCount(1, Student::all());
 
         $response = $this->delete('/students/' . $student->id);
 

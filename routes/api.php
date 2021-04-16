@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Student;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -14,9 +15,29 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+$studentRoute = '/students/{id}';
 
+Route::get('/students', function () {
+    return Student::all();
+});
 
-Route::post('/students', '\App\Http\Controllers\StudentsController@store');
+Route::get($studentRoute, function ($id) {
+    return Student::find($id);
+});
 
-Route::patch('/students/{student}', '\App\Http\Controllers\StudentsController@update');
+Route::post('/students', function (Request $request) {
+    return Student::create($request->all);
+});
+
+Route::put($studentRoute, function (Request $request, $id) {
+    $student = Student::findOrFail($id);
+    $student->update($request->all());
+});
+
+Route::delete($studentRoute, function ($id) {
+    Student::find($id)->delete();
+
+    return 204;
+});
+
 

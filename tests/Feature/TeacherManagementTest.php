@@ -15,9 +15,9 @@ class TeacherManagementTest extends TestCase
     public function createTeacher(){
         $this->withoutExceptionHandling();
 
-        $this->post('/teacher', [
+        $this->post('/teachers', [
             'name' => 'Example teacher name',
-            'teacherid' => 'Example teacher ID',
+            'teacherid' => '5489',
             'subject' => 'Example teacher subject'
         ]);
 

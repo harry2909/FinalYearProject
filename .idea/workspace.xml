@@ -1,8 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc22cbdc-2e8c-408c-8571-01a42d49a401" name="Default Changelist" comment="View student test passing.">
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/StudentsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/StudentsController.php" afterDir="false" />
+    <list default="true" id="fc22cbdc-2e8c-408c-8571-01a42d49a401" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Models/Teacher.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Feature/TeacherManagementTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarIssues.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarIssues.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -147,7 +167,7 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="PHPUnit.StudentManagementTest.showStudentTest">
+  <component name="RunManager" selected="PHPUnit.TeacherManagementTest.createTeacher">
     <configuration name="StudentManagementTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Feature\StudentManagementTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/StudentManagementTest.php" scope="Class" />
       <method v="2" />
@@ -164,8 +184,8 @@
       <TestRunner class="Tests\Feature\StudentManagementTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/StudentManagementTest.php" method="showStudentTest" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="StudentManagementTest.updateStudent" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\StudentManagementTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/StudentManagementTest.php" method="updateStudent" scope="Method" />
+    <configuration name="TeacherManagementTest.createTeacher" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\TeacherManagementTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/TeacherManagementTest.php" method="createTeacher" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -174,11 +194,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.TeacherManagementTest.createTeacher" />
         <item itemvalue="PHPUnit.StudentManagementTest.showStudentTest" />
         <item itemvalue="PHPUnit.StudentManagementTest" />
         <item itemvalue="PHPUnit.StudentManagementTest.showAllStudents" />
         <item itemvalue="PHPUnit.StudentManagementTest.addStudentToDB" />
-        <item itemvalue="PHPUnit.StudentManagementTest.updateStudent" />
       </list>
     </recent_temporary>
   </component>
@@ -193,7 +213,7 @@
       <workItem from="1618234967236" duration="4541000" />
       <workItem from="1618411956762" duration="3755000" />
       <workItem from="1618566632750" duration="1450000" />
-      <workItem from="1618568764711" duration="7520000" />
+      <workItem from="1618568764711" duration="7912000" />
     </task>
     <task id="LOCAL-00001" summary="Created routes for each CRUD action within API.php. Routes have been defined for: Get all, get specific, add new, update and delete.">
       <created>1618571375823</created>
@@ -286,11 +306,29 @@
       <option name="project" value="LOCAL" />
       <updated>1618579508325</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="View student test passing.">
+      <created>1618579821312</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1618579821312</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -323,11 +361,11 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1221" y="386" key="#Project_Settings/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618568944301" />
-    <state x="720" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1618579196268">
+    <state x="720" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1618579942409">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1200" y="179" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618238251087" />
-    <state x="720" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618579196268" />
+    <state x="720" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618579942409" />
     <state x="778" y="276" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0" timestamp="1618571704837">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -336,34 +374,34 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1214" y="373" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618568989625" />
-    <state x="485" y="87" key="CommitChangelistDialog2" timestamp="1618579749420">
+    <state x="485" y="87" key="CommitChangelistDialog2" timestamp="1618579820545">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="485" y="87" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618579749420" />
+    <state x="485" y="87" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618579820545" />
     <state x="-1181" y="273" key="FileChooserDialogImpl" timestamp="1618414602912">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1181" y="273" key="FileChooserDialogImpl/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618414602912" />
-    <state width="1875" height="281" key="GridCell.Tab.0.bottom" timestamp="1618579749450">
+    <state width="1875" height="281" key="GridCell.Tab.0.bottom" timestamp="1618580154010">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1875" height="281" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618416156286" />
-    <state width="1875" height="281" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618579749450" />
-    <state width="1875" height="281" key="GridCell.Tab.0.center" timestamp="1618579749450">
+    <state width="1875" height="281" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618580154010" />
+    <state width="1875" height="281" key="GridCell.Tab.0.center" timestamp="1618580154010">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1875" height="281" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618416156286" />
-    <state width="1875" height="281" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618579749450" />
-    <state width="1875" height="281" key="GridCell.Tab.0.left" timestamp="1618579749450">
+    <state width="1875" height="281" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618580154010" />
+    <state width="1875" height="281" key="GridCell.Tab.0.left" timestamp="1618580154010">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1875" height="281" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618416156286" />
-    <state width="1875" height="281" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618579749450" />
-    <state width="1875" height="281" key="GridCell.Tab.0.right" timestamp="1618579749450">
+    <state width="1875" height="281" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618580154010" />
+    <state width="1875" height="281" key="GridCell.Tab.0.right" timestamp="1618580154010">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1875" height="281" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618416156286" />
-    <state width="1875" height="281" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618579749450" />
+    <state width="1875" height="281" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618580154010" />
     <state x="774" y="452" key="ReplaceDuplicatesPrompt" timestamp="1618571710668">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

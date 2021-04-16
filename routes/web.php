@@ -28,3 +28,5 @@ Route::get($studentID, '\App\Http\Controllers\StudentsController@view');
 Route::patch($studentID, '\App\Http\Controllers\StudentsController@update');
 
 Route::delete($studentID, '\App\Http\Controllers\StudentsController@delete');
+
+Route::post('/teachers', '\App\Http\Controllers\TeachersController@store');

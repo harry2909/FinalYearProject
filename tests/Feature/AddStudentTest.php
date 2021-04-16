@@ -10,6 +10,16 @@ class AddStudentTest extends TestCase
 {
     use RefreshDatabase;
 
+    /** @test */
+    public function showAllStudents()
+    {
+        // to get underlying error
+        $this->withoutExceptionHandling();
+
+        $response = $this->get('/students');
+
+        $response->assertRedirect('/students');
+    }
 
     /** @test */
     public function addStudentToDB()

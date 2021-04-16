@@ -21,6 +21,8 @@ Route::get('/students', '\App\Http\Controllers\StudentsController@index');
 
 Route::post('/students', '\App\Http\Controllers\StudentsController@store');
 
+Route::get('/students/{student}', '\App\Http\Controllers\StudentsController@store');
+
 Route::patch('/students/{student}', '\App\Http\Controllers\StudentsController@update');
 
 Route::delete('/students/{student}', '\App\Http\Controllers\StudentsController@delete');

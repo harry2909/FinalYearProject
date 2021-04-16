@@ -6,7 +6,7 @@ use App\Models\Student;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
 
-class AddStudentTest extends TestCase
+class StudentManagementTest extends TestCase
 {
     use RefreshDatabase;
 
@@ -125,6 +125,28 @@ class AddStudentTest extends TestCase
 
         $this->assertEquals('New name', Student::first()->name);
         $response->assertRedirect($student->path());
+
+    }
+
+    /** @test */
+    public function showStudentTest()
+    {
+        $this->withoutExceptionHandling();
+
+        $this->post('/students', [
+            'name' => 'Example Student Name',
+            'studentid' => '1872',
+            'address' => 'Example student address',
+            'telephone' => '75625845240',
+            'year' => '8'
+        ]);
+
+        $student = Student::first();
+
+        $response = $this->get($student->path());
+
+        $this->assertCount(1, Student::all());
+        $response->assertRedirect('/students/' . 1);
 
     }
 }

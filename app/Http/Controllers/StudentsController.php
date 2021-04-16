@@ -10,14 +10,19 @@ class StudentsController extends Controller
     public function store()
     {
 
-        Student::create($this->validateRequest());
+        return Student::create($this->validateRequest());
     }
 
     public function update(Student $student)
     {
 
-        $student->update($this->validateRequest());
+        return $student->update($this->validateRequest());
 
+    }
+
+    public function delete(Student $student)
+    {
+        return $student->delete();
     }
 
     /**

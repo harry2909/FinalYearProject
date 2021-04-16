@@ -10,19 +10,26 @@ class StudentsController extends Controller
     public function store()
     {
 
-        return Student::create($this->validateRequest());
+        $student = Student::create($this->validateRequest());
+
+        return redirect('/students/' . $student->id);
+
     }
 
     public function update(Student $student)
     {
 
-        return $student->update($this->validateRequest());
+        $student->update($this->validateRequest());
+
+        return redirect('/students/' . $student->id);
 
     }
 
     public function delete(Student $student)
     {
-        return $student->delete();
+        $student->delete();
+
+        return redirect('/students');
     }
 
     /**

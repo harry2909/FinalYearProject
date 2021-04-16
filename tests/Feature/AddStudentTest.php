@@ -10,6 +10,7 @@ class AddStudentTest extends TestCase
 {
     use RefreshDatabase;
 
+
     /** @test */
     public function addStudentToDB()
     {
@@ -24,8 +25,11 @@ class AddStudentTest extends TestCase
             'year' => '8'
         ]);
 
+        $student = Student::first();
+
         $response->assertOk();
         $this->assertCount(1, Student::all());
+        $response->assertRedirect('/students/' . $student->id);
     }
 
     /** @test */
@@ -83,6 +87,7 @@ class AddStudentTest extends TestCase
         $response = $this->delete('/students/' . $student->id);
 
         $this->assertCount(0, Student::all());
+        $response->assertRedirect('/students');
     }
 
     /** @test */
@@ -110,6 +115,7 @@ class AddStudentTest extends TestCase
         ]);
 
         $this->assertEquals('New name', Student::first()->name);
+        $response->assertRedirect('/students/' . $student->id);
 
     }
 }

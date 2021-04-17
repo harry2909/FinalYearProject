@@ -47,6 +47,16 @@ class APITest extends TestCase
 
         $subject = $this->create('Subject');
 
+        $response = $this->json('GET', "api/subjects/$subject->id");
+
+        $response->assertStatus(200);
+
+        $response->assertExactJson([
+            'id' => $subject->id,
+            'name' => $subject->name,
+            'subjectid' => $subject->subjectid
+        ]);
+
 
 
     }

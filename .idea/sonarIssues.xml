@@ -58,6 +58,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/database/factories/SubjectFactory.php">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/database/factories/TeacherFactory.php">
           <value>
             <set />
@@ -94,6 +99,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/database/seeders/StudentSeeder.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/database/seeders/SubjectSeeder.php">
           <value>
             <set />
           </value>

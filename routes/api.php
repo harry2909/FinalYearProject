@@ -23,7 +23,7 @@ Route::namespace('API')->group(function () {
 
     Route::post('/subjects', '\App\Http\Controllers\APIController@store');
 
-    Route::get($subjectID, '\App\Http\Controllers\APIController@view');
+    Route::get($subjectID, '\App\Http\Controllers\APIController@show');
 
     Route::patch($subjectID, '\App\Http\Controllers\APIController@update');
 

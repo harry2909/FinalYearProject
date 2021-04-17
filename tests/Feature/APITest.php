@@ -14,6 +14,27 @@ class APITest extends TestCase
     use RefreshDatabase;
 
     /** @test */
+    public function productShowAll()
+    {
+        $this->withoutExceptionHandling();
+
+        $Subject1 = $this->create('Subject');
+        $Subject2 = $this->create('Subject');
+        $Subject3 = $this->create('Subject');
+
+        $response = $this->json('GET', '/api/subjects');
+
+        $response->assertStatus(200)->assertJsonStructure([
+            'data' => [
+                '*' => [
+                    'id', 'name', 'subjectid'
+                ]
+            ]
+        ]);
+    }
+
+
+    /** @test */
     public function productCreate()
     {
         $this->withoutExceptionHandling();

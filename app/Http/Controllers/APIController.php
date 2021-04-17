@@ -4,13 +4,14 @@ namespace App\Http\Controllers;
 
 use App\Models\Subject;
 use App\Http\Resources\Subject as SubjectResource;
+use App\Http\Resources\SubjectCollection as SubjectCollection;
 use Illuminate\Http\Request;
 
 class APIController extends Controller
 {
     public function index()
     {
-        return Subject::all();
+        return new SubjectCollection(Subject::paginate());
     }
 
     public function show(int $id)

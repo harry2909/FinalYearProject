@@ -13,30 +13,40 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-$studentID = '/students/{student}';
 
 Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/students', '\App\Http\Controllers\StudentsController@index');
+Route::namespace('Students')->group(function () {
 
-Route::post('/students', '\App\Http\Controllers\StudentsController@store');
+    $studentID = '/students/{student}';
 
-Route::get($studentID, '\App\Http\Controllers\StudentsController@view');
+    Route::get('/students', '\App\Http\Controllers\StudentsController@index');
 
-Route::patch($studentID, '\App\Http\Controllers\StudentsController@update');
+    Route::post('/students', '\App\Http\Controllers\StudentsController@store');
 
-Route::delete($studentID, '\App\Http\Controllers\StudentsController@delete');
+    Route::get($studentID, '\App\Http\Controllers\StudentsController@view');
 
-$teacherID = '/teachers/{teacher}';
+    Route::patch($studentID, '\App\Http\Controllers\StudentsController@update');
 
-Route::post('/teachers', '\App\Http\Controllers\TeachersController@store');
+    Route::delete($studentID, '\App\Http\Controllers\StudentsController@delete');
+});
 
-Route::get('/teachers', '\App\Http\Controllers\TeachersController@index');
+Route::namespace('Teachers')->group(function () {
+    $teacherID = '/teachers/{teacher}';
 
-Route::get($teacherID, '\App\Http\Controllers\TeachersController@view');
+    Route::post('/teachers', '\App\Http\Controllers\TeachersController@store');
 
-Route::patch($teacherID, '\App\Http\Controllers\TeachersController@update');
+    Route::get('/teachers', '\App\Http\Controllers\TeachersController@index');
 
-Route::delete($teacherID, '\App\Http\Controllers\TeachersController@delete');
+    Route::get($teacherID, '\App\Http\Controllers\TeachersController@view');
+
+    Route::patch($teacherID, '\App\Http\Controllers\TeachersController@update');
+
+    Route::delete($teacherID, '\App\Http\Controllers\TeachersController@delete');
+});
+
+
+
+

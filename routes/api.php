@@ -16,27 +16,19 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-$studentID = '/students/{student}';
+Route::namespace('API')->group(function () {
+    $subjectID = '/subjects/{subject}';
 
-Route::get('/students', '\App\Http\Controllers\StudentsController@index');
+    Route::get('/subjects', '\App\Http\Controllers\APIController@index');
 
-Route::post('/students', '\App\Http\Controllers\StudentsController@store');
+    Route::post('/subjects', '\App\Http\Controllers\APIController@store');
 
-Route::get($studentID, '\App\Http\Controllers\StudentsController@view');
+    Route::get($subjectID, '\App\Http\Controllers\APIController@view');
 
-Route::patch($studentID, '\App\Http\Controllers\StudentsController@update');
+    Route::patch($subjectID, '\App\Http\Controllers\APIController@update');
 
-Route::delete($studentID, '\App\Http\Controllers\StudentsController@delete');
+    Route::delete($subjectID, '\App\Http\Controllers\APIController@delete');
+});
 
-$teacherID = '/teachers/{teacher}';
 
-Route::post('/teachers', '\App\Http\Controllers\TeachersController@store');
-
-Route::get('/teachers', '\App\Http\Controllers\TeachersController@index');
-
-Route::get($teacherID, '\App\Http\Controllers\TeachersController@view');
-
-Route::patch($teacherID, '\App\Http\Controllers\TeachersController@update');
-
-Route::delete($teacherID, '\App\Http\Controllers\TeachersController@delete');
 

@@ -36,8 +36,9 @@ class APIController extends Controller
         return response()->json(new SubjectResource($subject), 200);
     }
 
-    public function delete(Subject $subject)
+    public function delete(int $id)
     {
+        $subject = Subject::findOrFail($id);
         $subject->delete();
 
         return response()->json(null, 204);

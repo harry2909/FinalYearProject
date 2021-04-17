@@ -97,7 +97,42 @@ class APITest extends TestCase
         $response->assertStatus(200)->assertExactJson([
             'id' => $subject->id,
             'name' => $subject->name . 'Updated',
-            'subjectid' => $subject->subjectid  . 0000
+            'subjectid' => $subject->subjectid . 0000
         ]);
+
+        $this->assertDatabaseHas('subjects', [
+            'id' => $subject->id,
+            'name' => $subject->name . 'Updated',
+            'subjectid' => $subject->subjectid . 0000
+        ]);
+    }
+
+    /** @test */
+    public function fail404IfDeleteProductNotFound()
+    {
+
+        //$this->withoutExceptionHandling();
+
+        $response = $this->json('DELETE', "api/subjects/-1");
+
+        $response->assertStatus(404);
+
+
+    }
+
+    /** @test */
+    public function productDelete()
+    {
+        $this->withoutExceptionHandling();
+
+        $subject = $this->create('Subject');
+
+        $response = $this->json('DELETE', "api/subjects/$subject->id");
+
+        $response->assertStatus(204)->assertSee(null);
+
+        $this->assertDatabaseMissing('subjects', [
+            'id' => $subject->id]);
+
     }
 }

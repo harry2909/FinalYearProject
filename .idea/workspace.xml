@@ -172,21 +172,21 @@
       <recent name="D:\xampp\htdocs\FinalYearProject\app\Http\Controllers\Api" />
     </key>
   </component>
-  <component name="RunManager" selected="PHPUnit.APITest.productUpdate">
-    <configuration name="APITest.fail404IfUpdatedProductNotFound" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\APITest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/APITest.php" method="fail404IfUpdatedProductNotFound" scope="Method" />
+  <component name="RunManager" selected="PHPUnit.APITest.productDelete">
+    <configuration name="APITest.fail404IfDeleteProductNotFound" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\APITest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/APITest.php" method="fail404IfDeleteProductNotFound" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="APITest.fail404ProductNotFound" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\APITest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/APITest.php" method="fail404ProductNotFound" scope="Method" />
+    <configuration name="APITest.fail404IfUpdatedProductNotFound" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\APITest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/APITest.php" method="fail404IfUpdatedProductNotFound" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="APITest.productCreate" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Feature\APITest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/APITest.php" method="productCreate" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="APITest.productShow" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\APITest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/APITest.php" method="productShow" scope="Method" />
+    <configuration name="APITest.productDelete" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\APITest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/APITest.php" method="productDelete" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="APITest.productUpdate" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
@@ -199,11 +199,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.APITest.productDelete" />
+        <item itemvalue="PHPUnit.APITest.fail404IfDeleteProductNotFound" />
         <item itemvalue="PHPUnit.APITest.productUpdate" />
         <item itemvalue="PHPUnit.APITest.fail404IfUpdatedProductNotFound" />
         <item itemvalue="PHPUnit.APITest.productCreate" />
-        <item itemvalue="PHPUnit.APITest.fail404ProductNotFound" />
-        <item itemvalue="PHPUnit.APITest.productShow" />
       </list>
     </recent_temporary>
   </component>
@@ -220,7 +220,7 @@
       <workItem from="1618566632750" duration="1450000" />
       <workItem from="1618568764711" duration="9575000" />
       <workItem from="1618590492439" duration="89000" />
-      <workItem from="1618654342645" duration="8930000" />
+      <workItem from="1618654342645" duration="9713000" />
     </task>
     <task id="LOCAL-00001" summary="Created routes for each CRUD action within API.php. Routes have been defined for: Get all, get specific, add new, update and delete.">
       <created>1618571375823</created>
@@ -432,7 +432,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618665855755</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Test for subject updating is working correctly.">
+      <created>1618667038280</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1618667038280</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -452,7 +459,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Added route for deleting student." />
     <MESSAGE value="wrote an assert to check that before deletion there is 1 student." />
     <MESSAGE value="Function for delete added to controller. Passing test." />
     <MESSAGE value="Refactored some tests to check for correct redirect upon using each function." />
@@ -476,8 +482,9 @@
     <MESSAGE value="Resource created to start using API resources instead of eloquent for the data in the controller.&#10;Specified in Subject resource to only include the id, name and subjectid in the json response.&#10;Added in a few more Json tests to check that the structure and json returned is correct" />
     <MESSAGE value="Created a testcase to create some data in products" />
     <MESSAGE value="Refactored the existing seeders to correctly use factories" />
-    <MESSAGE value="Product show seems to be working correctly.&#10;Modified show function in controller to use findorfail.&#10;Subjectfactory setup for creating faker data.&#10;Subject seeder setup to run the factory.&#10;Amended API route from &quot;view&quot; to &quot;show&quot;.&#10;Tested the show route from the api by checking the exact Json returned." />
-    <option name="LAST_COMMIT_MESSAGE" value="Product show seems to be working correctly.&#10;Modified show function in controller to use findorfail.&#10;Subjectfactory setup for creating faker data.&#10;Subject seeder setup to run the factory.&#10;Amended API route from &quot;view&quot; to &quot;show&quot;.&#10;Tested the show route from the api by checking the exact Json returned." />
+    <MESSAGE value="Subject show seems to be working correctly.&#10;Modified show function in controller to use findorfail.&#10;Subjectfactory setup for creating faker data.&#10;Subject seeder setup to run the factory.&#10;Amended API route from &quot;view&quot; to &quot;show&quot;.&#10;Tested the show route from the api by checking the exact Json returned." />
+    <MESSAGE value="Test for subject updating is working correctly." />
+    <option name="LAST_COMMIT_MESSAGE" value="Test for subject updating is working correctly." />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1206" y="342" key="#Notifications" timestamp="1618237799755">
@@ -513,34 +520,46 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1214" y="373" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618568989625" />
-    <state x="126" y="37" width="1297" height="866" key="CommitChangelistDialog2" timestamp="1618665854482">
+    <state x="126" y="37" width="1297" height="866" key="CommitChangelistDialog2" timestamp="1618667037088">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="126" y="37" width="1297" height="866" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618665854482" />
+    <state x="126" y="37" width="1297" height="866" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618667037088" />
     <state x="-1181" y="273" key="FileChooserDialogImpl" timestamp="1618414602912">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1181" y="273" key="FileChooserDialogImpl/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618414602912" />
-    <state width="1875" height="281" key="GridCell.Tab.0.bottom" timestamp="1618666825319">
+    <state x="633" y="399" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog" timestamp="1618667054118">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="633" y="399" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618667054118" />
+    <state width="1875" height="281" key="GridCell.Tab.0.bottom" timestamp="1618667464715">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1875" height="281" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618416156286" />
-    <state width="1875" height="281" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618666825319" />
-    <state width="1875" height="281" key="GridCell.Tab.0.center" timestamp="1618666825319">
+    <state width="1875" height="281" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618667464715" />
+    <state width="1875" height="281" key="GridCell.Tab.0.center" timestamp="1618667464715">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1875" height="281" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618416156286" />
-    <state width="1875" height="281" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618666825319" />
-    <state width="1875" height="281" key="GridCell.Tab.0.left" timestamp="1618666825318">
+    <state width="1875" height="281" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618667464715" />
+    <state width="1875" height="281" key="GridCell.Tab.0.left" timestamp="1618667464715">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1875" height="281" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618416156286" />
-    <state width="1875" height="281" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618666825318" />
-    <state width="1875" height="281" key="GridCell.Tab.0.right" timestamp="1618666825319">
+    <state width="1875" height="281" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618667464715" />
+    <state width="1875" height="281" key="GridCell.Tab.0.right" timestamp="1618667464715">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1875" height="281" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618416156286" />
-    <state width="1875" height="281" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618666825319" />
+    <state width="1875" height="281" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618667464715" />
+    <state x="183" y="85" key="MergeDialog" timestamp="1618667090190">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="183" y="85" key="MergeDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618667090190" />
+    <state x="597" y="280" key="MultipleFileMergeDialog" timestamp="1618667093197">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="597" y="280" key="MultipleFileMergeDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618667093197" />
     <state x="774" y="452" key="ReplaceDuplicatesPrompt" timestamp="1618571710668">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -549,11 +568,11 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1460" y="163" key="SettingsEditor/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618568747503" />
-    <state x="551" y="251" key="Vcs.Push.Dialog.v2" timestamp="1618665876691">
+    <state x="551" y="251" key="Vcs.Push.Dialog.v2" timestamp="1618667122641">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1369" y="251" key="Vcs.Push.Dialog.v2/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618235266070" />
-    <state x="551" y="251" key="Vcs.Push.Dialog.v2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618665876691" />
+    <state x="551" y="251" key="Vcs.Push.Dialog.v2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618667122641" />
     <state x="776" y="432" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1618654409446">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

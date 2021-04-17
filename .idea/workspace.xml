@@ -20,9 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc22cbdc-2e8c-408c-8571-01a42d49a401" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/sonarIssues.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarIssues.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/StudentSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/StudentSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/TeacherSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/TeacherSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/APIController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/APIController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_04_12_145943_create_students_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_04_12_145943_create_students_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_04_16_133850_create_teachers_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_04_11_133850_create_teachers_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_04_17_102452_create_subjects_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_04_12_102452_create_subjects_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/Feature/APITest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/APITest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -173,7 +176,7 @@
       <recent name="D:\xampp\htdocs\FinalYearProject\app\Http\Controllers\Api" />
     </key>
   </component>
-  <component name="RunManager" selected="PHPUnit.SeederTest">
+  <component name="RunManager" selected="PHPUnit.APITest.productCreate">
     <configuration name="APITest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Feature\APITest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/APITest.php" scope="Class" />
       <method v="2" />
@@ -200,8 +203,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="PHPUnit.SeederTest" />
         <item itemvalue="PHPUnit.APITest.productCreate" />
+        <item itemvalue="PHPUnit.SeederTest" />
         <item itemvalue="PHPUnit.StudentManagementTest" />
         <item itemvalue="PHPUnit.APITest" />
         <item itemvalue="PHPUnit.TeacherManagementTest" />
@@ -221,7 +224,7 @@
       <workItem from="1618566632750" duration="1450000" />
       <workItem from="1618568764711" duration="9575000" />
       <workItem from="1618590492439" duration="89000" />
-      <workItem from="1618654342645" duration="2762000" />
+      <workItem from="1618654342645" duration="4112000" />
     </task>
     <task id="LOCAL-00001" summary="Created routes for each CRUD action within API.php. Routes have been defined for: Get all, get specific, add new, update and delete.">
       <created>1618571375823</created>
@@ -391,7 +394,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618656764570</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Changed some faker details for the seeders.">
+      <created>1618657160200</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1618657160200</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -435,7 +445,8 @@
     <MESSAGE value="Decided that for the API tests I'll need a separate controller. Otherwise Id' have to refactor my existing controllers which would in turn break the tests. Created new model, migration and controller for API stuff." />
     <MESSAGE value="Updated test to check first for correct http response as well as that a value has been added into the Subject DB. Routes have been updated to use namespace groups." />
     <MESSAGE value="Updated test to use faker." />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated test to use faker." />
+    <MESSAGE value="Changed some faker details for the seeders." />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed some faker details for the seeders." />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1206" y="342" key="#Notifications" timestamp="1618237799755">
@@ -450,6 +461,10 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1221" y="386" key="#Project_Settings/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618568944301" />
+    <state x="413" y="173" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1618657912260">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="413" y="173" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618657912260" />
     <state x="720" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1618579942409">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -467,34 +482,34 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1214" y="373" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618568989625" />
-    <state x="0" y="87" key="CommitChangelistDialog2" timestamp="1618656763696">
+    <state x="0" y="87" key="CommitChangelistDialog2" timestamp="1618657159383">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="0" y="87" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618656763696" />
+    <state x="0" y="87" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618657159383" />
     <state x="-1181" y="273" key="FileChooserDialogImpl" timestamp="1618414602912">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1181" y="273" key="FileChooserDialogImpl/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618414602912" />
-    <state width="1875" height="281" key="GridCell.Tab.0.bottom" timestamp="1618656856012">
+    <state width="1875" height="281" key="GridCell.Tab.0.bottom" timestamp="1618657528926">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1875" height="281" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618416156286" />
-    <state width="1875" height="281" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618656856012" />
-    <state width="1875" height="281" key="GridCell.Tab.0.center" timestamp="1618656856012">
+    <state width="1875" height="281" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618657528926" />
+    <state width="1875" height="281" key="GridCell.Tab.0.center" timestamp="1618657528926">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1875" height="281" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618416156286" />
-    <state width="1875" height="281" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618656856012" />
-    <state width="1875" height="281" key="GridCell.Tab.0.left" timestamp="1618656856012">
+    <state width="1875" height="281" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618657528926" />
+    <state width="1875" height="281" key="GridCell.Tab.0.left" timestamp="1618657528925">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1875" height="281" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618416156286" />
-    <state width="1875" height="281" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618656856012" />
-    <state width="1875" height="281" key="GridCell.Tab.0.right" timestamp="1618656856012">
+    <state width="1875" height="281" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618657528925" />
+    <state width="1875" height="281" key="GridCell.Tab.0.right" timestamp="1618657528926">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1875" height="281" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618416156286" />
-    <state width="1875" height="281" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618656856012" />
+    <state width="1875" height="281" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618657528926" />
     <state x="774" y="452" key="ReplaceDuplicatesPrompt" timestamp="1618571710668">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -12,29 +12,29 @@ class APIController extends Controller
         return Subject::all();
     }
 
-    public function show($id)
+    public function show(Subject $subject)
     {
-        return Subject::find($id);
+        return $subject;
     }
 
     public function store(Request $request)
     {
-        return Subject::create($request->all());
+        $subject = Subject::create($request->all());
+
+        return response()->json($subject, 201);
     }
 
-    public function update(Request $request, $id)
+    public function update(Request $request, Subject $subject)
     {
-        $subject = Subject::findOrFail($id);
         $subject->update($request->all());
 
-        return $subject;
+        return response()->json($subject, 200);
     }
 
-    public function delete(Request $request, $id)
+    public function delete(Subject $subject)
     {
-        $subject = Subject::findOrFail($id);
         $subject->delete();
 
-        return 204;
+        return response()->json(null, 204);
     }
 }

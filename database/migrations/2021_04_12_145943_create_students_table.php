@@ -20,6 +20,8 @@ class CreateStudentsTable extends Migration
             $table->string('address');
             $table->bigInteger('telephone');
             $table->integer('year');
+            $table->integer('subject_id')->unsigned()->nullable();
+            $table->foreign('subject_id')->references('id')->on('subjects');
             $table->timestamps();
         });
     }

@@ -20,12 +20,15 @@ class APITest extends TestCase
         $faker = Factory::create();
 
         $response = $this->json('POST', 'api/subjects', [
-            'name' => $faker->catchPhrase,
-            'subjectid' => $faker->randomNumber()
+            'name' => $name = $faker->catchPhrase,
+            'subjectid' => $id = $faker->randomNumber()
         ]);
 
         $response->assertStatus(201);
-        $this->assertCount(1, Subject::all());
+        $this->assertDatabaseHas('subjects', [
+            'name' => $name,
+            'subjectid' => $id
+        ]);
 
     }
 }

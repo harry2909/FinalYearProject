@@ -22,7 +22,9 @@ class SubjectFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'name' => $this->faker->catchPhrase,
+            'subjectid' => $this->faker->randomNumber(5)
+
         ];
     }
 }

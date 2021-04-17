@@ -13,9 +13,11 @@ class APIController extends Controller
         return Subject::all();
     }
 
-    public function show(Subject $subject)
+    public function show(int $id)
     {
-        return $subject;
+        $subject = Subject::findOrFail($id);
+
+        return response()->json(new SubjectResource($subject));
     }
 
     public function store(Request $request)

@@ -3,6 +3,7 @@
 namespace Tests\Feature;
 
 use App\Models\Subject;
+use Faker\Factory;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Tests\TestCase;
@@ -16,10 +17,14 @@ class APITest extends TestCase
     {
         $this->withoutExceptionHandling();
 
+        $faker = Factory::create();
+
         $response = $this->json('POST', 'api/subjects', [
-            'name' => 'Example subject Name',
-            'subjectid' => '1872'
+            'name' => $faker->catchPhrase,
+            'subjectid' => $faker->randomNumber()
         ]);
+
+        dd(Subject::first());
 
 
         $response->assertStatus(201);

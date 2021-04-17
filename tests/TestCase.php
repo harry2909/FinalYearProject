@@ -2,14 +2,10 @@
 
 namespace Tests;
 
-use Database\Factories\SubjectFactory;
-use Database\Seeders\StudentSeeder;
-use Faker\Factory;
+use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Testing\TestCase as BaseTestCase;
-use App\Http\Resources\Subject as SubjectResource;
 use App\Models\Subject;
-use Illuminate\Support\Facades\Artisan;
 
 abstract class TestCase extends BaseTestCase
 {
@@ -17,11 +13,22 @@ abstract class TestCase extends BaseTestCase
 
     use HasFactory;
 
-    public function create(string $model, array $attributes = [])
+    public function create(string $model, array $attributes = [], $resource = true)
     {
-        $subject = Subject::factory("App\\$model")->create($attributes);
+        if($model == 'Subject'){
+            $resourceModel = Subject::factory("App\\$model")->create($attributes);
+        } elseif ($model == 'User'){
+            $resourceModel = User::factory("App\\$model")->create($attributes);
+        }
+        $resourceClass = "App\\Http\\Resources\\$model";
 
-        return new SubjectResource($subject);
+        if(!$resource){
+            return $resourceModel;
+        }
+
+
+
+        return new $resourceClass($resourceModel);
 
     }
 }

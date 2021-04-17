@@ -22,7 +22,7 @@ class APITest extends TestCase
         $Subject2 = $this->create('Subject');
         $Subject3 = $this->create('Subject');
 
-        $response = $this->json('GET', '/api/subjects');
+        $response = $this->actingAs($this->create('User', [], false), 'api')->json('GET', '/api/subjects');
 
         $response->assertStatus(200)->assertJsonStructure([
             'data' => [
@@ -45,7 +45,7 @@ class APITest extends TestCase
 
         $faker = Factory::create();
 
-        $response = $this->json('POST', 'api/subjects', [
+        $response = $this->actingAs($this->create('User', [], false), 'api')->json('POST', 'api/subjects', [
             'name' => $name = $faker->catchPhrase,
             'subjectid' => $id = $faker->randomNumber()
         ]);
@@ -69,7 +69,7 @@ class APITest extends TestCase
     /** @test */
     public function fail404ProductNotFound()
     {
-        $response = $this->json('GET', "api/products/-1");
+        $response = $this->actingAs($this->create('User', [], false), 'api')->json('GET', "api/products/-1");
 
         $response->assertStatus(404);
     }
@@ -81,7 +81,7 @@ class APITest extends TestCase
 
         $subject = $this->create('Subject');
 
-        $response = $this->json('GET', "api/subjects/$subject->id");
+        $response = $this->actingAs($this->create('User', [], false), 'api')->json('GET', "api/subjects/$subject->id");
 
         $response->assertStatus(200);
 
@@ -100,7 +100,7 @@ class APITest extends TestCase
 
         //$this->withoutExceptionHandling();
 
-        $response = $this->json('PATCH', "api/subjects/-1");
+        $response = $this->actingAs($this->create('User', [], false), 'api')->json('PATCH', "api/subjects/-1");
 
         $response->assertStatus(404);
 
@@ -114,7 +114,7 @@ class APITest extends TestCase
 
         $subject = $this->create('Subject');
 
-        $response = $this->json('PATCH', "api/subjects/$subject->id", [
+        $response = $this->actingAs($this->create('User', [], false), 'api')->json('PATCH', "api/subjects/$subject->id", [
             'name' => $subject->name . 'Updated',
             'subjectid' => $subject->subjectid . 0000
         ]);
@@ -138,7 +138,7 @@ class APITest extends TestCase
 
         //$this->withoutExceptionHandling();
 
-        $response = $this->json('DELETE', "api/subjects/-1");
+        $response = $this->actingAs($this->create('User', [], false), 'api')->json('DELETE', "api/subjects/-1");
 
         $response->assertStatus(404);
 
@@ -152,7 +152,7 @@ class APITest extends TestCase
 
         $subject = $this->create('Subject');
 
-        $response = $this->json('DELETE', "api/subjects/$subject->id");
+        $response = $this->actingAs($this->create('User', [], false), 'api')->json('DELETE', "api/subjects/$subject->id");
 
         $response->assertStatus(204)->assertSee(null);
 

@@ -45,6 +45,8 @@ class APITest extends TestCase
     {
         $this->withoutExceptionHandling();
 
+        $subject = $this->create('Subject');
+
 
 
     }

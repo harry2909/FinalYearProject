@@ -16,55 +16,27 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-$studentRoute = '/students/{id}';
+$studentID = '/students/{student}';
 
-Route::get('/students', function () {
-    return Student::all();
-});
+Route::get('/students', '\App\Http\Controllers\StudentsController@index');
 
-Route::get($studentRoute, function ($id) {
-    return Student::find($id);
-});
+Route::post('/students', '\App\Http\Controllers\StudentsController@store');
 
-Route::post('/students', function (Request $request) {
-    return Student::create($request->all);
-});
+Route::get($studentID, '\App\Http\Controllers\StudentsController@view');
 
-Route::patch($studentRoute, function (Request $request, $id) {
-    $student = Student::findOrFail($id);
-    $student->update($request->all());
-});
+Route::patch($studentID, '\App\Http\Controllers\StudentsController@update');
 
-Route::delete($studentRoute, function ($id) {
-    Student::find($id)->delete();
+Route::delete($studentID, '\App\Http\Controllers\StudentsController@delete');
 
-    return 204;
-});
+$teacherID = '/teachers/{teacher}';
 
+Route::post('/teachers', '\App\Http\Controllers\TeachersController@store');
 
-$teacherRoute = '/teachers/{id}';
+Route::get('/teachers', '\App\Http\Controllers\TeachersController@index');
 
-Route::get('/teachers', function () {
-    return Teacher::all();
-});
+Route::get($teacherID, '\App\Http\Controllers\TeachersController@view');
 
-Route::get($teacherRoute, function ($id) {
-    return Teacher::find($id);
-});
+Route::patch($teacherID, '\App\Http\Controllers\TeachersController@update');
 
-Route::post('/teachers', function (Request $request) {
-    return Teacher::create($request->all);
-});
-
-Route::patch($teacherRoute, function (Request $request, $id) {
-    $teacher = Teacher::findOrFail($id);
-    $teacher->update($request->all());
-});
-
-Route::delete($teacherRoute, function ($id) {
-    Teacher::find($id)->delete();
-
-    return 204;
-});
-
+Route::delete($teacherID, '\App\Http\Controllers\TeachersController@delete');
 

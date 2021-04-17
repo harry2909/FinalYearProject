@@ -14,7 +14,7 @@ class APITest extends TestCase
     use RefreshDatabase;
 
     /** @test */
-    public function productShowAll()
+    public function subjectShowAll()
     {
         $this->withoutExceptionHandling();
 
@@ -39,7 +39,7 @@ class APITest extends TestCase
 
 
     /** @test */
-    public function productCreate()
+    public function subjectCreate()
     {
         $this->withoutExceptionHandling();
 
@@ -67,15 +67,15 @@ class APITest extends TestCase
     }
 
     /** @test */
-    public function fail404ProductNotFound()
+    public function fail404SubjectNotFound()
     {
-        $response = $this->actingAs($this->create('User', [], false), 'api')->json('GET', "api/products/-1");
+        $response = $this->actingAs($this->create('User', [], false), 'api')->json('GET', "api/subjects/-1");
 
         $response->assertStatus(404);
     }
 
     /** @test */
-    public function productShow()
+    public function subjectShow()
     {
         $this->withoutExceptionHandling();
 
@@ -95,7 +95,7 @@ class APITest extends TestCase
     }
 
     /** @test */
-    public function fail404IfUpdatedProductNotFound()
+    public function fail404IfUpdatedSubjectNotFound()
     {
 
         //$this->withoutExceptionHandling();
@@ -108,7 +108,7 @@ class APITest extends TestCase
     }
 
     /** @test */
-    public function productUpdate()
+    public function subjectUpdate()
     {
         $this->withoutExceptionHandling();
 
@@ -133,7 +133,7 @@ class APITest extends TestCase
     }
 
     /** @test */
-    public function fail404IfDeleteProductNotFound()
+    public function fail404IfDeleteSubjectNotFound()
     {
 
         //$this->withoutExceptionHandling();
@@ -146,7 +146,7 @@ class APITest extends TestCase
     }
 
     /** @test */
-    public function productDelete()
+    public function subjectDelete()
     {
         $this->withoutExceptionHandling();
 
@@ -159,5 +159,26 @@ class APITest extends TestCase
         $this->assertDatabaseMissing('subjects', [
             'id' => $subject->id]);
 
+    }
+
+    /** @test */
+    public function nonAuthenticatedUsersCannotAccessEndpoints()
+    {
+        //$this->withoutExceptionHandling();
+
+        $index = $this->json('GET', 'api/subjects');
+        $index->assertStatus(401);
+
+        $create = $this->json('POST', 'api/subjects');
+        $create->assertStatus(401);
+
+        $view = $this->json('GET', 'api/subjects/-1');
+        $view->assertStatus(401);
+
+        $update = $this->json('PATCH', 'api/subjects/-1');
+        $update->assertStatus(401);
+
+        $delete = $this->json('DELETE', 'api/subjects/-1');
+        $delete->assertStatus(401);
     }
 }

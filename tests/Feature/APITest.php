@@ -24,7 +24,15 @@ class APITest extends TestCase
             'subjectid' => $id = $faker->randomNumber()
         ]);
 
-        $response->assertStatus(201);
+        \Log::info(1, [$response->getContent()]);
+
+        $response->assertJsonStructure([
+            'name', 'subjectid'
+        ])->assertJson([
+            'name' => $name,
+            'subjectid' => $id
+        ])->assertStatus(201);
+
         $this->assertDatabaseHas('subjects', [
             'name' => $name,
             'subjectid' => $id

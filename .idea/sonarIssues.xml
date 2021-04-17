@@ -33,6 +33,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/Http/Resources/Subject.php">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/Models/Student.php">
           <value>
             <set />
@@ -89,6 +94,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/routes/web.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/storage/logs/laravel.log">
           <value>
             <set />
           </value>

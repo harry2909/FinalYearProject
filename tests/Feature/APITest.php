@@ -24,9 +24,6 @@ class APITest extends TestCase
             'subjectid' => $faker->randomNumber()
         ]);
 
-        dd(Subject::first());
-
-
         $response->assertStatus(201);
         $this->assertCount(1, Subject::all());
 

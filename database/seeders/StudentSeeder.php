@@ -19,10 +19,10 @@ class StudentSeeder extends Seeder
         for($i = 0; $i < 50; $i++){
             Student::create([
                 'name' => $faker->name,
-                'studentid' => $faker->randomNumber(),
+                'studentid' => $faker->randomNumber(5),
                 'address' => $faker->address,
-                'telephone' => $faker->randomNumber(),
-                'year' => $faker->randomDigit
+                'telephone' => $faker->randomNumber(7),
+                'year' => $faker->numberBetween(7, 13)
             ]);
         }
     }

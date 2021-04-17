@@ -27,8 +27,10 @@ class APIController extends Controller
         return response()->json(new SubjectResource($subject), 201);
     }
 
-    public function update(Request $request, Subject $subject)
+    public function update(Request $request, int $id)
     {
+        $subject = Subject::findOrFail($id);
+
         $subject->update($request->all());
 
         return response()->json(new SubjectResource($subject), 200);

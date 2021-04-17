@@ -6,6 +6,7 @@ use App\Models\Subject;
 use Faker\Factory;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
+use Illuminate\Support\Facades\Log;
 use Tests\TestCase;
 
 class APITest extends TestCase
@@ -24,7 +25,7 @@ class APITest extends TestCase
             'subjectid' => $id = $faker->randomNumber()
         ]);
 
-        \Log::info(1, [$response->getContent()]);
+        Log::info(1, [$response->getContent()]);
 
         $response->assertJsonStructure([
             'name', 'subjectid'
@@ -38,6 +39,14 @@ class APITest extends TestCase
             'subjectid' => $id
         ]);
 
+    }
+
+    /** @test */
+    public function fail404ProductNotFound()
+    {
+        $response = $this->json('GET', "api/products/-1");
+
+        $response->assertStatus(404);
     }
 
     /** @test */
@@ -58,6 +67,37 @@ class APITest extends TestCase
         ]);
 
 
+    }
 
+    /** @test */
+    public function fail404IfUpdatedProductNotFound()
+    {
+
+        //$this->withoutExceptionHandling();
+
+        $response = $this->json('PATCH', "api/subjects/-1");
+
+        $response->assertStatus(404);
+
+
+    }
+
+    /** @test */
+    public function productUpdate()
+    {
+        $this->withoutExceptionHandling();
+
+        $subject = $this->create('Subject');
+
+        $response = $this->json('PATCH', "api/subjects/$subject->id", [
+            'name' => $subject->name . 'Updated',
+            'subjectid' => $subject->subjectid . 0000
+        ]);
+
+        $response->assertStatus(200)->assertExactJson([
+            'id' => $subject->id,
+            'name' => $subject->name . 'Updated',
+            'subjectid' => $subject->subjectid  . 0000
+        ]);
     }
 }

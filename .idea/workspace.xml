@@ -20,9 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc22cbdc-2e8c-408c-8571-01a42d49a401" name="Default Changelist" comment="Added a new resource for returning a collection.&#10;Added some code to return this new collection resource and paginate the output.&#10;New test method used to check for index page. Checking specific Json structure.">
-      <change afterPath="$PROJECT_DIR$/app/Http/Resources/SubjectCollection.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarIssues.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarIssues.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/APIController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/APIController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/Feature/APITest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/APITest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -182,12 +181,12 @@
       <TestRunner class="Tests\Feature\APITest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/APITest.php" method="fail404IfDeleteProductNotFound" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="APITest.fail404IfUpdatedProductNotFound" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\APITest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/APITest.php" method="fail404IfUpdatedProductNotFound" scope="Method" />
-      <method v="2" />
-    </configuration>
     <configuration name="APITest.productDelete" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Feature\APITest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/APITest.php" method="productDelete" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="APITest.productShowAll" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\APITest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/APITest.php" method="productShowAll" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="APITest.productUpdate" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
@@ -201,10 +200,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="PHPUnit.APITest" />
+        <item itemvalue="PHPUnit.APITest.productShowAll" />
         <item itemvalue="PHPUnit.APITest.productDelete" />
         <item itemvalue="PHPUnit.APITest.fail404IfDeleteProductNotFound" />
         <item itemvalue="PHPUnit.APITest.productUpdate" />
-        <item itemvalue="PHPUnit.APITest.fail404IfUpdatedProductNotFound" />
       </list>
     </recent_temporary>
   </component>
@@ -221,7 +220,7 @@
       <workItem from="1618566632750" duration="1450000" />
       <workItem from="1618568764711" duration="9575000" />
       <workItem from="1618590492439" duration="89000" />
-      <workItem from="1618654342645" duration="10388000" />
+      <workItem from="1618654342645" duration="10747000" />
     </task>
     <task id="LOCAL-00001" summary="Created routes for each CRUD action within API.php. Routes have been defined for: Get all, get specific, add new, update and delete.">
       <created>1618571375823</created>
@@ -447,7 +446,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618667743238</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Added a new resource for returning a collection.&#10;Added some code to return this new collection resource and paginate the output.&#10;New test method used to check for index page. Checking specific Json structure.">
+      <created>1618668360100</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1618668360100</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -528,10 +534,10 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1214" y="373" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618568989625" />
-    <state x="126" y="37" width="1297" height="866" key="CommitChangelistDialog2" timestamp="1618668304615">
+    <state x="126" y="37" width="1297" height="866" key="CommitChangelistDialog2" timestamp="1618668359155">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="126" y="37" width="1297" height="866" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618668304615" />
+    <state x="126" y="37" width="1297" height="866" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618668359155" />
     <state x="-1181" y="273" key="FileChooserDialogImpl" timestamp="1618414602912">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
@@ -540,26 +546,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="633" y="399" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618667054118" />
-    <state width="1875" height="281" key="GridCell.Tab.0.bottom" timestamp="1618668125424">
+    <state width="1875" height="281" key="GridCell.Tab.0.bottom" timestamp="1618668679492">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1875" height="281" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618416156286" />
-    <state width="1875" height="281" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618668125424" />
-    <state width="1875" height="281" key="GridCell.Tab.0.center" timestamp="1618668125424">
+    <state width="1875" height="281" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618668679492" />
+    <state width="1875" height="281" key="GridCell.Tab.0.center" timestamp="1618668679492">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1875" height="281" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618416156286" />
-    <state width="1875" height="281" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618668125424" />
-    <state width="1875" height="281" key="GridCell.Tab.0.left" timestamp="1618668125423">
+    <state width="1875" height="281" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618668679492" />
+    <state width="1875" height="281" key="GridCell.Tab.0.left" timestamp="1618668679492">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1875" height="281" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618416156286" />
-    <state width="1875" height="281" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618668125423" />
-    <state width="1875" height="281" key="GridCell.Tab.0.right" timestamp="1618668125424">
+    <state width="1875" height="281" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618668679492" />
+    <state width="1875" height="281" key="GridCell.Tab.0.right" timestamp="1618668679492">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1875" height="281" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618416156286" />
-    <state width="1875" height="281" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618668125424" />
+    <state width="1875" height="281" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618668679492" />
     <state x="183" y="85" key="MergeDialog" timestamp="1618667090190">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

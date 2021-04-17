@@ -29,8 +29,12 @@ class APITest extends TestCase
                 '*' => [
                     'id', 'name', 'subjectid'
                 ]
-            ]
+            ],
+            'links' => ['first', 'last', 'prev', 'next'],
+            'meta' => ['current_page', 'last_page', 'from', 'to', 'path', 'per_page', 'total']
         ]);
+
+        Log::info($response->getContent());
     }
 
 

@@ -128,6 +128,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/tests/TestCase.php">
+          <value>
+            <set />
+          </value>
+        </entry>
       </map>
     </option>
   </component>

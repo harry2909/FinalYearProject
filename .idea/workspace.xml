@@ -20,11 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc22cbdc-2e8c-408c-8571-01a42d49a401" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Resources/Subject.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarIssues.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarIssues.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/APIController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/APIController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/Feature/APITest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/APITest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/TestCase.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/TestCase.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -222,7 +219,7 @@
       <workItem from="1618566632750" duration="1450000" />
       <workItem from="1618568764711" duration="9575000" />
       <workItem from="1618590492439" duration="89000" />
-      <workItem from="1618654342645" duration="4776000" />
+      <workItem from="1618654342645" duration="5080000" />
     </task>
     <task id="LOCAL-00001" summary="Created routes for each CRUD action within API.php. Routes have been defined for: Get all, get specific, add new, update and delete.">
       <created>1618571375823</created>
@@ -406,7 +403,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618658537877</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Resource created to start using API resources instead of eloquent for the data in the controller.&#10;Specified in Subject resource to only include the id, name and subjectid in the json response.&#10;Added in a few more Json tests to check that the structure and json returned is correct">
+      <created>1618659362774</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1618659362774</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -426,7 +430,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Adding routes for the controller methods back in for the web.php." />
     <MESSAGE value="New function created to validate request." />
     <MESSAGE value="Refactoring some inline variables." />
     <MESSAGE value="Written test to check for deletion of student from DB." />
@@ -451,7 +454,8 @@
     <MESSAGE value="Updated test to use faker." />
     <MESSAGE value="Changed some faker details for the seeders." />
     <MESSAGE value="Messed around with the migrations to allow for foreign keys. Added Json responses to API controller." />
-    <option name="LAST_COMMIT_MESSAGE" value="Messed around with the migrations to allow for foreign keys. Added Json responses to API controller." />
+    <MESSAGE value="Resource created to start using API resources instead of eloquent for the data in the controller.&#10;Specified in Subject resource to only include the id, name and subjectid in the json response.&#10;Added in a few more Json tests to check that the structure and json returned is correct" />
+    <option name="LAST_COMMIT_MESSAGE" value="Resource created to start using API resources instead of eloquent for the data in the controller.&#10;Specified in Subject resource to only include the id, name and subjectid in the json response.&#10;Added in a few more Json tests to check that the structure and json returned is correct" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1206" y="342" key="#Notifications" timestamp="1618237799755">
@@ -487,34 +491,34 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1214" y="373" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618568989625" />
-    <state x="0" y="87" key="CommitChangelistDialog2" timestamp="1618658536322">
+    <state x="126" y="37" key="CommitChangelistDialog2" timestamp="1618659361898">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="0" y="87" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618658536322" />
+    <state x="126" y="37" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618659361898" />
     <state x="-1181" y="273" key="FileChooserDialogImpl" timestamp="1618414602912">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1181" y="273" key="FileChooserDialogImpl/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618414602912" />
-    <state width="1875" height="281" key="GridCell.Tab.0.bottom" timestamp="1618658917207">
+    <state width="1875" height="281" key="GridCell.Tab.0.bottom" timestamp="1618659196022">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1875" height="281" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618416156286" />
-    <state width="1875" height="281" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618658917207" />
-    <state width="1875" height="281" key="GridCell.Tab.0.center" timestamp="1618658917207">
+    <state width="1875" height="281" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618659196022" />
+    <state width="1875" height="281" key="GridCell.Tab.0.center" timestamp="1618659196022">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1875" height="281" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618416156286" />
-    <state width="1875" height="281" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618658917207" />
-    <state width="1875" height="281" key="GridCell.Tab.0.left" timestamp="1618658917207">
+    <state width="1875" height="281" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618659196022" />
+    <state width="1875" height="281" key="GridCell.Tab.0.left" timestamp="1618659196022">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1875" height="281" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618416156286" />
-    <state width="1875" height="281" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618658917207" />
-    <state width="1875" height="281" key="GridCell.Tab.0.right" timestamp="1618658917207">
+    <state width="1875" height="281" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618659196022" />
+    <state width="1875" height="281" key="GridCell.Tab.0.right" timestamp="1618659196022">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1875" height="281" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618416156286" />
-    <state width="1875" height="281" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618658917207" />
+    <state width="1875" height="281" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618659196022" />
     <state x="774" y="452" key="ReplaceDuplicatesPrompt" timestamp="1618571710668">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

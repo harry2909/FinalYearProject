@@ -39,4 +39,13 @@ class APITest extends TestCase
         ]);
 
     }
+
+    /** @test */
+    public function productShow()
+    {
+        $this->withoutExceptionHandling();
+
+
+
+    }
 }

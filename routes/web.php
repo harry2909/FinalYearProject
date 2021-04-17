@@ -18,6 +18,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::post('/auth/token', '\App\Http\Controllers\AuthController@store');
+
 Route::namespace('Students')->group(function () {
 
     $studentID = '/students/{student}';

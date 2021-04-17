@@ -19,10 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc22cbdc-2e8c-408c-8571-01a42d49a401" name="Default Changelist" comment="Added a new resource for returning a collection.&#10;Added some code to return this new collection resource and paginate the output.&#10;New test method used to check for index page. Checking specific Json structure.">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarIssues.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarIssues.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/APITest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/APITest.php" afterDir="false" />
+    <list default="true" id="fc22cbdc-2e8c-408c-8571-01a42d49a401" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -220,7 +218,7 @@
       <workItem from="1618566632750" duration="1450000" />
       <workItem from="1618568764711" duration="9575000" />
       <workItem from="1618590492439" duration="89000" />
-      <workItem from="1618654342645" duration="10747000" />
+      <workItem from="1618654342645" duration="11113000" />
     </task>
     <task id="LOCAL-00001" summary="Created routes for each CRUD action within API.php. Routes have been defined for: Get all, get specific, add new, update and delete.">
       <created>1618571375823</created>
@@ -453,7 +451,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618668360100</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Tests for pagination working correctly.&#10;Json structure returning as expected.">
+      <created>1618668846378</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1618668846378</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -473,7 +478,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Refactored some tests to check for correct redirect upon using each function." />
     <MESSAGE value="Created a function in Student Model to get path of specific student" />
     <MESSAGE value="Writing test for index" />
     <MESSAGE value="index code implemented" />
@@ -498,7 +502,8 @@
     <MESSAGE value="Test for subject updating is working correctly." />
     <MESSAGE value="Test for correct http responses showing are passing. Added test for successful deletion." />
     <MESSAGE value="Added a new resource for returning a collection.&#10;Added some code to return this new collection resource and paginate the output.&#10;New test method used to check for index page. Checking specific Json structure." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a new resource for returning a collection.&#10;Added some code to return this new collection resource and paginate the output.&#10;New test method used to check for index page. Checking specific Json structure." />
+    <MESSAGE value="Tests for pagination working correctly.&#10;Json structure returning as expected." />
+    <option name="LAST_COMMIT_MESSAGE" value="Tests for pagination working correctly.&#10;Json structure returning as expected." />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1206" y="342" key="#Notifications" timestamp="1618237799755">
@@ -534,10 +539,10 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1214" y="373" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618568989625" />
-    <state x="126" y="37" width="1297" height="866" key="CommitChangelistDialog2" timestamp="1618668359155">
+    <state x="126" y="37" width="1297" height="866" key="CommitChangelistDialog2" timestamp="1618668845718">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="126" y="37" width="1297" height="866" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618668359155" />
+    <state x="126" y="37" width="1297" height="866" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618668845718" />
     <state x="-1181" y="273" key="FileChooserDialogImpl" timestamp="1618414602912">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
@@ -546,26 +551,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="633" y="399" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618667054118" />
-    <state width="1875" height="281" key="GridCell.Tab.0.bottom" timestamp="1618668679492">
+    <state width="1875" height="281" key="GridCell.Tab.0.bottom" timestamp="1618668821448">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1875" height="281" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618416156286" />
-    <state width="1875" height="281" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618668679492" />
-    <state width="1875" height="281" key="GridCell.Tab.0.center" timestamp="1618668679492">
+    <state width="1875" height="281" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618668821448" />
+    <state width="1875" height="281" key="GridCell.Tab.0.center" timestamp="1618668821447">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1875" height="281" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618416156286" />
-    <state width="1875" height="281" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618668679492" />
-    <state width="1875" height="281" key="GridCell.Tab.0.left" timestamp="1618668679492">
+    <state width="1875" height="281" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618668821447" />
+    <state width="1875" height="281" key="GridCell.Tab.0.left" timestamp="1618668821447">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1875" height="281" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618416156286" />
-    <state width="1875" height="281" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618668679492" />
-    <state width="1875" height="281" key="GridCell.Tab.0.right" timestamp="1618668679492">
+    <state width="1875" height="281" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618668821447" />
+    <state width="1875" height="281" key="GridCell.Tab.0.right" timestamp="1618668821448">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1875" height="281" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618416156286" />
-    <state width="1875" height="281" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618668679492" />
+    <state width="1875" height="281" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618668821448" />
     <state x="183" y="85" key="MergeDialog" timestamp="1618667090190">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -582,11 +587,11 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1460" y="163" key="SettingsEditor/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618568747503" />
-    <state x="551" y="251" key="Vcs.Push.Dialog.v2" timestamp="1618667122641">
+    <state x="551" y="251" key="Vcs.Push.Dialog.v2" timestamp="1618668915158">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1369" y="251" key="Vcs.Push.Dialog.v2/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618235266070" />
-    <state x="551" y="251" key="Vcs.Push.Dialog.v2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618667122641" />
+    <state x="551" y="251" key="Vcs.Push.Dialog.v2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618668915158" />
     <state x="776" y="432" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1618654409446">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

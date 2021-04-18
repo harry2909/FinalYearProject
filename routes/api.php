@@ -20,7 +20,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::middleware('auth:api')->namespace('API')->group(function () {
+Route::group(['middleware' => 'auth:api'], function () {
     $subjectID = '/subjects/{subject}';
 
     Route::get('/subjects', '\App\Http\Controllers\APIController@index');

@@ -9,8 +9,6 @@ o
 ?database/migrations/2021_04_12_145943_create_students_table.php,1\f\1fb5f661404d2a2bc96565c70b2fab467e7ff9c4
 F
 app/Models/Student.php,a\a\aa8ab527979d8c2d686e0e79c4fa067953a9c6bf
-o
-?database/migrations/2021_04_16_133850_create_teachers_table.php,c\4\c4bf313a772fb5374122f1af22e49494f60329e9
 R
 "database/seeders/StudentSeeder.php,2\9\2947debdbc0a71dc7b4698b740739c42e623488f
 F
@@ -25,12 +23,8 @@ L
 routes/web.php,6\b\6b9a783d9b43fee50fd28f56dbd1856d2608f305
 =
 composer.lock,c\3\c3262e2a0879195bd6a727e90f768bc85ad79ffd
-t
-Ddatabase/migrations/2021_04_16_160559_add_role_id_to_users_table.php,9\2\929a0089d7a5b11c05abf216e73296ebae58a68b
 [
 +app/Http/Controllers/StudentsController.php,d\2\d203c9a3e144d74bfcb78bc3ad0aa9582efb82b3
-l
-<database/migrations/2021_04_16_160523_create_roles_table.php,d\c\dc8fc98edb8f66e3216ea0165bc275ce685eaf75
 W
 'tests/Feature/StudentManagementTest.php,b\4\b4e99f02333a9badc4b8d94ddd22b94f884f31b9
 =
@@ -39,3 +33,17 @@ W
 routes/api.php,b\3\b337d07ab0e7d54bf5547a0321a43ecafbd73ec1
 C
 app/Models/User.php,a\9\a90f2e50cb06863b54effced365aa5f1fe7d9c88
+?
+config/auth.php,c\d\cddba0f39ef2cbe4d8189e8f5621a3bb533d6bc2
+R
+"database/seeders/SubjectSeeder.php,0\e\0e51bef41b95cf7d7f4731ba70d4ea212bc2c3ec
+B
+tests/TestCase.php,d\c\dc1b14d8259cf8c2584562f808499dadb44f8593
+R
+"database/factories/UserFactory.php,3\4\3401747fc769758d97931473eab6222bc2abf009
+H
+storage/logs/laravel.log,5\9\594b7055003ba7ec361dc917d3fd69234d89a509
+P
+ tests/Feature/AuthController.php,8\a\8aba1216d9098a6ba5bf3e4333bae811cdaa843c
+W
+'app/Http/Controllers/AuthController.php,3\1\31d283052936b2e7a79a7aa05dd75800e2abe438

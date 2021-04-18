@@ -26,8 +26,6 @@ abstract class TestCase extends BaseTestCase
             return $resourceModel;
         }
 
-
-
         return new $resourceClass($resourceModel);
 
     }

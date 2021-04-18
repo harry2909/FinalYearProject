@@ -78,15 +78,13 @@ class AuthController extends TestCase
             'password' => 'secret'
         ]);
 
-        $user = User::first();
+        $test = $response['token'];
 
-        $finalUser = $this->actingAs($this->create('User', [], false), 'api')->json('POST', 'api/user-details', [
-            'name' => $user->name,
-            'email' => $user->email,
-            'password' => $user->password
+        $final = $this->json('POST', 'api/user-details', [
+            'token' => $test
         ]);
 
-        dd($response);
+        dd($final);
 
     }
 }

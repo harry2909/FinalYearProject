@@ -27,10 +27,9 @@ class AuthController extends Controller
 
         if (Auth::attempt($credentials)) {
             $token = User::whereEmail($request->email)->first()->createToken($request->email)->accessToken;
-            response()->json(['success', 'email' => $credentials['email'], 'token' => $token], 200);
-            return redirect(route('dashboard'));
+            return response()->json(['success', 'email' => $credentials['email'], 'token' => $token], 200);
         } else {
-            return redirect(route('wrongLogin'));
+            return response()->json(null, 401);
         }
     }
 

@@ -49,4 +49,6 @@ class APIController extends Controller
     {
         return view('login');
     }
+
+
 }

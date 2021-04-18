@@ -19,11 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc22cbdc-2e8c-408c-8571-01a42d49a401" name="Default Changelist" comment="Finally got the token working using Auth. It was entirely because I wasn't first encrytping my password using bycrypt. I've also setup so that on setup after refreshing the DB, the artisan command passport:install is used to get personal access tokens.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="fc22cbdc-2e8c-408c-8571-01a42d49a401" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.rnd" beforeDir="false" afterPath="$PROJECT_DIR$/.rnd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/Feature/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/AuthController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -188,7 +187,7 @@
       <recent name="D:\xampp\htdocs\FinalYearProject\app\Http\Controllers\Api" />
     </key>
   </component>
-  <component name="RunManager" selected="PHPUnit.AuthController.canLogin">
+  <component name="RunManager" selected="PHPUnit.AuthController.canRegister">
     <configuration name="APITest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Feature\APITest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/APITest.php" scope="Class" />
       <method v="2" />
@@ -205,8 +204,8 @@
       <TestRunner class="Tests\Feature\AuthController" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/AuthController.php" method="canLogin" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="StudentManagementTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\StudentManagementTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/StudentManagementTest.php" scope="Class" />
+    <configuration name="AuthController.canRegister" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\AuthController" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/AuthController.php" method="canRegister" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -215,11 +214,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.AuthController.canRegister" />
         <item itemvalue="PHPUnit.AuthController.canLogin" />
         <item itemvalue="PHPUnit.APITest" />
         <item itemvalue="PHPUnit.AuthController.canAuthenticate" />
         <item itemvalue="PHPUnit.APITest.subjectShowAll" />
-        <item itemvalue="PHPUnit.StudentManagementTest" />
       </list>
     </recent_temporary>
   </component>
@@ -238,7 +237,7 @@
       <workItem from="1618590492439" duration="89000" />
       <workItem from="1618654342645" duration="15153000" />
       <workItem from="1618740286996" duration="632000" />
-      <workItem from="1618740953065" duration="6374000" />
+      <workItem from="1618740953065" duration="7074000" />
     </task>
     <task id="LOCAL-00001" summary="Created routes for each CRUD action within API.php. Routes have been defined for: Get all, get specific, add new, update and delete.">
       <created>1618571375823</created>
@@ -520,7 +519,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618745445810</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="Now setting up the routes and tests for authenticating a user. (Login + registration too)">
+      <created>1618747485999</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1618747485999</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -540,7 +546,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Test for storing teacher is working" />
     <MESSAGE value="All tests passing correctly" />
     <MESSAGE value="Setting up test for seeder now" />
     <MESSAGE value="Seeder test is working correctly. Now to implement the seeder and call it from the test." />
@@ -565,7 +570,8 @@
     <MESSAGE value="Installed Passport to manage API tokens." />
     <MESSAGE value="Now adding in the Personal access token stuff but can't get it to work at the moment.&#10;Need to figure out why the code in the auth controller (the if statement) isn't passing" />
     <MESSAGE value="Finally got the token working using Auth. It was entirely because I wasn't first encrytping my password using bycrypt. I've also setup so that on setup after refreshing the DB, the artisan command passport:install is used to get personal access tokens." />
-    <option name="LAST_COMMIT_MESSAGE" value="Finally got the token working using Auth. It was entirely because I wasn't first encrytping my password using bycrypt. I've also setup so that on setup after refreshing the DB, the artisan command passport:install is used to get personal access tokens." />
+    <MESSAGE value="Now setting up the routes and tests for authenticating a user. (Login + registration too)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Now setting up the routes and tests for authenticating a user. (Login + registration too)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1206" y="342" key="#Notifications" timestamp="1618237799755">
@@ -601,10 +607,10 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1214" y="373" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618568989625" />
-    <state x="126" y="37" width="1297" height="866" key="CommitChangelistDialog2" timestamp="1618747100101">
+    <state x="126" y="37" width="1297" height="866" key="CommitChangelistDialog2" timestamp="1618747484731">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="126" y="37" width="1297" height="866" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618747100101" />
+    <state x="126" y="37" width="1297" height="866" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618747484731" />
     <state x="-1181" y="273" key="FileChooserDialogImpl" timestamp="1618414602912">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
@@ -613,26 +619,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="633" y="399" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618667054118" />
-    <state width="1875" height="243" key="GridCell.Tab.0.bottom" timestamp="1618747062995">
+    <state width="1875" height="243" key="GridCell.Tab.0.bottom" timestamp="1618748006809">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1875" height="281" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618416156286" />
-    <state width="1875" height="243" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618747062995" />
-    <state width="1875" height="243" key="GridCell.Tab.0.center" timestamp="1618747062995">
+    <state width="1875" height="243" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618748006809" />
+    <state width="1875" height="243" key="GridCell.Tab.0.center" timestamp="1618748006809">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1875" height="281" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618416156286" />
-    <state width="1875" height="243" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618747062995" />
-    <state width="1875" height="243" key="GridCell.Tab.0.left" timestamp="1618747062995">
+    <state width="1875" height="243" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618748006809" />
+    <state width="1875" height="243" key="GridCell.Tab.0.left" timestamp="1618748006809">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1875" height="281" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618416156286" />
-    <state width="1875" height="243" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618747062995" />
-    <state width="1875" height="243" key="GridCell.Tab.0.right" timestamp="1618747062995">
+    <state width="1875" height="243" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618748006809" />
+    <state width="1875" height="243" key="GridCell.Tab.0.right" timestamp="1618748006809">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1875" height="281" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618416156286" />
-    <state width="1875" height="243" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618747062995" />
+    <state width="1875" height="243" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618748006809" />
     <state x="183" y="85" key="MergeDialog" timestamp="1618667090190">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

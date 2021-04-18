@@ -25,6 +25,10 @@ Route::post('/login', '\App\Http\Controllers\AuthController@login');
 Route::post('/register', '\App\Http\Controllers\AuthController@register');
 
 Route::group(['middleware' => 'auth:api'], function () {
+    Route::post('/user-details', '\App\Http\Controllers\AuthController@showDetails');
+});
+
+Route::group(['middleware' => 'auth:api'], function () {
     $subjectID = '/subjects/{subject}';
 
     Route::get('/subjects', '\App\Http\Controllers\APIController@index');

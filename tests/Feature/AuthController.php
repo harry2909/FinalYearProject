@@ -67,4 +67,26 @@ class AuthController extends TestCase
 
     }
 
+    /** @test */
+    public function canSeeUserDetails()
+    {
+        $this->withoutExceptionHandling();
+
+        $response = $this->json('POST', 'api/register', [
+            'name' => 'harry2909',
+            'email' => 'harry2909@gmail.com',
+            'password' => 'secret'
+        ]);
+
+        $user = User::first();
+
+        $finalUser = $this->actingAs($this->create('User', [], false), 'api')->json('POST', 'api/user-details', [
+            'name' => $user->name,
+            'email' => $user->email,
+            'password' => $user->password
+        ]);
+
+        dd($response);
+
+    }
 }

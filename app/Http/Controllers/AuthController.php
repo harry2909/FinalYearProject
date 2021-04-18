@@ -16,9 +16,9 @@ class AuthController extends Controller
         if (Auth::attempt($credentials)) {
             $token = User::whereEmail($request->email)->first()->createToken($request->email)->accessToken;
 
-            return response()->json(['token' => $token]);
+            return response()->json(['success', 'token' => $token]);
         } else {
-            return response()->json(['email' => $request->email, 'password' => $request->password]);
+            return response()->json(['failed', 'email' => $request->email, 'password' => $request->password]);
         }
     }
 
@@ -28,7 +28,7 @@ class AuthController extends Controller
 
         if (Auth::attempt($credentials)) {
             $token = User::whereEmail($request->email)->first()->createToken($request->email)->accessToken;
-            return response()->json(['email' => $credentials['email'], 'token' => $token], 200);
+            return response()->json(['success', 'email' => $credentials['email'], 'token' => $token], 200);
         } else {
             return response()->json(null, 401);
         }
@@ -49,7 +49,13 @@ class AuthController extends Controller
         $input['password'] = bcrypt($input['password']);
         $user = User::create($input);
         $token = User::whereEmail($user->email)->first()->createToken($user->email)->accessToken;
-        return response()->json(['name' => $user->name, 'token' => $token], 200);
+        return response()->json(['success', 'name' => $user->name, 'token' => $token], 200);
 
+    }
+
+    public function showDetails()
+    {
+        $user = Auth::user();
+        return response()->json(['success' => $user], 200);
     }
 }

@@ -16,13 +16,20 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::post('login', '\App\Http\Controllers\AuthController@login');
+Route::post('login', '\App\Http\Controllers\AuthController@login')->name('loginRequest');
 
 Route::get('login', '\App\Http\Controllers\APIController@loginView');
+
+Route::get('incorrectLogin', function () {
+    return view('badLogin');
+})->name('wrongLogin');
 
 Route::post('register', '\App\Http\Controllers\AuthController@register');
 
 Route::group(['middleware' => 'auth:api'], function () {
+    Route::get('loggedIn', function (){
+        return view('dashboard');
+    })->name('dashboard');
     Route::post('user-details', '\App\Http\Controllers\AuthController@showDetails');
 });
 

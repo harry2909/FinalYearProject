@@ -26,25 +26,30 @@ class AuthController extends Controller
     {
         $credentials = $request->only('email', 'password');
 
-        if(Auth::attempt($credentials)) {
+        if (Auth::attempt($credentials)) {
             $token = User::whereEmail($request->email)->first()->createToken($request->email)->accessToken;
-            return response()->json(['token' => $token]);
-        }
-        else{
+            return response()->json(['email' => $credentials['email'], 'token' => $token], 200);
+        } else {
             return response()->json(null, 401);
         }
     }
 
     public function register(Request $request)
     {
-        $validator = Validator::make($request->all(), [
+        $validator = $request->validate([
             'name' => 'required',
             'email' => 'required',
             'password' => 'required'
         ]);
 
-        if($validator->fails()){
+        if (!$validator) {
             return response()->json(['error' => $validator->errors()], 401);
         }
+        $input = $request->all();
+        $input['password'] = bcrypt($input['password']);
+        $user = User::create($input);
+        $token = User::whereEmail($user->email)->first()->createToken($user->email)->accessToken;
+        return response()->json(['name' => $user->name, 'token' => $token], 200);
+
     }
 }

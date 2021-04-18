@@ -46,7 +46,7 @@ class AuthController extends TestCase
             'password' => 'secret'
         ]);
 
-        $response->assertStatus(200)->assertJsonStructure(['token']);
+        $response->assertStatus(200)->assertJsonStructure(['email', 'token']);
     }
 
     /** @test */
@@ -54,15 +54,15 @@ class AuthController extends TestCase
     {
         $this->withoutExceptionHandling();
 
-        $user = $this->create('User', [], false);
-
         $response = $this->json('POST', 'api/register', [
-            'name' => $user->name,
-            'email' => $user->email,
+            'name' => 'harry2909',
+            'email' => 'harry2909@gmail.com',
             'password' => 'secret'
         ]);
 
-        $response->assertStatus(200)->assertJsonStructure(['name', 'email', 'password']);
+        $response->assertStatus(200)->assertJsonStructure([
+            'name', 'token'
+        ]);
 
 
     }

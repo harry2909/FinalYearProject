@@ -12,11 +12,7 @@ class AuthController extends Controller
     {
         $credentials = $request->only('email', 'password');
 
-//        print_r(User::all());
-        //dd($credentials);
-
         if (Auth::attempt($credentials)) {
-            echo 'hello';
             $token = User::whereEmail($request->email)->first()->createToken($request->email)->accessToken;
 
             return response()->json(['HarryTest', 'token' => $token]);

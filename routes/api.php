@@ -30,10 +30,11 @@ Route::group(['middleware' => 'auth:api'], function () {
     Route::post('user-details', '\App\Http\Controllers\AuthController@showDetails')->name('getUser');
 });
 
-Route::group(['middleware' => 'auth:api'], function () {
-    $subjectID = '/subjects/{subject}';
+Route::get('/subjects', '\App\Http\Controllers\APIController@index');
 
-    Route::get('/subjects', '\App\Http\Controllers\APIController@index');
+Route::group(['middleware' => 'auth:api'], function () {
+
+    $subjectID = '/subjects/{subject}';
 
     Route::post('/subjects', '\App\Http\Controllers\APIController@store');
 

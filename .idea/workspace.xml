@@ -20,12 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc22cbdc-2e8c-408c-8571-01a42d49a401" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/sonarIssues.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarIssues.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/APIController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/APIController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/badLogin.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard.blade.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -241,7 +237,7 @@
       <workItem from="1618590492439" duration="89000" />
       <workItem from="1618654342645" duration="15153000" />
       <workItem from="1618740286996" duration="632000" />
-      <workItem from="1618740953065" duration="17550000" />
+      <workItem from="1618740953065" duration="18878000" />
     </task>
     <task id="LOCAL-00001" summary="Created routes for each CRUD action within API.php. Routes have been defined for: Get all, get specific, add new, update and delete.">
       <created>1618571375823</created>
@@ -572,7 +568,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618764315217</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="API is pretty much setup. Now need to do the front end and interact with it all correctly.">
+      <created>1618766406780</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1618766406780</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -592,7 +595,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Updated test to check first for correct http response as well as that a value has been added into the Subject DB. Routes have been updated to use namespace groups." />
     <MESSAGE value="Updated test to use faker." />
     <MESSAGE value="Changed some faker details for the seeders." />
     <MESSAGE value="Messed around with the migrations to allow for foreign keys. Added Json responses to API controller." />
@@ -617,7 +619,8 @@
     <MESSAGE value="Finally got the user-details route to work. Currently. API will accept registration, login and then check user details with the correct personal access token provided." />
     <MESSAGE value="Installing laravel collective to start handling login/register form data for the API" />
     <MESSAGE value="Made a few pages to start handling the correct/incorrect logins." />
-    <option name="LAST_COMMIT_MESSAGE" value="Made a few pages to start handling the correct/incorrect logins." />
+    <MESSAGE value="API is pretty much setup. Now need to do the front end and interact with it all correctly." />
+    <option name="LAST_COMMIT_MESSAGE" value="API is pretty much setup. Now need to do the front end and interact with it all correctly." />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1206" y="342" key="#Notifications" timestamp="1618237799755">
@@ -653,10 +656,10 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1214" y="373" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618568989625" />
-    <state x="126" y="37" width="1297" height="866" key="CommitChangelistDialog2" timestamp="1618764314168">
+    <state x="126" y="37" width="1297" height="866" key="CommitChangelistDialog2" timestamp="1618766405779">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="126" y="37" width="1297" height="866" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618764314168" />
+    <state x="126" y="37" width="1297" height="866" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618766405779" />
     <state x="739" y="273" key="FileChooserDialogImpl" timestamp="1618762742795">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
-use Dotenv\Validator;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -58,4 +57,5 @@ class AuthController extends Controller
         $user = Auth::user();
         return response()->json(['success' => $user], 200);
     }
+
 }

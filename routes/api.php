@@ -18,21 +18,12 @@ use Illuminate\Support\Facades\Route;
 
 Route::post('login', '\App\Http\Controllers\AuthController@login')->name('loginRequest');
 
-Route::get('login', '\App\Http\Controllers\APIController@loginView')->name('loginView');
+Route::post('register', '\App\Http\Controllers\AuthController@register')->name('registerRequest');
 
-Route::get('incorrectLogin', function () {
-    return view('badLogin');
-})->name('wrongLogin');
-
-Route::post('register', '\App\Http\Controllers\AuthController@register');
+Route::get('/subjects', '\App\Http\Controllers\APIController@index')->name('showSubjects');
 
 Route::group(['middleware' => 'auth:api'], function () {
     Route::post('user-details', '\App\Http\Controllers\AuthController@showDetails')->name('getUser');
-});
-
-Route::get('/subjects', '\App\Http\Controllers\APIController@index');
-
-Route::group(['middleware' => 'auth:api'], function () {
 
     $subjectID = '/subjects/{subject}';
 
@@ -44,6 +35,9 @@ Route::group(['middleware' => 'auth:api'], function () {
 
     Route::delete($subjectID, '\App\Http\Controllers\APIController@delete');
 });
+
+
+
 
 
 

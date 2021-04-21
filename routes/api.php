@@ -20,15 +20,19 @@ Route::post('login', '\App\Http\Controllers\AuthController@login')->name('loginR
 
 Route::post('register', '\App\Http\Controllers\AuthController@register')->name('registerRequest');
 
-Route::get('/subjects', '\App\Http\Controllers\APIController@index')->name('showSubjects');
+Route::get('subjects', '\App\Http\Controllers\APIController@index')->name('showSubjects');
+
+Route::get('unauthorised', function () {
+    return view('unauthorised');
+})->name('unauthorised');
 
 Route::group(['middleware' => 'auth:api'], function () {
 
     Route::post('user-details', '\App\Http\Controllers\AuthController@showDetails')->name('getUser');
 
-    $subjectID = '/subjects/{subject}';
+    $subjectID = 'subjects/{subject}';
 
-    Route::post('/subjects', '\App\Http\Controllers\APIController@store');
+    Route::post('subjects', '\App\Http\Controllers\APIController@store');
 
     Route::get($subjectID, '\App\Http\Controllers\APIController@show');
 

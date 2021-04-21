@@ -19,9 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc22cbdc-2e8c-408c-8571-01a42d49a401" name="Default Changelist" comment="API is pretty much setup. Now need to do the front end and interact with it all correctly.">
-      <change beforePath="$PROJECT_DIR$/resources/views/login.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+    <list default="true" id="fc22cbdc-2e8c-408c-8571-01a42d49a401" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/unauthorised.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -237,13 +238,6 @@
       <workItem from="1618654342645" duration="15153000" />
       <workItem from="1618740286996" duration="632000" />
       <workItem from="1618740953065" duration="18878000" />
-    </task>
-    <task id="LOCAL-00001" summary="Created routes for each CRUD action within API.php. Routes have been defined for: Get all, get specific, add new, update and delete.">
-      <created>1618571375823</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1618571375823</updated>
     </task>
     <task id="LOCAL-00002" summary="Adding routes for the controller methods back in for the web.php.">
       <created>1618571533243</created>
@@ -574,7 +568,21 @@
       <option name="project" value="LOCAL" />
       <updated>1618766406780</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="Refactoring the routes.">
+      <created>1619008652201</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1619008652201</updated>
+    </task>
+    <task id="LOCAL-00050" summary="Subjects index is correctly returning a json response on postman. Will test by adding some subjects.">
+      <created>1619008847433</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1619008847433</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -594,8 +602,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Updated test to use faker." />
-    <MESSAGE value="Changed some faker details for the seeders." />
     <MESSAGE value="Messed around with the migrations to allow for foreign keys. Added Json responses to API controller." />
     <MESSAGE value="Resource created to start using API resources instead of eloquent for the data in the controller.&#10;Specified in Subject resource to only include the id, name and subjectid in the json response.&#10;Added in a few more Json tests to check that the structure and json returned is correct" />
     <MESSAGE value="Created a testcase to create some data in products" />
@@ -619,7 +625,9 @@
     <MESSAGE value="Installing laravel collective to start handling login/register form data for the API" />
     <MESSAGE value="Made a few pages to start handling the correct/incorrect logins." />
     <MESSAGE value="API is pretty much setup. Now need to do the front end and interact with it all correctly." />
-    <option name="LAST_COMMIT_MESSAGE" value="API is pretty much setup. Now need to do the front end and interact with it all correctly." />
+    <MESSAGE value="Refactoring the routes." />
+    <MESSAGE value="Subjects index is correctly returning a json response on postman. Will test by adding some subjects." />
+    <option name="LAST_COMMIT_MESSAGE" value="Subjects index is correctly returning a json response on postman. Will test by adding some subjects." />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1206" y="342" key="#Notifications" timestamp="1618237799755">
@@ -655,10 +663,10 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1214" y="373" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618568989625" />
-    <state x="126" y="37" width="1297" height="866" key="CommitChangelistDialog2" timestamp="1619008651524">
+    <state x="126" y="37" width="1297" height="866" key="CommitChangelistDialog2" timestamp="1619008846552">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="126" y="37" width="1297" height="866" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619008651524" />
+    <state x="126" y="37" width="1297" height="866" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619008846552" />
     <state x="0" y="35" key="DiffContextDialog" timestamp="1619008537492">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -704,10 +712,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="726" y="241" key="NewPhpClassDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618762321282" />
-    <state x="793" y="442" key="NewPhpFileDialog" timestamp="1618763450475">
+    <state x="793" y="442" key="NewPhpFileDialog" timestamp="1619009276645">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="793" y="442" key="NewPhpFileDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618763450475" />
+    <state x="793" y="442" key="NewPhpFileDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619009276645" />
     <state x="774" y="452" key="ReplaceDuplicatesPrompt" timestamp="1618571710668">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -726,11 +734,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="776" y="432" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618654409446" />
-    <state x="667" y="119" width="585" height="801" key="find.popup" timestamp="1618671050808">
+    <state x="667" y="119" width="585" height="801" key="find.popup" timestamp="1619009023985">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1253" y="119" width="585" height="801" key="find.popup/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618238927700" />
-    <state x="667" y="119" width="585" height="801" key="find.popup/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618671050808" />
+    <state x="667" y="119" width="585" height="801" key="find.popup/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619009023985" />
     <state x="676" y="290" key="refactoring.ChangeSignatureDialog" timestamp="1618661034824">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

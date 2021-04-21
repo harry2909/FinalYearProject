@@ -45,10 +45,5 @@ class APIController extends Controller
         return response()->json(null, 204);
     }
 
-    public function loginView()
-    {
-        return view('login');
-    }
-
 
 }

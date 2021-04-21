@@ -158,6 +158,16 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/resources/views/addSubject.blade.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/resources/views/addSubject.php">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/resources/views/badLogin.blade.php">
           <value>
             <set />

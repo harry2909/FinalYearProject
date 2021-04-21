@@ -166,9 +166,6 @@ class APITest extends TestCase
     {
         //$this->withoutExceptionHandling();
 
-        $index = $this->json('GET', 'api/subjects');
-        $index->assertStatus(401);
-
         $create = $this->json('POST', 'api/subjects');
         $create->assertStatus(401);
 

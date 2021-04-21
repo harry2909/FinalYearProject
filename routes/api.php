@@ -22,6 +22,12 @@ Route::post('register', '\App\Http\Controllers\AuthController@register')->name('
 
 Route::get('subjects', '\App\Http\Controllers\APIController@index')->name('showSubjects');
 
+Route::get('addSubject', function () {
+    return view('addSubject');
+});
+
+Route::post('subjects', '\App\Http\Controllers\APIController@postRequest')->name('userAddSubject');
+
 Route::get('unauthorised', function () {
     return view('unauthorised');
 })->name('unauthorised');

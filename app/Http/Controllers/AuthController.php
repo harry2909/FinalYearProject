@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Session;
 
 class AuthController extends Controller
 {
@@ -14,7 +15,6 @@ class AuthController extends Controller
 
         if (Auth::attempt($credentials)) {
             $token = User::whereEmail($request->email)->first()->createToken($request->email)->accessToken;
-            $_SESSION['token'] = $token;
             return response()->json(['success', 'token' => $token]);
         } else {
             return response()->json(['failed', 'email' => $request->email, 'password' => $request->password]);
@@ -27,7 +27,6 @@ class AuthController extends Controller
 
         if (Auth::attempt($credentials)) {
             $token = User::whereEmail($request->email)->first()->createToken($request->email)->accessToken;
-            $_SESSION['token'] = $token;
             return response()->json(['success', 'email' => $credentials['email'], 'token' => $token], 200);
         } else {
             return response()->json(null, 401);

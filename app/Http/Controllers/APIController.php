@@ -6,6 +6,8 @@ use App\Models\Subject;
 use App\Http\Resources\Subject as SubjectResource;
 use App\Http\Resources\SubjectCollection as SubjectCollection;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\Session;
 
 class APIController extends Controller
 {
@@ -43,7 +45,9 @@ class APIController extends Controller
         $subject->delete();
 
         return response()->json(null, 204);
+
     }
+
 
 
 }

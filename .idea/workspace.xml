@@ -20,13 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc22cbdc-2e8c-408c-8571-01a42d49a401" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/addSubject.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarIssues.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarIssues.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/APIController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/APIController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/addSubject.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/addSubject.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/APITest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/APITest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -242,13 +243,6 @@
       <workItem from="1618654342645" duration="15153000" />
       <workItem from="1618740286996" duration="632000" />
       <workItem from="1618740953065" duration="18878000" />
-    </task>
-    <task id="LOCAL-00003" summary="New function created to validate request.">
-      <created>1618571745558</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1618571745558</updated>
     </task>
     <task id="LOCAL-00004" summary="Refactoring some inline variables.">
       <created>1618573001575</created>
@@ -586,7 +580,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619009454789</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="Seeing if I can somehow send a request from laravel.">
+      <created>1619011207030</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1619011207030</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -606,7 +607,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Resource created to start using API resources instead of eloquent for the data in the controller.&#10;Specified in Subject resource to only include the id, name and subjectid in the json response.&#10;Added in a few more Json tests to check that the structure and json returned is correct" />
     <MESSAGE value="Created a testcase to create some data in products" />
     <MESSAGE value="Refactored the existing seeders to correctly use factories" />
     <MESSAGE value="Subject show seems to be working correctly.&#10;Modified show function in controller to use findorfail.&#10;Subjectfactory setup for creating faker data.&#10;Subject seeder setup to run the factory.&#10;Amended API route from &quot;view&quot; to &quot;show&quot;.&#10;Tested the show route from the api by checking the exact Json returned." />
@@ -631,7 +631,8 @@
     <MESSAGE value="Refactoring the routes." />
     <MESSAGE value="Subjects index is correctly returning a json response on postman. Will test by adding some subjects." />
     <MESSAGE value="Adding a simple route to handle the unauthorised request." />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding a simple route to handle the unauthorised request." />
+    <MESSAGE value="Seeing if I can somehow send a request from laravel." />
+    <option name="LAST_COMMIT_MESSAGE" value="Seeing if I can somehow send a request from laravel." />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1206" y="342" key="#Notifications" timestamp="1618237799755">
@@ -655,10 +656,10 @@
     </state>
     <state x="-1200" y="179" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618238251087" />
     <state x="720" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618579942409" />
-    <state x="689" y="273" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1618669651360">
+    <state x="689" y="273" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1619013139202">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="689" y="273" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618669651360" />
+    <state x="689" y="273" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619013139202" />
     <state x="778" y="276" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0" timestamp="1618571704837">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -667,10 +668,10 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1214" y="373" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618568989625" />
-    <state x="126" y="37" width="1297" height="866" key="CommitChangelistDialog2" timestamp="1619009453851">
+    <state x="126" y="37" width="1297" height="866" key="CommitChangelistDialog2" timestamp="1619011205885">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="126" y="37" width="1297" height="866" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619009453851" />
+    <state x="126" y="37" width="1297" height="866" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619011205885" />
     <state x="0" y="35" key="DiffContextDialog" timestamp="1619008537492">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

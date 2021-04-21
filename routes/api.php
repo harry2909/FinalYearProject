@@ -23,6 +23,7 @@ Route::post('register', '\App\Http\Controllers\AuthController@register')->name('
 Route::get('/subjects', '\App\Http\Controllers\APIController@index')->name('showSubjects');
 
 Route::group(['middleware' => 'auth:api'], function () {
+
     Route::post('user-details', '\App\Http\Controllers\AuthController@showDetails')->name('getUser');
 
     $subjectID = '/subjects/{subject}';
@@ -34,6 +35,7 @@ Route::group(['middleware' => 'auth:api'], function () {
     Route::patch($subjectID, '\App\Http\Controllers\APIController@update');
 
     Route::delete($subjectID, '\App\Http\Controllers\APIController@delete');
+
 });
 
 

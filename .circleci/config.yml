@@ -41,8 +41,8 @@ jobs:
             - ./vendor
 
       - run:
-        name: "Install PHP extensions"
-        command: sudo docker-php-ext-install pdo_mysql
+          name: "Install PHP extensions"
+          command: sudo docker-php-ext-install pdo_mysql
 
       - run:
           name: "Install PHP extensions"

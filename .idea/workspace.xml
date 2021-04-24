@@ -20,14 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc22cbdc-2e8c-408c-8571-01a42d49a401" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarIssues.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarIssues.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/9/69e3bd8ddf957a32ec5a3b80a87f8cc4bfe36a27" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/9/69e3bd8ddf957a32ec5a3b80a87f8cc4bfe36a27" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/APIController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/APIController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/addSubject.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/addSubject.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,17 +187,17 @@
       <recent name="D:\xampp\htdocs\FinalYearProject\app\Http\Controllers\Api" />
     </key>
   </component>
-  <component name="RunManager" selected="PHPUnit.APITest.nonAuthenticatedUsersCannotAccessEndpoints">
+  <component name="RunManager" selected="PHPUnit.APITest">
+    <configuration name="APITest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\APITest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/APITest.php" scope="Class" />
+      <method v="2" />
+    </configuration>
     <configuration name="APITest.nonAuthenticatedUsersCannotAccessEndpoints" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Feature\APITest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/APITest.php" method="nonAuthenticatedUsersCannotAccessEndpoints" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="APITest.subjectCreate" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Feature\APITest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/APITest.php" method="subjectCreate" scope="Method" />
-      <method v="2" />
-    </configuration>
-    <configuration name="AuthController.canLogin" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\AuthController" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/AuthController.php" method="canLogin" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="AuthController.canRegister" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
@@ -219,11 +214,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.APITest" />
         <item itemvalue="PHPUnit.APITest.nonAuthenticatedUsersCannotAccessEndpoints" />
         <item itemvalue="PHPUnit.APITest.subjectCreate" />
         <item itemvalue="PHPUnit.AuthController.canSeeUserDetails" />
         <item itemvalue="PHPUnit.AuthController.canRegister" />
-        <item itemvalue="PHPUnit.AuthController.canLogin" />
       </list>
     </recent_temporary>
   </component>
@@ -243,13 +238,7 @@
       <workItem from="1618654342645" duration="15153000" />
       <workItem from="1618740286996" duration="632000" />
       <workItem from="1618740953065" duration="18878000" />
-    </task>
-    <task id="LOCAL-00004" summary="Refactoring some inline variables.">
-      <created>1618573001575</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1618573001575</updated>
+      <workItem from="1619172725027" duration="1637000" />
     </task>
     <task id="LOCAL-00005" summary="Written test to check for deletion of student from DB.">
       <created>1618573595999</created>
@@ -587,7 +576,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619011207030</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="Can't for the life of me get it so that I can send a request from localhost to the API. Abandoning for now.">
+      <created>1619015430968</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1619015430968</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -607,7 +603,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Created a testcase to create some data in products" />
     <MESSAGE value="Refactored the existing seeders to correctly use factories" />
     <MESSAGE value="Subject show seems to be working correctly.&#10;Modified show function in controller to use findorfail.&#10;Subjectfactory setup for creating faker data.&#10;Subject seeder setup to run the factory.&#10;Amended API route from &quot;view&quot; to &quot;show&quot;.&#10;Tested the show route from the api by checking the exact Json returned." />
     <MESSAGE value="Test for subject updating is working correctly." />
@@ -632,7 +627,8 @@
     <MESSAGE value="Subjects index is correctly returning a json response on postman. Will test by adding some subjects." />
     <MESSAGE value="Adding a simple route to handle the unauthorised request." />
     <MESSAGE value="Seeing if I can somehow send a request from laravel." />
-    <option name="LAST_COMMIT_MESSAGE" value="Seeing if I can somehow send a request from laravel." />
+    <MESSAGE value="Can't for the life of me get it so that I can send a request from localhost to the API. Abandoning for now." />
+    <option name="LAST_COMMIT_MESSAGE" value="Can't for the life of me get it so that I can send a request from localhost to the API. Abandoning for now." />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1206" y="342" key="#Notifications" timestamp="1618237799755">
@@ -668,10 +664,10 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1214" y="373" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618568989625" />
-    <state x="126" y="37" width="1297" height="866" key="CommitChangelistDialog2" timestamp="1619011205885">
+    <state x="126" y="37" width="1297" height="866" key="CommitChangelistDialog2" timestamp="1619015429988">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="126" y="37" width="1297" height="866" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619011205885" />
+    <state x="126" y="37" width="1297" height="866" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619015429988" />
     <state x="0" y="35" key="DiffContextDialog" timestamp="1619008537492">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -685,42 +681,42 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="633" y="399" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618667054118" />
-    <state width="1875" height="243" key="GridCell.Tab.0.bottom" timestamp="1619011008096">
+    <state width="1875" height="243" key="GridCell.Tab.0.bottom" timestamp="1619174681209">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1875" height="281" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618416156286" />
-    <state width="1875" height="243" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619011008096" />
-    <state width="1875" height="243" key="GridCell.Tab.0.center" timestamp="1619011008096">
+    <state width="1875" height="243" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619174681209" />
+    <state width="1875" height="243" key="GridCell.Tab.0.center" timestamp="1619174681209">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1875" height="281" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618416156286" />
-    <state width="1875" height="243" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619011008096" />
-    <state width="1875" height="243" key="GridCell.Tab.0.left" timestamp="1619011008096">
+    <state width="1875" height="243" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619174681209" />
+    <state width="1875" height="243" key="GridCell.Tab.0.left" timestamp="1619174681209">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1875" height="281" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618416156286" />
-    <state width="1875" height="243" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619011008096" />
-    <state width="1875" height="243" key="GridCell.Tab.0.right" timestamp="1619011008096">
+    <state width="1875" height="243" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619174681209" />
+    <state width="1875" height="243" key="GridCell.Tab.0.right" timestamp="1619174681209">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1875" height="281" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618416156286" />
-    <state width="1875" height="243" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619011008096" />
-    <state width="1875" height="347" key="GridCell.Tab.1.bottom" timestamp="1619009871442">
+    <state width="1875" height="243" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619174681209" />
+    <state width="1875" height="347" key="GridCell.Tab.1.bottom" timestamp="1619032606366">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1875" height="347" key="GridCell.Tab.1.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619009871442" />
-    <state width="1875" height="347" key="GridCell.Tab.1.center" timestamp="1619009871441">
+    <state width="1875" height="347" key="GridCell.Tab.1.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619032606366" />
+    <state width="1875" height="347" key="GridCell.Tab.1.center" timestamp="1619032606366">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1875" height="347" key="GridCell.Tab.1.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619009871441" />
-    <state width="1875" height="347" key="GridCell.Tab.1.left" timestamp="1619009871441">
+    <state width="1875" height="347" key="GridCell.Tab.1.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619032606366" />
+    <state width="1875" height="347" key="GridCell.Tab.1.left" timestamp="1619032606366">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1875" height="347" key="GridCell.Tab.1.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619009871441" />
-    <state width="1875" height="347" key="GridCell.Tab.1.right" timestamp="1619009871441">
+    <state width="1875" height="347" key="GridCell.Tab.1.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619032606366" />
+    <state width="1875" height="347" key="GridCell.Tab.1.right" timestamp="1619032606366">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1875" height="347" key="GridCell.Tab.1.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619009871441" />
+    <state width="1875" height="347" key="GridCell.Tab.1.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619032606366" />
     <state x="183" y="85" key="MergeDialog" timestamp="1618667090190">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -741,16 +737,16 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="774" y="452" key="ReplaceDuplicatesPrompt/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618571710668" />
-    <state x="545" y="198" key="SettingsEditor" timestamp="1618740989999">
+    <state x="545" y="198" key="SettingsEditor" timestamp="1619173464523">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1460" y="163" key="SettingsEditor/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618568747503" />
-    <state x="545" y="198" key="SettingsEditor/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618740989999" />
-    <state x="551" y="251" key="Vcs.Push.Dialog.v2" timestamp="1619008478896">
+    <state x="545" y="198" key="SettingsEditor/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619173464523" />
+    <state x="551" y="251" key="Vcs.Push.Dialog.v2" timestamp="1619015437032">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1369" y="251" key="Vcs.Push.Dialog.v2/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618235266070" />
-    <state x="551" y="251" key="Vcs.Push.Dialog.v2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619008478896" />
+    <state x="551" y="251" key="Vcs.Push.Dialog.v2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619015437032" />
     <state x="776" y="432" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1618654409446">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

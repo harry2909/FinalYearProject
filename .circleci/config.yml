@@ -9,11 +9,10 @@ jobs:
       # Specify the version you desire here
       - image: circleci/php:7.4-node-browsers
         environment:
-          MYSQL_HOST: 127.0.0.1
-          MYSQL_DATABASE: finalyearproject
+          MYSQL_HOST: mysql
+          MYSQL_DATABASE: homestead
           MYSQL_USER: root
-          MYSQL_PASSWORD:
-          MYSQL_ROOT_PASSWORD:
+          MYSQL_PASSWORD: root
 
     steps:
       - checkout

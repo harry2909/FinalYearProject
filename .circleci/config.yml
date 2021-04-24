@@ -1,54 +1,71 @@
+# PHP CircleCI 2.0 configuration file
+#
+# Check https://circleci.com/docs/2.0/language-php/ for more details
+#
 version: 2
 jobs:
   build:
     docker:
       # Specify the version you desire here
-      - image: circleci/php:7.4-browsers
-      - image: circleci/mysql:5.7
+      - image: circleci/php:7.4-node-browsers
         environment:
-          MYSQL_ALLOW_EMPTY_PASSWORD: yes
-          MYSQL_USER: root
-          MYSQL_ROOT_PASSWORD: ''
-          MYSQL_DATABASE: finalyearproject
-
-    working_directory: ~/laravel
+          MYSQL_ROOT_PASSWORD: root_password
+          MYSQL_DATABASE: testing_database
+          MYSQL_USER: testing_user
+          MYSQL_PASSWORD: testing_password
 
     steps:
       - checkout
+
       - run:
-          name: Install PHP exts
+          name: "Prepare Environment"
           command: |
+            sudo apt update
             sudo docker-php-ext-install zip
-            sudo docker-php-ext-install pdo_mysql
-            sudo apt install -y mysql-client
-      - run: sudo composer self-update
+
+      - run:
+          name: "Create Environment file"
+          command: |
+            mv .env.testing .env
 
       # Download and cache dependencies
       - restore_cache:
           keys:
+            # "composer.lock" can be used if it is committed to the repo
             - v1-dependencies-{{ checksum "composer.json" }}
             # fallback to using the latest cache if no exact match is found
             - v1-dependencies-
 
-      - run: composer install -n --prefer-dist
+      - run:
+          name: "Install Dependencies"
+          command: composer install -n --prefer-dist
 
       - save_cache:
+          key: v1-dependencies-{{ checksum "composer.json" }}
           paths:
             - ./vendor
-          key: v1-dependencies-{{ checksum "composer.json" }}
 
       - run:
-          name: Setup Laravel stuffs
-          command: |
-            php artisan migrate --force
-      - run: ./vendor/bin/phpunit
+          name: "Install PHP extensions"
+          command: sudo docker-php-ext-install pdo_mysql
 
       - run:
-           name: "Run Unit Tests"
-           command: ./vendor/bin/phpunit tests/Feature
+          name: "Install PHP extensions"
+          command: sudo docker-php-ext-enable pdo_mysql
 
-workflows:
-  version: 2
-  notify_deploy:
-    jobs:
-      - build
+      - run:
+          name: "Generate App key"
+          command: php artisan key:generate
+
+      - run:
+          name: "DB Migration"
+          command: php artisan migrate:fresh
+
+      - run:
+          name: "Passport Install"
+          command: php artisan passport:install --force
+
+      # run tests with phpunit
+      - run:
+          name: "Run Unit Tests"
+          command: ./vendor/bin/phpunit tests/Feature

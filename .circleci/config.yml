@@ -27,7 +27,7 @@ jobs:
       - run:
           name: "Create Environment file"
           command: |
-            mv .env.testing .env
+            cp .env.testing .env
 
       # Download and cache dependencies
       - restore_cache:
@@ -61,10 +61,6 @@ jobs:
       - run:
           name: "DB Migration"
           command: php artisan migrate:fresh
-
-      - run:
-          name: "Passport Install"
-          command: php artisan passport:install --force
 
       # run tests with phpunit
       - run:

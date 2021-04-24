@@ -27,9 +27,6 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Composer Update
-          command: composer update
-      - run:
           name: Install MySQL driver
           command: |
             sudo docker-php-ext-configure pdo_mysql --with-pdo-mysql=mysqlnd

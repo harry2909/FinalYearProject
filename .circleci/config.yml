@@ -8,6 +8,11 @@ jobs:
     docker:
       # Specify the version you desire here
       - image: circleci/php:7.4-node-browsers
+        environment:
+          MYSQL_DATABASE: finalyearproject
+          MYSQL_USER: root
+          MYSQL_PASSWORD:
+          MYSQL_ROOT_PASSWORD:
 
     steps:
       - checkout

@@ -7,7 +7,7 @@ jobs:
   test:
     docker:
       # Specify the version you desire here
-      - image: cimg/php:7.4.10
+      - image: circleci/php:7.4.10
 
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
@@ -31,7 +31,7 @@ jobs:
       - run:
           name: Install MySQL driver
           command: |
-            sudo docker-php-ext-install pdo pdo_mysql --with-pdo-mysql=mysqlnd
+            sudo docker-php-ext-configure pdo_mysql --with-pdo-mysql=mysqlnd
             sudo docker-php-ext-install zip bcmath pdo_mysql
       # Download and cache dependencies
 

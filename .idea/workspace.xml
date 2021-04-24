@@ -20,7 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc22cbdc-2e8c-408c-8571-01a42d49a401" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/9/69e3bd8ddf957a32ec5a3b80a87f8cc4bfe36a27" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/9/69e3bd8ddf957a32ec5a3b80a87f8cc4bfe36a27" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Browser/ExampleTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Browser/Pages/HomePage.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Browser/Pages/Page.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Browser/console/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Browser/screenshots/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/DuskTestCase.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarIssues.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarIssues.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/b/6b9a783d9b43fee50fd28f56dbd1856d2608f305" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/b/6b9a783d9b43fee50fd28f56dbd1856d2608f305" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -159,6 +167,8 @@
       <path value="$PROJECT_DIR$/vendor/laravel/passport" />
       <path value="$PROJECT_DIR$/vendor/phpseclib/phpseclib" />
       <path value="$PROJECT_DIR$/vendor/laravelcollective/html" />
+      <path value="$PROJECT_DIR$/vendor/laravel/dusk" />
+      <path value="$PROJECT_DIR$/vendor/php-webdriver/webdriver" />
     </include_path>
   </component>
   <component name="ProjectId" id="1r4UgB4IYx9FpXIMmebYMZpZsfq" />
@@ -187,7 +197,7 @@
       <recent name="D:\xampp\htdocs\FinalYearProject\app\Http\Controllers\Api" />
     </key>
   </component>
-  <component name="RunManager" selected="PHPUnit.APITest">
+  <component name="RunManager" selected="PHPUnit.ExampleTest.testBasicExample">
     <configuration name="APITest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Feature\APITest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/APITest.php" scope="Class" />
       <method v="2" />
@@ -200,12 +210,12 @@
       <TestRunner class="Tests\Feature\APITest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/APITest.php" method="subjectCreate" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="AuthController.canRegister" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\AuthController" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/AuthController.php" method="canRegister" scope="Method" />
+    <configuration name="ExampleTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Browser\ExampleTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Browser/ExampleTest.php" scope="Class" />
       <method v="2" />
     </configuration>
-    <configuration name="AuthController.canSeeUserDetails" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\AuthController" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/AuthController.php" method="canSeeUserDetails" scope="Method" />
+    <configuration name="ExampleTest.testBasicExample" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Browser\ExampleTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Browser/ExampleTest.php" method="testBasicExample" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -214,11 +224,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.ExampleTest.testBasicExample" />
+        <item itemvalue="PHPUnit.ExampleTest" />
         <item itemvalue="PHPUnit.APITest" />
         <item itemvalue="PHPUnit.APITest.nonAuthenticatedUsersCannotAccessEndpoints" />
         <item itemvalue="PHPUnit.APITest.subjectCreate" />
-        <item itemvalue="PHPUnit.AuthController.canSeeUserDetails" />
-        <item itemvalue="PHPUnit.AuthController.canRegister" />
       </list>
     </recent_temporary>
   </component>
@@ -239,13 +249,8 @@
       <workItem from="1618740286996" duration="632000" />
       <workItem from="1618740953065" duration="18878000" />
       <workItem from="1619172725027" duration="1637000" />
-    </task>
-    <task id="LOCAL-00005" summary="Written test to check for deletion of student from DB.">
-      <created>1618573595999</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1618573595999</updated>
+      <workItem from="1619269672199" duration="1258000" />
+      <workItem from="1619271014586" duration="612000" />
     </task>
     <task id="LOCAL-00006" summary="Added route for deleting student.">
       <created>1618573652231</created>
@@ -583,7 +588,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619015430968</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="Installing Laravel Dusk to test out API">
+      <created>1619269832583</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1619269832583</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -603,7 +615,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Refactored the existing seeders to correctly use factories" />
     <MESSAGE value="Subject show seems to be working correctly.&#10;Modified show function in controller to use findorfail.&#10;Subjectfactory setup for creating faker data.&#10;Subject seeder setup to run the factory.&#10;Amended API route from &quot;view&quot; to &quot;show&quot;.&#10;Tested the show route from the api by checking the exact Json returned." />
     <MESSAGE value="Test for subject updating is working correctly." />
     <MESSAGE value="Test for correct http responses showing are passing. Added test for successful deletion." />
@@ -628,7 +639,8 @@
     <MESSAGE value="Adding a simple route to handle the unauthorised request." />
     <MESSAGE value="Seeing if I can somehow send a request from laravel." />
     <MESSAGE value="Can't for the life of me get it so that I can send a request from localhost to the API. Abandoning for now." />
-    <option name="LAST_COMMIT_MESSAGE" value="Can't for the life of me get it so that I can send a request from localhost to the API. Abandoning for now." />
+    <MESSAGE value="Installing Laravel Dusk to test out API" />
+    <option name="LAST_COMMIT_MESSAGE" value="Installing Laravel Dusk to test out API" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1206" y="342" key="#Notifications" timestamp="1618237799755">
@@ -664,10 +676,10 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1214" y="373" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618568989625" />
-    <state x="126" y="37" width="1297" height="866" key="CommitChangelistDialog2" timestamp="1619015429988">
+    <state x="126" y="37" width="1297" height="866" key="CommitChangelistDialog2" timestamp="1619269830787">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="126" y="37" width="1297" height="866" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619015429988" />
+    <state x="126" y="37" width="1297" height="866" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619269830787" />
     <state x="0" y="35" key="DiffContextDialog" timestamp="1619008537492">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -681,42 +693,58 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="633" y="399" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618667054118" />
-    <state width="1875" height="243" key="GridCell.Tab.0.bottom" timestamp="1619174681209">
+    <state width="1875" height="245" key="GridCell.Tab.0.bottom" timestamp="1619271696306">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1875" height="281" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618416156286" />
-    <state width="1875" height="243" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619174681209" />
-    <state width="1875" height="243" key="GridCell.Tab.0.center" timestamp="1619174681209">
+    <state width="1875" height="245" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619271696306" />
+    <state width="1875" height="245" key="GridCell.Tab.0.center" timestamp="1619271696305">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1875" height="281" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618416156286" />
-    <state width="1875" height="243" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619174681209" />
-    <state width="1875" height="243" key="GridCell.Tab.0.left" timestamp="1619174681209">
+    <state width="1875" height="245" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619271696305" />
+    <state width="1875" height="245" key="GridCell.Tab.0.left" timestamp="1619271696304">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1875" height="281" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618416156286" />
-    <state width="1875" height="243" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619174681209" />
-    <state width="1875" height="243" key="GridCell.Tab.0.right" timestamp="1619174681209">
+    <state width="1875" height="245" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619271696304" />
+    <state width="1875" height="245" key="GridCell.Tab.0.right" timestamp="1619271696305">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1875" height="281" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618416156286" />
-    <state width="1875" height="243" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619174681209" />
-    <state width="1875" height="347" key="GridCell.Tab.1.bottom" timestamp="1619032606366">
+    <state width="1875" height="245" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619271696305" />
+    <state width="1875" height="347" key="GridCell.Tab.1.bottom" timestamp="1619271596532">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1875" height="347" key="GridCell.Tab.1.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619032606366" />
-    <state width="1875" height="347" key="GridCell.Tab.1.center" timestamp="1619032606366">
+    <state width="1875" height="347" key="GridCell.Tab.1.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619271596532" />
+    <state width="1875" height="347" key="GridCell.Tab.1.center" timestamp="1619271596532">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1875" height="347" key="GridCell.Tab.1.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619032606366" />
-    <state width="1875" height="347" key="GridCell.Tab.1.left" timestamp="1619032606366">
+    <state width="1875" height="347" key="GridCell.Tab.1.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619271596532" />
+    <state width="1875" height="347" key="GridCell.Tab.1.left" timestamp="1619271596532">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1875" height="347" key="GridCell.Tab.1.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619032606366" />
-    <state width="1875" height="347" key="GridCell.Tab.1.right" timestamp="1619032606366">
+    <state width="1875" height="347" key="GridCell.Tab.1.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619271596532" />
+    <state width="1875" height="347" key="GridCell.Tab.1.right" timestamp="1619271596532">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1875" height="347" key="GridCell.Tab.1.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619032606366" />
+    <state width="1875" height="347" key="GridCell.Tab.1.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619271596532" />
+    <state width="1875" height="347" key="GridCell.Tab.2.bottom" timestamp="1619271596532">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1875" height="347" key="GridCell.Tab.2.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619271596532" />
+    <state width="1875" height="347" key="GridCell.Tab.2.center" timestamp="1619271596532">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1875" height="347" key="GridCell.Tab.2.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619271596532" />
+    <state width="1875" height="347" key="GridCell.Tab.2.left" timestamp="1619271596532">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1875" height="347" key="GridCell.Tab.2.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619271596532" />
+    <state width="1875" height="347" key="GridCell.Tab.2.right" timestamp="1619271596532">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1875" height="347" key="GridCell.Tab.2.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619271596532" />
     <state x="183" y="85" key="MergeDialog" timestamp="1618667090190">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -729,10 +757,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="726" y="241" key="NewPhpClassDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618762321282" />
-    <state x="793" y="442" key="NewPhpFileDialog" timestamp="1619010447461">
+    <state x="793" y="442" key="NewPhpFileDialog" timestamp="1619270060328">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="793" y="442" key="NewPhpFileDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619010447461" />
+    <state x="793" y="442" key="NewPhpFileDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619270060328" />
     <state x="774" y="452" key="ReplaceDuplicatesPrompt" timestamp="1618571710668">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

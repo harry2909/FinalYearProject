@@ -63,3 +63,7 @@ V
 &resources/views/unauthorised.blade.php,e\1\e1297ff6d0e78241d8a734980b1b9ffeb399c0d9
 V
 &app/Http/Controllers/APIController.php,a\d\ada395dfec7937731b6050b2e0eeae0f0192c23d
+Q
+!resources/views/welcome.blade.php,0\c\0c96dd63e07fb2e889aeaea5cbabd89d0d09f1fb
+M
+tests/Browser/ExampleTest.php,6\c\6c50ab3f626e5970cdc66a19cd6045207158abc7

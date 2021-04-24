@@ -13,6 +13,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/.env">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/Exceptions/Handler.php">
           <value>
             <set />
@@ -193,6 +198,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/resources/views/welcome.blade.php">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/routes/api.php">
           <value>
             <set />
@@ -204,6 +214,16 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/storage/logs/laravel.log">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/tests/Browser/ExampleTest.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/tests/DuskTestCase.php">
           <value>
             <set />
           </value>

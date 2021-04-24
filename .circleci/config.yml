@@ -3,10 +3,11 @@
 # Check https://circleci.com/docs/2.0/language-php/ for more details
 #
 version: 2
-machine:
-  php:
-    version: 7.4.10
 jobs:
+  build:
+    machine:
+      php:
+        version: 7.4.10
   test:
     docker:
       # Specify the version you desire here

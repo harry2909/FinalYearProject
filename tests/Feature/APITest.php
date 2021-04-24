@@ -164,7 +164,7 @@ class APITest extends TestCase
     /** @test */
     public function nonAuthenticatedUsersCannotAccessEndpoints()
     {
-        //$this->withoutExceptionHandling();
+        $this->withoutExceptionHandling();
 
         $create = $this->json('POST', 'api/subjects');
         $create->assertStatus(401);

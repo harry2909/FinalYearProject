@@ -21,7 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="fc22cbdc-2e8c-408c-8571-01a42d49a401" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.circleci/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.circleci/config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarIssues.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarIssues.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -242,20 +241,6 @@
       <workItem from="1619172725027" duration="1637000" />
       <workItem from="1619269672199" duration="1258000" />
       <workItem from="1619271014586" duration="1858000" />
-    </task>
-    <task id="LOCAL-00009" summary="Refactored some tests to check for correct redirect upon using each function.">
-      <created>1618577786719</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1618577786719</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Created a function in Student Model to get path of specific student">
-      <created>1618578040861</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1618578040861</updated>
     </task>
     <task id="LOCAL-00011" summary="Writing test for index">
       <created>1618578495556</created>
@@ -586,7 +571,21 @@
       <option name="project" value="LOCAL" />
       <updated>1619276896209</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="Running some more artisan commands on script">
+      <created>1619277059446</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1619277059446</updated>
+    </task>
+    <task id="LOCAL-00059" summary="Trying some more commands">
+      <created>1619277299707</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1619277299707</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -606,8 +605,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Added a new resource for returning a collection.&#10;Added some code to return this new collection resource and paginate the output.&#10;New test method used to check for index page. Checking specific Json structure." />
-    <MESSAGE value="Tests for pagination working correctly.&#10;Json structure returning as expected." />
     <MESSAGE value="Now adding in some authentication to protect the API" />
     <MESSAGE value="Modified my test case to change the returned factory based on the model name.&#10;Using acting as to act as an authorised user to make http requests." />
     <MESSAGE value="Created test to make sure an unauthenticated user cannot access API endpoints." />
@@ -631,7 +628,9 @@
     <MESSAGE value="Got the Dusk test to work. Had to change my APP URL to the localhost" />
     <MESSAGE value="Setting up circleci for automated tests" />
     <MESSAGE value="Added .env.testing file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added .env.testing file" />
+    <MESSAGE value="Running some more artisan commands on script" />
+    <MESSAGE value="Trying some more commands" />
+    <option name="LAST_COMMIT_MESSAGE" value="Trying some more commands" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1206" y="342" key="#Notifications" timestamp="1618237799755">
@@ -667,10 +666,10 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1214" y="373" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618568989625" />
-    <state x="126" y="37" width="1297" height="866" key="CommitChangelistDialog2" timestamp="1619277058606">
+    <state x="126" y="37" width="1297" height="866" key="CommitChangelistDialog2" timestamp="1619277299124">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="126" y="37" width="1297" height="866" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619277058606" />
+    <state x="126" y="37" width="1297" height="866" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619277299124" />
     <state x="0" y="35" key="DiffContextDialog" timestamp="1619008537492">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -761,11 +760,11 @@
     </state>
     <state x="-1460" y="163" key="SettingsEditor/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618568747503" />
     <state x="545" y="198" key="SettingsEditor/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619173464523" />
-    <state x="551" y="251" key="Vcs.Push.Dialog.v2" timestamp="1619277061097">
+    <state x="551" y="251" key="Vcs.Push.Dialog.v2" timestamp="1619277302530">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1369" y="251" key="Vcs.Push.Dialog.v2/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618235266070" />
-    <state x="551" y="251" key="Vcs.Push.Dialog.v2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619277061097" />
+    <state x="551" y="251" key="Vcs.Push.Dialog.v2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619277302530" />
     <state x="776" y="432" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1618654409446">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

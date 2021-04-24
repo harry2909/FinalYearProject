@@ -27,7 +27,7 @@ jobs:
     steps:
       - checkout
       - run:
-          command: composer update
+          command: COMPOSER_MEMORY_LIMIT=-1 composer update
       - run:
           name: Install MySQL driver
           command: |

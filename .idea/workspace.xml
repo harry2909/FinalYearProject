@@ -20,10 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc22cbdc-2e8c-408c-8571-01a42d49a401" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarIssues.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarIssues.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.circleci/config.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/unauthorised.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/unauthorised.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Browser/ExampleTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Browser/DuskAPITest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,7 +188,7 @@
       <recent name="D:\xampp\htdocs\FinalYearProject\app\Http\Controllers\Api" />
     </key>
   </component>
-  <component name="RunManager" selected="PHPUnit.DuskAPITest.testUnauthorisedPage">
+  <component name="RunManager" selected="PHPUnit.APITest">
     <configuration name="APITest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Feature\APITest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/APITest.php" scope="Class" />
       <method v="2" />
@@ -217,10 +215,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.APITest" />
         <item itemvalue="PHPUnit.DuskAPITest.testUnauthorisedPage" />
         <item itemvalue="PHPUnit.DuskAPITest.testBasicExample" />
         <item itemvalue="PHPUnit.DuskAPITest" />
-        <item itemvalue="PHPUnit.APITest" />
         <item itemvalue="PHPUnit.ExampleTest.testBasicExample" />
       </list>
     </recent_temporary>
@@ -686,26 +684,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="633" y="399" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618667054118" />
-    <state width="1875" height="245" key="GridCell.Tab.0.bottom" timestamp="1619272889271">
+    <state width="1875" height="245" key="GridCell.Tab.0.bottom" timestamp="1619276271498">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1875" height="281" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618416156286" />
-    <state width="1875" height="245" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619272889271" />
-    <state width="1875" height="245" key="GridCell.Tab.0.center" timestamp="1619272889270">
+    <state width="1875" height="245" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619276271498" />
+    <state width="1875" height="245" key="GridCell.Tab.0.center" timestamp="1619276271498">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1875" height="281" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618416156286" />
-    <state width="1875" height="245" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619272889270" />
-    <state width="1875" height="245" key="GridCell.Tab.0.left" timestamp="1619272889270">
+    <state width="1875" height="245" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619276271498" />
+    <state width="1875" height="245" key="GridCell.Tab.0.left" timestamp="1619276271498">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1875" height="281" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618416156286" />
-    <state width="1875" height="245" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619272889270" />
-    <state width="1875" height="245" key="GridCell.Tab.0.right" timestamp="1619272889271">
+    <state width="1875" height="245" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619276271498" />
+    <state width="1875" height="245" key="GridCell.Tab.0.right" timestamp="1619276271498">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1875" height="281" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618416156286" />
-    <state width="1875" height="245" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619272889271" />
+    <state width="1875" height="245" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619276271498" />
     <state width="1875" height="347" key="GridCell.Tab.1.bottom" timestamp="1619271596532">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

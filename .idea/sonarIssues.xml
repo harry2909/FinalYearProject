@@ -113,6 +113,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/config/database.php">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/database/factories/StudentFactory.php">
           <value>
             <set />

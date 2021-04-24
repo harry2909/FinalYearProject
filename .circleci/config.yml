@@ -35,6 +35,14 @@ jobs:
           paths:
             - ./vendor
 
+      - run:
+          name: "Install PHP extensions"
+          command: sudo docker-php-ext-install pdo_mysql
+
+      - run:
+           name: "Install PHP extensions"
+           command: sudo docker-php-ext-enable pdo_mysql
+
       # prepare the database
       - run:
           name: "Create Environment file and generate app key"
@@ -56,3 +64,4 @@ jobs:
       - run:
           name: "Run Unit Tests"
           command: ./vendor/bin/phpunit tests/Feature
+

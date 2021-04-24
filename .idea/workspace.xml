@@ -19,7 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc22cbdc-2e8c-408c-8571-01a42d49a401" name="Default Changelist" comment="" />
+    <list default="true" id="fc22cbdc-2e8c-408c-8571-01a42d49a401" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.circleci/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.circleci/config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarIssues.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarIssues.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -239,13 +242,6 @@
       <workItem from="1619172725027" duration="1637000" />
       <workItem from="1619269672199" duration="1258000" />
       <workItem from="1619271014586" duration="1858000" />
-    </task>
-    <task id="LOCAL-00008" summary="Function for delete added to controller. Passing test.">
-      <created>1618577229658</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1618577229658</updated>
     </task>
     <task id="LOCAL-00009" summary="Refactored some tests to check for correct redirect upon using each function.">
       <created>1618577786719</created>
@@ -583,7 +579,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619276483358</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="Added .env.testing file">
+      <created>1619276896209</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1619276896209</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -603,7 +606,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Test for correct http responses showing are passing. Added test for successful deletion." />
     <MESSAGE value="Added a new resource for returning a collection.&#10;Added some code to return this new collection resource and paginate the output.&#10;New test method used to check for index page. Checking specific Json structure." />
     <MESSAGE value="Tests for pagination working correctly.&#10;Json structure returning as expected." />
     <MESSAGE value="Now adding in some authentication to protect the API" />
@@ -628,7 +630,8 @@
     <MESSAGE value="Installing Laravel Dusk to test out API" />
     <MESSAGE value="Got the Dusk test to work. Had to change my APP URL to the localhost" />
     <MESSAGE value="Setting up circleci for automated tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Setting up circleci for automated tests" />
+    <MESSAGE value="Added .env.testing file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added .env.testing file" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1206" y="342" key="#Notifications" timestamp="1618237799755">

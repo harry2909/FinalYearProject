@@ -44,6 +44,14 @@ jobs:
           name: "Generate App key"
           command: php artisan key:generate
 
+      - run:
+          name: "DB Migration"
+          command: php artisan migrate:fresh
+
+      - run:
+          name: "Passport Install"
+          command: php artisan passport:install --force
+
       # run tests with phpunit
       - run:
           name: "Run Unit Tests"

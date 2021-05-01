@@ -146,7 +146,7 @@ class StudentManagementTest extends TestCase
         $response = $this->get($student->path());
 
         $this->assertCount(1, Student::all());
-        $response->assertRedirect($student->path());
+        $response->assertStatus(200);
 
     }
 }

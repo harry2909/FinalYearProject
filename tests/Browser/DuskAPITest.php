@@ -2,12 +2,16 @@
 
 namespace Tests\Browser;
 
+use App\Models\User;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
+use Illuminate\Foundation\Testing\RefreshDatabase;
 use Laravel\Dusk\Browser;
 use Tests\DuskTestCase;
 
 class DuskAPITest extends DuskTestCase
 {
+    use RefreshDatabase;
+
     /**
      * A basic browser test example.
      *
@@ -33,4 +37,5 @@ class DuskAPITest extends DuskTestCase
             $browser->visit('http://127.0.0.1:8000/api/subjects/1')->assertSee('Unauthorised');
         });
     }
+
 }

@@ -18,19 +18,19 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::post('/auth/token', '\App\Http\Controllers\AuthController@store');
+Route::post('/auth/token', '\App\Http\Controllers\AuthController@store')->name('getToken');
 
 $studentID = '/students/{student}';
 
-Route::get('/students', '\App\Http\Controllers\StudentsController@index');
+Route::get('/students', '\App\Http\Controllers\StudentsController@index')->name('showStudents');
 
-Route::post('/students', '\App\Http\Controllers\StudentsController@store');
+Route::post('/students', '\App\Http\Controllers\StudentsController@store')->name('storeStudents');
 
-Route::get($studentID, '\App\Http\Controllers\StudentsController@view');
+Route::get($studentID, '\App\Http\Controllers\StudentsController@view')->name('showSelectedStudent');
 
-Route::patch($studentID, '\App\Http\Controllers\StudentsController@update');
+Route::patch($studentID, '\App\Http\Controllers\StudentsController@update')->name('updateSelectedStudent');
 
-Route::delete($studentID, '\App\Http\Controllers\StudentsController@delete');
+Route::delete($studentID, '\App\Http\Controllers\StudentsController@delete')->name('deleteSelectedStudent');
 
 
 $teacherID = '/teachers/{teacher}';

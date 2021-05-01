@@ -10,6 +10,12 @@
 <div class="max-w-full rounded overflow-hidden flex flex-wrap text-black-500 justify-center">
     @yield('allStudents')
 </div>
+<div class="max-w-full rounded overflow-hidden flex flex-wrap text-black-500 justify-center">
+    @yield('viewStudent')
+</div>
+<div class="max-w-full rounded overflow-hidden flex justify-center text-white">
+    @yield('paginator')
+</div>
 </body>
 </html>
 

@@ -2,19 +2,32 @@
     <div class="px-6 py-4">
         <div class="font-bold text-xl mb-2">{{$student->name}}</div>
         <p class="text-grey-darker text-base">
-            {{$student->studentid}}
+            Student ID: {{$student->studentid}}
         </p>
         <p class="text-grey-darker text-base">
-            {{$student->address}}
+            Student Address: {{$student->address}}
         </p>
         <p class="text-grey-darker text-base">
-            {{$student->telephone}}
+            Student Telephone: {{$student->telephone}}
         </p>
         <p class="text-grey-darker text-base">
-            {{$student->year}}
+            Student Year Group: {{$student->year}}
         </p>
         <p class="text-grey-darker text-base">
-            {{$student->subjectid}}
+            @if(Route::current()->getName()!='showSelectedStudent')
+                <button onclick="window.location='{{ url("students/".$student->id) }}'"
+                        class="select-product bg-black hover:bg-blue-700 text-white font-bold py-1 px-2 m-3 float-right rounded">
+                    Select
+                </button>
+            @endif
+        </p>
+        <p class="text-grey-darker text-base">
+            @if(Route::current()->getName()=='showSelectedStudent')
+                <button onclick="window.location='{{ url("students")}}'"
+                        class="select-product bg-black hover:bg-blue-700 text-white font-bold py-1 px-2 m-3 float-right rounded">
+                    Back
+                </button>
+            @endif
         </p>
     </div>
 </div>

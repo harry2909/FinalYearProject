@@ -11,7 +11,7 @@ class StudentsController extends Controller
      */
     public function index()
     {
-        $students = Student::all();
+        $students = Student::all()->toQuery()->paginate(15);
         return \view('studentsIndex')->with('students', $students);
     }
 
@@ -33,9 +33,10 @@ class StudentsController extends Controller
 
     }
 
-    public function view(Student $student)
+    public function view(int $id)
     {
-        return redirect($student->path());
+        $student = Student::find($id);
+        return \view('studentView')->with('student', $student);
     }
 
     public function delete(Student $student)

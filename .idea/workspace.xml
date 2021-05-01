@@ -19,7 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc22cbdc-2e8c-408c-8571-01a42d49a401" name="Default Changelist" comment="" />
+    <list default="true" id="fc22cbdc-2e8c-408c-8571-01a42d49a401" name="Default Changelist" comment="IT IS FINALLY AUTOMATING TESTS ON PUSH">
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -185,21 +188,21 @@
       <recent name="D:\xampp\htdocs\FinalYearProject\app\Http\Controllers\Api" />
     </key>
   </component>
-  <component name="RunManager" selected="PHPUnit.APITest.nonAuthenticatedUsersCannotAccessEndpoints">
-    <configuration name="APITest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\APITest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/APITest.php" scope="Class" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="PHPUnit.DuskAPITest.testUnauthorisedPage">
     <configuration name="APITest.nonAuthenticatedUsersCannotAccessEndpoints" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Feature\APITest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/APITest.php" method="nonAuthenticatedUsersCannotAccessEndpoints" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="DuskAPITest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Browser\DuskAPITest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Browser/DuskAPITest.php" scope="Class" />
+    <configuration name="AuthController" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\AuthController" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/AuthController.php" scope="Class" />
       <method v="2" />
     </configuration>
-    <configuration name="DuskAPITest.testBasicExample" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Browser\DuskAPITest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Browser/DuskAPITest.php" method="testBasicExample" scope="Method" />
+    <configuration name="AuthController.canAuthenticate" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\AuthController" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/AuthController.php" method="canAuthenticate" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="DuskAPITest.testSubjectsPage" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Browser\DuskAPITest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Browser/DuskAPITest.php" method="testSubjectsPage" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="DuskAPITest.testUnauthorisedPage" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
@@ -212,11 +215,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="PHPUnit.APITest.nonAuthenticatedUsersCannotAccessEndpoints" />
-        <item itemvalue="PHPUnit.APITest" />
         <item itemvalue="PHPUnit.DuskAPITest.testUnauthorisedPage" />
-        <item itemvalue="PHPUnit.DuskAPITest.testBasicExample" />
-        <item itemvalue="PHPUnit.DuskAPITest" />
+        <item itemvalue="PHPUnit.DuskAPITest.testSubjectsPage" />
+        <item itemvalue="PHPUnit.AuthController" />
+        <item itemvalue="PHPUnit.AuthController.canAuthenticate" />
+        <item itemvalue="PHPUnit.APITest.nonAuthenticatedUsersCannotAccessEndpoints" />
       </list>
     </recent_temporary>
   </component>

@@ -6,10 +6,13 @@ use App\Models\Student;
 
 class StudentsController extends Controller
 {
-
+    /**
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
+     */
     public function index()
     {
-        return Student::all();
+        $students = Student::all();
+        return \view('studentsIndex')->with('students', $students);
     }
 
     public function store()

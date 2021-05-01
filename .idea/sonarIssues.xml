@@ -183,6 +183,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/resources/css/app.css">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/resources/views/addSubject.blade.php">
           <value>
             <set />
@@ -204,6 +209,21 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/resources/views/login.blade.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/resources/views/mainView.blade.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/resources/views/studentsIndex.blade.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/resources/views/template.blade.php">
           <value>
             <set />
           </value>
@@ -263,6 +283,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/tests/Feature/FrontEndTests.php">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/tests/Feature/SeederTest.php">
           <value>
             <set />
@@ -279,6 +304,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/tests/TestCase.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/webpack.mix.js">
           <value>
             <set />
           </value>

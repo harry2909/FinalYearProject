@@ -20,7 +20,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc22cbdc-2e8c-408c-8571-01a42d49a401" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.circleci/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.circleci/config.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/mainView.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/studentsIndex.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/template.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Feature/FrontEndTests.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarIssues.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarIssues.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/StudentsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/StudentsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -187,25 +199,25 @@
       <recent name="D:\xampp\htdocs\FinalYearProject\app\Http\Controllers\Api" />
     </key>
   </component>
-  <component name="RunManager" selected="PHPUnit.AuthController">
+  <component name="RunManager" selected="PHPUnit.FrontEndTests.getIndexViewStudents">
     <configuration name="AuthController" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Feature\AuthController" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/AuthController.php" scope="Class" />
       <method v="2" />
     </configuration>
-    <configuration name="AuthController.canAuthenticate" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\AuthController" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/AuthController.php" method="canAuthenticate" scope="Method" />
-      <method v="2" />
-    </configuration>
-    <configuration name="DuskAPITest.testSubjectsPage" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Browser\DuskAPITest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Browser/DuskAPITest.php" method="testSubjectsPage" scope="Method" />
-      <method v="2" />
-    </configuration>
-    <configuration name="DuskAPITest.testUnauthorisedPage" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Browser\DuskAPITest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Browser/DuskAPITest.php" method="testUnauthorisedPage" scope="Method" />
-      <method v="2" />
-    </configuration>
     <configuration name="DuskAPITest.userCanRegister" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Browser\DuskAPITest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Browser/DuskAPITest.php" method="userCanRegister" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="FrontEndTests" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\FrontEndTests" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/FrontEndTests.php" scope="Class" />
+      <method v="2" />
+    </configuration>
+    <configuration name="FrontEndTests.getIndexViewStudents" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\FrontEndTests" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/FrontEndTests.php" method="getIndexViewStudents" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="FrontEndTests.getWelcomeView" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\FrontEndTests" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/FrontEndTests.php" method="getWelcomeView" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -214,11 +226,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.FrontEndTests.getIndexViewStudents" />
+        <item itemvalue="PHPUnit.FrontEndTests.getWelcomeView" />
+        <item itemvalue="PHPUnit.FrontEndTests" />
         <item itemvalue="PHPUnit.AuthController" />
         <item itemvalue="PHPUnit.DuskAPITest.userCanRegister" />
-        <item itemvalue="PHPUnit.DuskAPITest.testUnauthorisedPage" />
-        <item itemvalue="PHPUnit.DuskAPITest.testSubjectsPage" />
-        <item itemvalue="PHPUnit.AuthController.canAuthenticate" />
       </list>
     </recent_temporary>
   </component>
@@ -241,20 +253,6 @@
       <workItem from="1619172725027" duration="1637000" />
       <workItem from="1619269672199" duration="1258000" />
       <workItem from="1619271014586" duration="1858000" />
-    </task>
-    <task id="LOCAL-00054" summary="Installing Laravel Dusk to test out API">
-      <created>1619269832583</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1619269832583</updated>
-    </task>
-    <task id="LOCAL-00055" summary="Got the Dusk test to work. Had to change my APP URL to the localhost">
-      <created>1619271916906</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1619271916907</updated>
     </task>
     <task id="LOCAL-00056" summary="Setting up circleci for automated tests">
       <created>1619276483358</created>
@@ -585,7 +583,21 @@
       <option name="project" value="LOCAL" />
       <updated>1619875464151</updated>
     </task>
-    <option name="localTasksCounter" value="103" />
+    <task id="LOCAL-00103" summary="Adding in script to run DUSK stuff too">
+      <created>1619875597893</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1619875597894</updated>
+    </task>
+    <task id="LOCAL-00104" summary="Removing DUSK">
+      <created>1619875894487</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1619875894487</updated>
+    </task>
+    <option name="localTasksCounter" value="105" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -605,8 +617,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Installed Passport to manage API tokens." />
-    <MESSAGE value="Now adding in the Personal access token stuff but can't get it to work at the moment.&#10;Need to figure out why the code in the auth controller (the if statement) isn't passing" />
     <MESSAGE value="Finally got the token working using Auth. It was entirely because I wasn't first encrytping my password using bycrypt. I've also setup so that on setup after refreshing the DB, the artisan command passport:install is used to get personal access tokens." />
     <MESSAGE value="Now setting up the routes and tests for authenticating a user. (Login + registration too)" />
     <MESSAGE value="Login is okay. Now testing for registering correctly." />
@@ -630,7 +640,9 @@
     <MESSAGE value="//" />
     <MESSAGE value="API Test for Dusk are now running" />
     <MESSAGE value="Realising that yes I can use DUSK to test browser navigation, though I need to really test POST requests to my API which you can't do through DUSK." />
-    <option name="LAST_COMMIT_MESSAGE" value="Realising that yes I can use DUSK to test browser navigation, though I need to really test POST requests to my API which you can't do through DUSK." />
+    <MESSAGE value="Adding in script to run DUSK stuff too" />
+    <MESSAGE value="Removing DUSK" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removing DUSK" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1206" y="342" key="#Notifications" timestamp="1618237799755">
@@ -666,10 +678,10 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1214" y="373" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618568989625" />
-    <state x="184" y="111" width="1297" height="866" key="CommitChangelistDialog2" timestamp="1619875463466">
+    <state x="184" y="111" width="1297" height="866" key="CommitChangelistDialog2" timestamp="1619875893892">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="184" y="111" width="1297" height="866" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619875463466" />
+    <state x="184" y="111" width="1297" height="866" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619875893892" />
     <state x="0" y="35" key="DiffContextDialog" timestamp="1619008537492">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -683,26 +695,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="633" y="399" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618667054118" />
-    <state width="1875" height="245" key="GridCell.Tab.0.bottom" timestamp="1619874431934">
+    <state width="1875" height="245" key="GridCell.Tab.0.bottom" timestamp="1619877029448">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1875" height="281" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618416156286" />
-    <state width="1875" height="245" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619874431934" />
-    <state width="1875" height="245" key="GridCell.Tab.0.center" timestamp="1619874431934">
+    <state width="1875" height="245" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619877029448" />
+    <state width="1875" height="245" key="GridCell.Tab.0.center" timestamp="1619877029448">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1875" height="281" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618416156286" />
-    <state width="1875" height="245" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619874431934" />
-    <state width="1875" height="245" key="GridCell.Tab.0.left" timestamp="1619874431934">
+    <state width="1875" height="245" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619877029448" />
+    <state width="1875" height="245" key="GridCell.Tab.0.left" timestamp="1619877029448">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1875" height="281" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618416156286" />
-    <state width="1875" height="245" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619874431934" />
-    <state width="1875" height="245" key="GridCell.Tab.0.right" timestamp="1619874431934">
+    <state width="1875" height="245" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619877029448" />
+    <state width="1875" height="245" key="GridCell.Tab.0.right" timestamp="1619877029448">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1875" height="281" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618416156286" />
-    <state width="1875" height="245" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619874431934" />
+    <state width="1875" height="245" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619877029448" />
     <state width="1875" height="347" key="GridCell.Tab.1.bottom" timestamp="1619283441085">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -747,10 +759,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="726" y="241" key="NewPhpClassDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618762321282" />
-    <state x="793" y="442" key="NewPhpFileDialog" timestamp="1619270060328">
+    <state x="793" y="442" key="NewPhpFileDialog" timestamp="1619877104272">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="793" y="442" key="NewPhpFileDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619270060328" />
+    <state x="793" y="442" key="NewPhpFileDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619877104272" />
     <state x="774" y="452" key="ReplaceDuplicatesPrompt" timestamp="1618571710668">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -760,20 +772,20 @@
     </state>
     <state x="-1460" y="163" key="SettingsEditor/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618568747503" />
     <state x="545" y="198" key="SettingsEditor/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619173464523" />
-    <state x="551" y="251" key="Vcs.Push.Dialog.v2" timestamp="1619875473127">
+    <state x="551" y="251" key="Vcs.Push.Dialog.v2" timestamp="1619875896011">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1369" y="251" key="Vcs.Push.Dialog.v2/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618235266070" />
-    <state x="551" y="251" key="Vcs.Push.Dialog.v2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619875473127" />
-    <state x="776" y="432" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1618654409446">
+    <state x="551" y="251" key="Vcs.Push.Dialog.v2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619875896011" />
+    <state x="776" y="432" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1619876926645">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="776" y="432" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618654409446" />
-    <state x="667" y="119" width="585" height="801" key="find.popup" timestamp="1619282078617">
+    <state x="776" y="432" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619876926645" />
+    <state x="667" y="119" width="585" height="801" key="find.popup" timestamp="1619877305144">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1253" y="119" width="585" height="801" key="find.popup/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618238927700" />
-    <state x="667" y="119" width="585" height="801" key="find.popup/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619282078617" />
+    <state x="667" y="119" width="585" height="801" key="find.popup/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619877305144" />
     <state x="676" y="290" key="refactoring.ChangeSignatureDialog" timestamp="1618661034824">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -786,15 +798,5 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618760592246" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/routes/web.php</url>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

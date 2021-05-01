@@ -20,34 +20,30 @@ Route::get('/', function () {
 
 Route::post('/auth/token', '\App\Http\Controllers\AuthController@store');
 
-Route::namespace('Students')->group(function () {
+$studentID = '/students/{student}';
 
-    $studentID = '/students/{student}';
+Route::get('/students', '\App\Http\Controllers\StudentsController@index');
 
-    Route::get('/students', '\App\Http\Controllers\StudentsController@index');
+Route::post('/students', '\App\Http\Controllers\StudentsController@store');
 
-    Route::post('/students', '\App\Http\Controllers\StudentsController@store');
+Route::get($studentID, '\App\Http\Controllers\StudentsController@view');
 
-    Route::get($studentID, '\App\Http\Controllers\StudentsController@view');
+Route::patch($studentID, '\App\Http\Controllers\StudentsController@update');
 
-    Route::patch($studentID, '\App\Http\Controllers\StudentsController@update');
+Route::delete($studentID, '\App\Http\Controllers\StudentsController@delete');
 
-    Route::delete($studentID, '\App\Http\Controllers\StudentsController@delete');
-});
 
-Route::namespace('Teachers')->group(function () {
-    $teacherID = '/teachers/{teacher}';
+$teacherID = '/teachers/{teacher}';
 
-    Route::post('/teachers', '\App\Http\Controllers\TeachersController@store');
+Route::post('/teachers', '\App\Http\Controllers\TeachersController@store');
 
-    Route::get('/teachers', '\App\Http\Controllers\TeachersController@index');
+Route::get('/teachers', '\App\Http\Controllers\TeachersController@index');
 
-    Route::get($teacherID, '\App\Http\Controllers\TeachersController@view');
+Route::get($teacherID, '\App\Http\Controllers\TeachersController@view');
 
-    Route::patch($teacherID, '\App\Http\Controllers\TeachersController@update');
+Route::patch($teacherID, '\App\Http\Controllers\TeachersController@update');
 
-    Route::delete($teacherID, '\App\Http\Controllers\TeachersController@delete');
-});
+Route::delete($teacherID, '\App\Http\Controllers\TeachersController@delete');
 
 
 

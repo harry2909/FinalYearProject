@@ -59,9 +59,7 @@ jobs:
       # this example uses codecept but you're not limited to it
       - run:
           name: "Run Tests"
-          command: |
-            ./vendor/bin/phpunit tests/Feature
-            ./vendor/bin/phpunit tests/Browser
+          command: ./vendor/bin/phpunit tests/Feature
 
 workflows:
   version: 2

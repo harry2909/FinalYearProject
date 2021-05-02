@@ -21,14 +21,6 @@
                 </button>
             @endif
         </p>
-        <p class="text-grey-darker text-base">
-            @if(Route::current()->getName()=='showSelectedStudent')
-                <button onclick="window.location='{{ url("students")}}'"
-                        class="select-product bg-black hover:bg-blue-700 text-white font-bold py-1 px-2 m-3 float-right rounded">
-                    Back
-                </button>
-            @endif
-        </p>
     </div>
 </div>
 

@@ -3,13 +3,16 @@
 namespace App\Http\Controllers;
 
 use App\Models\Student;
+use Illuminate\Contracts\Foundation\Application;
+use Illuminate\Contracts\View\Factory;
+use Illuminate\Contracts\View\View;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
 
 class StudentsController extends Controller
 {
     /**
-     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
+     * @return Application|Factory|View
      */
     public function index()
     {
@@ -49,7 +52,7 @@ class StudentsController extends Controller
         $student->year = $request->get('studentYear');
         $student->update();
 
-        return Redirect::to('/students/'.$id)->with('student', $student);
+        return Redirect::to('/students/' . $id)->with('student', $student);
 
     }
 

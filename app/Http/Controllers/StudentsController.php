@@ -59,11 +59,11 @@ class StudentsController extends Controller
         return \view('studentView')->with('student', $student);
     }
 
-    public function delete(Student $student)
+    public function delete(int $id)
     {
+        $student = Student::find($id);
         $student->delete();
-
-        return redirect('/students');
+        return Redirect::to('students')->with('deleteMessage', 'open');
     }
 
     /**

@@ -113,7 +113,7 @@ class StudentManagementTest extends TestCase
 
         $student = Student::first();
 
-        $response = $this->patch('/students/'.$student->id, [
+        $response = $this->patch('/students/' . $student->id, [
             'studentName' => 'New name',
             'studentID' => '123',
             'studentAddress' => 'dfgsgds',

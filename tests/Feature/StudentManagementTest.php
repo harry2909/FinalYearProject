@@ -28,17 +28,15 @@ class StudentManagementTest extends TestCase
         $this->withoutExceptionHandling();
 
         $response = $this->post('/students', [
-            'name' => 'Example Student Name',
-            'studentid' => '1872',
-            'address' => 'Example student address',
-            'telephone' => '75625845240',
-            'year' => '8'
+            'studentName' => 'Test',
+            'studentID' => '123',
+            'studentAddress' => 'dfgsgds',
+            'studentTelephone' => '75625845240',
+            'studentYear' => '8'
         ]);
 
-        $student = Student::first();
-
         $this->assertCount(1, Student::all());
-        $response->assertRedirect($student->path());
+        $response->assertRedirect();
     }
 
     /** @test */
@@ -47,14 +45,14 @@ class StudentManagementTest extends TestCase
         //$this->withoutExceptionHandling();
 
         $response = $this->post('/students', [
-            'name' => '',
-            'studentid' => '1872',
-            'address' => 'Example student address',
-            'telephone' => '75625845240',
-            'year' => '8'
+            'studentName' => '',
+            'studentID' => '123',
+            'studentAddress' => 'dfgsgds',
+            'studentTelephone' => '75625845240',
+            'studentYear' => '8'
         ]);
 
-        $response->assertSessionHasErrors('name');
+        $response->assertSessionHasErrors('studentName');
 
 
     }
@@ -65,14 +63,14 @@ class StudentManagementTest extends TestCase
         //$this->withoutExceptionHandling();
 
         $response = $this->post('/students', [
-            'name' => 'Example student name',
-            'studentid' => '',
-            'address' => 'Example student address',
-            'telephone' => '75625845240',
-            'year' => '8'
+            'studentName' => 'Test',
+            'studentID' => '',
+            'studentAddress' => 'dfgsgds',
+            'studentTelephone' => '75625845240',
+            'studentYear' => '8'
         ]);
 
-        $response->assertSessionHasErrors('studentid');
+        $response->assertSessionHasErrors('studentID');
 
 
     }
@@ -83,11 +81,11 @@ class StudentManagementTest extends TestCase
         $this->withoutExceptionHandling();
 
         $this->post('/students', [
-            'name' => 'Example Student Name',
-            'studentid' => '1872',
-            'address' => 'Example student address',
-            'telephone' => '75625845240',
-            'year' => '8'
+            'studentName' => 'Test',
+            'studentID' => '123',
+            'studentAddress' => 'dfgsgds',
+            'studentTelephone' => '75625845240',
+            'studentYear' => '8'
         ]);
 
         $student = Student::first();
@@ -106,21 +104,21 @@ class StudentManagementTest extends TestCase
         $this->withoutExceptionHandling();
 
         $this->post('/students', [
-            'name' => 'Example Student Name',
-            'studentid' => '1872',
-            'address' => 'Example student address',
-            'telephone' => '75625845240',
-            'year' => '8'
+            'studentName' => 'Test',
+            'studentID' => '123',
+            'studentAddress' => 'dfgsgds',
+            'studentTelephone' => '75625845240',
+            'studentYear' => '8'
         ]);
 
         $student = Student::first();
 
-        $response = $this->patch($student->path(), [
-            'name' => 'New name',
-            'studentid' => '1872',
-            'address' => 'Example student address',
-            'telephone' => '75625845240',
-            'year' => '8'
+        $response = $this->patch('/students/'.$student->id, [
+            'studentName' => 'New name',
+            'studentID' => '123',
+            'studentAddress' => 'dfgsgds',
+            'studentTelephone' => '75625845240',
+            'studentYear' => '8'
         ]);
 
         $this->assertEquals('New name', Student::first()->name);
@@ -134,11 +132,11 @@ class StudentManagementTest extends TestCase
         $this->withoutExceptionHandling();
 
         $this->post('/students', [
-            'name' => 'Example Student Name',
-            'studentid' => '1872',
-            'address' => 'Example student address',
-            'telephone' => '75625845240',
-            'year' => '8'
+            'studentName' => 'Test',
+            'studentID' => '123',
+            'studentAddress' => 'dfgsgds',
+            'studentTelephone' => '75625845240',
+            'studentYear' => '8'
         ]);
 
         $student = Student::first();

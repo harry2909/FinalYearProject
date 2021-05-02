@@ -24,7 +24,7 @@ Route::get('/token', function () {
 
 Route::post('/auth/token', '\App\Http\Controllers\AuthController@store')->name('getToken');
 
-$studentID = '/students/{student}';
+$studentID = '/students/{id}';
 
 Route::get('/students', '\App\Http\Controllers\StudentsController@index')->name('showStudents');
 

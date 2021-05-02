@@ -24,7 +24,7 @@ class StudentsController extends Controller
      */
     public function store(Request $request)
     {
-        $this->validateRequest($request);
+        $this->validateRequest();
         $student = new Student;
         $student->studentid = $request->get('studentID');
         $student->name = $request->get('studentName');
@@ -37,12 +37,19 @@ class StudentsController extends Controller
 
     }
 
-    public function update(Student $student)
+    public function update(Request $request, int $id)
     {
 
-        $student->update($this->validateRequest());
+        $this->validateRequest();
+        $student = Student::find($id);
+        $student->studentid = $request->get('studentID');
+        $student->name = $request->get('studentName');
+        $student->address = $request->get('studentAddress');
+        $student->telephone = $request->get('studentTelephone');
+        $student->year = $request->get('studentYear');
+        $student->update();
 
-        return redirect($student->path());
+        return Redirect::to('/students/'.$id)->with('student', $student);
 
     }
 

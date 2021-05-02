@@ -21,8 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="fc22cbdc-2e8c-408c-8571-01a42d49a401" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/StudentsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/StudentsController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/FrontEndTests.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/FrontEndTests.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/StudentManagementTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/StudentManagementTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -189,25 +190,25 @@
       <recent name="D:\xampp\htdocs\FinalYearProject\app\Http\Controllers\Api" />
     </key>
   </component>
-  <component name="RunManager" selected="PHPUnit.FrontEndTests.addStudentView">
-    <configuration name="APITest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\APITest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/APITest.php" scope="Class" />
-      <method v="2" />
-    </configuration>
-    <configuration name="FrontEndTests" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\FrontEndTests" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/FrontEndTests.php" scope="Class" />
-      <method v="2" />
-    </configuration>
-    <configuration name="FrontEndTests.addStudentView" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\FrontEndTests" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/FrontEndTests.php" method="addStudentView" scope="Method" />
-      <method v="2" />
-    </configuration>
-    <configuration name="FrontEndTests.getIndexViewStudents" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\FrontEndTests" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/FrontEndTests.php" method="getIndexViewStudents" scope="Method" />
+  <component name="RunManager" selected="PHPUnit.StudentManagementTest.showStudentTest">
+    <configuration name="StudentManagementTest.removeStudentFromDB" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\StudentManagementTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/StudentManagementTest.php" method="removeStudentFromDB" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="StudentManagementTest.showStudentTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Feature\StudentManagementTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/StudentManagementTest.php" method="showStudentTest" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="StudentManagementTest.testStudentIDValidation" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\StudentManagementTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/StudentManagementTest.php" method="testStudentIDValidation" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="StudentManagementTest.testStudentNameValidation" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\StudentManagementTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/StudentManagementTest.php" method="testStudentNameValidation" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="StudentManagementTest.updateStudent" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\StudentManagementTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/StudentManagementTest.php" method="updateStudent" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -216,11 +217,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="PHPUnit.FrontEndTests.addStudentView" />
-        <item itemvalue="PHPUnit.FrontEndTests.getIndexViewStudents" />
-        <item itemvalue="PHPUnit.FrontEndTests" />
         <item itemvalue="PHPUnit.StudentManagementTest.showStudentTest" />
-        <item itemvalue="PHPUnit.APITest" />
+        <item itemvalue="PHPUnit.StudentManagementTest.updateStudent" />
+        <item itemvalue="PHPUnit.StudentManagementTest.removeStudentFromDB" />
+        <item itemvalue="PHPUnit.StudentManagementTest.testStudentIDValidation" />
+        <item itemvalue="PHPUnit.StudentManagementTest.testStudentNameValidation" />
       </list>
     </recent_temporary>
   </component>
@@ -243,14 +244,7 @@
       <workItem from="1619172725027" duration="1637000" />
       <workItem from="1619269672199" duration="1258000" />
       <workItem from="1619271014586" duration="1858000" />
-      <workItem from="1619956222207" duration="3500000" />
-    </task>
-    <task id="LOCAL-00060" summary="//">
-      <created>1619277390740</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1619277390740</updated>
+      <workItem from="1619956222207" duration="4466000" />
     </task>
     <task id="LOCAL-00061" summary="//">
       <created>1619277447191</created>
@@ -588,7 +582,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619960639579</updated>
     </task>
-    <option name="localTasksCounter" value="109" />
+    <task id="LOCAL-00109" summary="Redirect working. Testing this in frontEndtests.">
+      <created>1619961568792</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1619961568792</updated>
+    </task>
+    <option name="localTasksCounter" value="110" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -609,7 +610,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Testing login, register with POSTman. Getting all the correct responses from the API." />
     <MESSAGE value="Finally got the user-details route to work. Currently. API will accept registration, login and then check user details with the correct personal access token provided." />
     <MESSAGE value="Installing laravel collective to start handling login/register form data for the API" />
     <MESSAGE value="Made a few pages to start handling the correct/incorrect logins." />
@@ -634,7 +634,8 @@
     <MESSAGE value="Simple view students and view singular students added." />
     <MESSAGE value="Fixed test" />
     <MESSAGE value="Adding student is working." />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding student is working." />
+    <MESSAGE value="Redirect working. Testing this in frontEndtests." />
+    <option name="LAST_COMMIT_MESSAGE" value="Redirect working. Testing this in frontEndtests." />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1206" y="342" key="#Notifications" timestamp="1618237799755">
@@ -662,10 +663,10 @@
     </state>
     <state x="-1200" y="179" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618238251087" />
     <state x="720" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619272090341" />
-    <state x="689" y="273" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1619960503898">
+    <state x="689" y="273" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1619962128677">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="689" y="273" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619960503898" />
+    <state x="689" y="273" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619962128677" />
     <state x="778" y="276" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0" timestamp="1618571704837">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -674,10 +675,10 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1214" y="373" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618568989625" />
-    <state x="184" y="111" width="1297" height="866" key="CommitChangelistDialog2" timestamp="1619960637510">
+    <state x="184" y="111" width="1297" height="866" key="CommitChangelistDialog2" timestamp="1619961567907">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="184" y="111" width="1297" height="866" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619960637510" />
+    <state x="184" y="111" width="1297" height="866" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619961567907" />
     <state x="0" y="35" key="DiffContextDialog" timestamp="1619008537492">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -691,26 +692,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="633" y="399" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618667054118" />
-    <state width="1875" height="245" key="GridCell.Tab.0.bottom" timestamp="1619961420625">
+    <state width="1875" height="245" key="GridCell.Tab.0.bottom" timestamp="1619962429385">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1875" height="281" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618416156286" />
-    <state width="1875" height="245" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619961420625" />
-    <state width="1875" height="245" key="GridCell.Tab.0.center" timestamp="1619961420624">
+    <state width="1875" height="245" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619962429385" />
+    <state width="1875" height="245" key="GridCell.Tab.0.center" timestamp="1619962429385">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1875" height="281" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618416156286" />
-    <state width="1875" height="245" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619961420624" />
-    <state width="1875" height="245" key="GridCell.Tab.0.left" timestamp="1619961420623">
+    <state width="1875" height="245" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619962429385" />
+    <state width="1875" height="245" key="GridCell.Tab.0.left" timestamp="1619962429385">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1875" height="281" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618416156286" />
-    <state width="1875" height="245" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619961420623" />
-    <state width="1875" height="245" key="GridCell.Tab.0.right" timestamp="1619961420624">
+    <state width="1875" height="245" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619962429385" />
+    <state width="1875" height="245" key="GridCell.Tab.0.right" timestamp="1619962429385">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1875" height="281" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618416156286" />
-    <state width="1875" height="245" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619961420624" />
+    <state width="1875" height="245" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619962429385" />
     <state width="1875" height="347" key="GridCell.Tab.1.bottom" timestamp="1619283441085">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -79,14 +79,17 @@
                         {{ Form::number('studentYear', Request::old('studentYear'), array('class' => 'form-control border w-full py-1 px-1.5', 'step' => '0.01', 'placeholder' => 'Student Year Group')) }}
                     </dd>
                 </div>
-                <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-                    <dt class="text-sm font-medium text-gray-500">
-                        Subject ID:
-                    </dt>
-                    <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                        {{ Form::number('subjectID', Request::old('subjectID'), array('class' => 'form-control border w-full py-1 px-1.5', 'step' => '0.01', 'placeholder' => 'Subject ID')) }}
-                    </dd>
-                </div>
+                @if(\App\Models\Subject::all()->count()==0)
+                @else
+                    <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                        <dt class="text-sm font-medium text-gray-500">
+                            Subject ID:
+                        </dt>
+                        <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+                            {{ Form::number('subjectID', Request::old('subjectID'), array('class' => 'form-control border w-full py-1 px-1.5', 'step' => '0.01', 'placeholder' => 'Subject ID')) }}
+                        </dd>
+                    </div>
+                @endif
                 <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-1 sm:gap-2 sm:px-2">
                     <dt></dt>
                     <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-1">

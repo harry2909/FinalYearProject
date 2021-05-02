@@ -30,7 +30,7 @@ class StudentManagementTest extends TestCase
         $response = $this->post('/students', [
             'studentName' => 'Test',
             'studentID' => '123',
-            'studentAddress' => 'dfgsgds',
+            'studentAddress' => '5 long lane',
             'studentTelephone' => '75625845240',
             'studentYear' => '8'
         ]);
@@ -47,7 +47,7 @@ class StudentManagementTest extends TestCase
         $response = $this->post('/students', [
             'studentName' => '',
             'studentID' => '123',
-            'studentAddress' => 'dfgsgds',
+            'studentAddress' => '5 long lane',
             'studentTelephone' => '75625845240',
             'studentYear' => '8'
         ]);
@@ -65,7 +65,7 @@ class StudentManagementTest extends TestCase
         $response = $this->post('/students', [
             'studentName' => 'Test',
             'studentID' => '',
-            'studentAddress' => 'dfgsgds',
+            'studentAddress' => '5 long lane',
             'studentTelephone' => '75625845240',
             'studentYear' => '8'
         ]);
@@ -83,7 +83,7 @@ class StudentManagementTest extends TestCase
         $this->post('/students', [
             'studentName' => 'Test',
             'studentID' => '123',
-            'studentAddress' => 'dfgsgds',
+            'studentAddress' => '5 long lane',
             'studentTelephone' => '75625845240',
             'studentYear' => '8'
         ]);
@@ -106,7 +106,7 @@ class StudentManagementTest extends TestCase
         $this->post('/students', [
             'studentName' => 'Test',
             'studentID' => '123',
-            'studentAddress' => 'dfgsgds',
+            'studentAddress' => '5 long lane',
             'studentTelephone' => '75625845240',
             'studentYear' => '8'
         ]);
@@ -116,7 +116,7 @@ class StudentManagementTest extends TestCase
         $response = $this->patch('/students/' . $student->id, [
             'studentName' => 'New name',
             'studentID' => '123',
-            'studentAddress' => 'dfgsgds',
+            'studentAddress' => '5 long lane',
             'studentTelephone' => '75625845240',
             'studentYear' => '8'
         ]);
@@ -134,7 +134,7 @@ class StudentManagementTest extends TestCase
         $this->post('/students', [
             'studentName' => 'Test',
             'studentID' => '123',
-            'studentAddress' => 'dfgsgds',
+            'studentAddress' => '5 long lane',
             'studentTelephone' => '75625845240',
             'studentYear' => '8'
         ]);

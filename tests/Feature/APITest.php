@@ -2,10 +2,8 @@
 
 namespace Tests\Feature;
 
-use App\Models\Subject;
 use Faker\Factory;
 use Illuminate\Foundation\Testing\RefreshDatabase;
-use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Support\Facades\Log;
 use Tests\TestCase;
 
@@ -18,9 +16,9 @@ class APITest extends TestCase
     {
         $this->withoutExceptionHandling();
 
-        $Subject1 = $this->create('Subject');
-        $Subject2 = $this->create('Subject');
-        $Subject3 = $this->create('Subject');
+        $this->create('Subject');
+        $this->create('Subject');
+        $this->create('Subject');
 
         $response = $this->actingAs($this->create('User', [], false), 'api')->json('GET', '/api/subjects');
 

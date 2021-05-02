@@ -15,6 +15,7 @@ abstract class TestCase extends BaseTestCase
 
     public function create(string $model, array $attributes = [], $resource = true)
     {
+        $resourceModel = '';
         if($model == 'Subject'){
             $resourceModel = Subject::factory("App\\$model")->create($attributes);
         } elseif ($model == 'User'){

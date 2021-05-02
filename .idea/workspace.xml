@@ -20,10 +20,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc22cbdc-2e8c-408c-8571-01a42d49a401" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/Templates/teacherTemplate.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/teachers/mainView.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/teachers/teacherView.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/teachers/teachersIndex.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarIssues.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarIssues.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/StudentsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/StudentsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/studentView.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/studentView.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/template.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/template.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TeachersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/TeachersController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/mainView.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/students/mainView.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/studentView.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/students/studentView.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/studentsIndex.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/students/studentsIndex.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/template.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Templates/studentTemplate.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,18 +188,24 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../component-3-harry2909" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/teachers" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\xampp\htdocs\FinalYearProject\resources\views\teachers" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\xampp\htdocs\FinalYearProject\resources\views\students" />
+      <recent name="D:\xampp\htdocs\FinalYearProject\resources\views\Templates" />
+      <recent name="D:\xampp\htdocs\FinalYearProject\resources\views" />
       <recent name="D:\xampp\htdocs\FinalYearProject\app\Http\Controllers\Api" />
     </key>
   </component>
-  <component name="RunManager" selected="PHPUnit.FrontEndTests">
+  <component name="RunManager" selected="PHPUnit.StudentManagementTest">
     <configuration name="APITest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Feature\APITest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/APITest.php" scope="Class" />
       <method v="2" />
@@ -217,10 +232,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.StudentManagementTest" />
         <item itemvalue="PHPUnit.FrontEndTests" />
         <item itemvalue="PHPUnit.AuthController" />
         <item itemvalue="PHPUnit.APITest" />
-        <item itemvalue="PHPUnit.StudentManagementTest" />
         <item itemvalue="PHPUnit.StudentManagementTest.showStudentTest" />
       </list>
     </recent_temporary>
@@ -244,14 +259,7 @@
       <workItem from="1619172725027" duration="1637000" />
       <workItem from="1619269672199" duration="1258000" />
       <workItem from="1619271014586" duration="1858000" />
-      <workItem from="1619956222207" duration="7480000" />
-    </task>
-    <task id="LOCAL-00063" summary="//">
-      <created>1619277696404</created>
-      <option name="number" value="00063" />
-      <option name="presentableId" value="LOCAL-00063" />
-      <option name="project" value="LOCAL" />
-      <updated>1619277696404</updated>
+      <workItem from="1619956222207" duration="10288000" />
     </task>
     <task id="LOCAL-00064" summary="//">
       <created>1619277829877</created>
@@ -589,7 +597,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619962643230</updated>
     </task>
-    <option name="localTasksCounter" value="112" />
+    <task id="LOCAL-00112" summary="All simple post is working">
+      <created>1619971043107</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1619971043107</updated>
+    </task>
+    <option name="localTasksCounter" value="113" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -610,7 +625,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Made a few pages to start handling the correct/incorrect logins." />
     <MESSAGE value="API is pretty much setup. Now need to do the front end and interact with it all correctly." />
     <MESSAGE value="Refactoring the routes." />
     <MESSAGE value="Subjects index is correctly returning a json response on postman. Will test by adding some subjects." />
@@ -635,7 +649,8 @@
     <MESSAGE value="Redirect working. Testing this in frontEndtests." />
     <MESSAGE value="Refactored tests to reflect the new controller changes" />
     <MESSAGE value="All tests passing." />
-    <option name="LAST_COMMIT_MESSAGE" value="All tests passing." />
+    <MESSAGE value="All simple post is working" />
+    <option name="LAST_COMMIT_MESSAGE" value="All simple post is working" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1206" y="342" key="#Notifications" timestamp="1618237799755">
@@ -663,10 +678,10 @@
     </state>
     <state x="-1200" y="179" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618238251087" />
     <state x="720" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619272090341" />
-    <state x="689" y="273" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1619962560827">
+    <state x="689" y="273" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1619971319022">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="689" y="273" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619962560827" />
+    <state x="689" y="273" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619971319022" />
     <state x="778" y="276" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0" timestamp="1618571704837">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -675,10 +690,10 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1214" y="373" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618568989625" />
-    <state x="184" y="111" width="1297" height="866" key="CommitChangelistDialog2" timestamp="1619962642207">
+    <state x="184" y="111" width="1297" height="866" key="CommitChangelistDialog2" timestamp="1619971042223">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="184" y="111" width="1297" height="866" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619962642207" />
+    <state x="184" y="111" width="1297" height="866" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619971042223" />
     <state x="0" y="35" key="DiffContextDialog" timestamp="1619008537492">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -692,26 +707,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="633" y="399" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618667054118" />
-    <state width="1875" height="245" key="GridCell.Tab.0.bottom" timestamp="1619962626061">
+    <state width="1875" height="245" key="GridCell.Tab.0.bottom" timestamp="1619971454656">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1875" height="281" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618416156286" />
-    <state width="1875" height="245" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619962626061" />
-    <state width="1875" height="245" key="GridCell.Tab.0.center" timestamp="1619962626060">
+    <state width="1875" height="245" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619971454656" />
+    <state width="1875" height="245" key="GridCell.Tab.0.center" timestamp="1619971454656">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1875" height="281" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618416156286" />
-    <state width="1875" height="245" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619962626060" />
-    <state width="1875" height="245" key="GridCell.Tab.0.left" timestamp="1619962626060">
+    <state width="1875" height="245" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619971454656" />
+    <state width="1875" height="245" key="GridCell.Tab.0.left" timestamp="1619971454656">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1875" height="281" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618416156286" />
-    <state width="1875" height="245" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619962626060" />
-    <state width="1875" height="245" key="GridCell.Tab.0.right" timestamp="1619962626061">
+    <state width="1875" height="245" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619971454656" />
+    <state width="1875" height="245" key="GridCell.Tab.0.right" timestamp="1619971454656">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1875" height="281" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618416156286" />
-    <state width="1875" height="245" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619962626061" />
+    <state width="1875" height="245" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619971454656" />
     <state width="1875" height="347" key="GridCell.Tab.1.bottom" timestamp="1619283441085">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -756,10 +771,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="726" y="241" key="NewPhpClassDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618762321282" />
-    <state x="793" y="442" key="NewPhpFileDialog" timestamp="1619877104272">
+    <state x="793" y="442" key="NewPhpFileDialog" timestamp="1619971826309">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="793" y="442" key="NewPhpFileDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619877104272" />
+    <state x="793" y="442" key="NewPhpFileDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619971826309" />
     <state x="774" y="452" key="ReplaceDuplicatesPrompt" timestamp="1618571710668">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -1,5 +1,5 @@
 <title>Students</title>
-@extends('mainView')
+@extends('students.mainView')
 <div class="max-w-full rounded overflow-hidden flex flex-wrap text-black-500 justify-center">
     <h1 class="font-bold text-3xl mb-2">Students Index</h1>
 </div>
@@ -19,7 +19,7 @@
 @endsection
 @section('allStudents')
     @forelse($students as $student)
-        @include('template', ['student'=>$student])
+        @include('Templates.studentTemplate', ['student'=>$student])
     @empty
         <h1 class="font-bold text-xl mb-2">There are no students to show!</h1>
     @endforelse
@@ -77,6 +77,14 @@
                     </dt>
                     <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
                         {{ Form::number('studentYear', Request::old('studentYear'), array('class' => 'form-control border w-full py-1 px-1.5', 'step' => '0.01', 'placeholder' => 'Student Year Group')) }}
+                    </dd>
+                </div>
+                <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                    <dt class="text-sm font-medium text-gray-500">
+                        Subject ID:
+                    </dt>
+                    <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+                        {{ Form::number('subjectID', Request::old('subjectID'), array('class' => 'form-control border w-full py-1 px-1.5', 'step' => '0.01', 'placeholder' => 'Subject ID')) }}
                     </dd>
                 </div>
                 <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-1 sm:gap-2 sm:px-2">

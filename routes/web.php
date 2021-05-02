@@ -39,15 +39,15 @@ Route::delete($studentID, '\App\Http\Controllers\StudentsController@delete')->na
 
 $teacherID = '/teachers/{teacher}';
 
-Route::post('/teachers', '\App\Http\Controllers\TeachersController@store');
+Route::post('/teachers', '\App\Http\Controllers\TeachersController@store')->name('showTeachers');
 
-Route::get('/teachers', '\App\Http\Controllers\TeachersController@index');
+Route::get('/teachers', '\App\Http\Controllers\TeachersController@index')->name('storeTeachers');
 
-Route::get($teacherID, '\App\Http\Controllers\TeachersController@view');
+Route::get($teacherID, '\App\Http\Controllers\TeachersController@view')->name('showSelectedTeacher');
 
-Route::patch($teacherID, '\App\Http\Controllers\TeachersController@update');
+Route::patch($teacherID, '\App\Http\Controllers\TeachersController@update')->name('updateSelectedTeacher');
 
-Route::delete($teacherID, '\App\Http\Controllers\TeachersController@delete');
+Route::delete($teacherID, '\App\Http\Controllers\TeachersController@delete')->name('deleteSelectedTeacher');
 
 
 

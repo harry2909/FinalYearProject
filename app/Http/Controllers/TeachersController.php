@@ -3,43 +3,66 @@
 namespace App\Http\Controllers;
 
 use App\Models\Teacher;
+use Illuminate\Contracts\Foundation\Application;
+use Illuminate\Contracts\View\Factory;
+use Illuminate\Contracts\View\View;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Redirect;
 
 class TeachersController extends Controller
 {
+    /**
+     * @return Application|Factory|View
+     */
     public function index()
     {
-        return Teacher::all();
+        $teachers = Teacher::paginate(15);
+
+        return \view('teachers.teachersIndex')->with('teachers', $teachers);
     }
 
-    public function store()
+    /**
+     * @param Request $request
+     * @return \Illuminate\Http\RedirectResponse
+     */
+    public function store(Request $request)
     {
+        $this->validateRequest();
+        $teacher = new Teacher;
+        $teacher->teacherid = $request->get('teacherID');
+        $teacher->name = $request->get('teacherName');
+        $teacher->subject = $request->get('teacherSubject');
+        $teacher->save();
 
-        $teacher = Teacher::create($this->validateRequest());
-
-        return redirect($teacher->teacherPath());
+        return Redirect::to('teachers');
 
     }
 
-    public function update(Teacher $teacher)
+    public function update(Request $request, int $id)
     {
 
-        $teacher->update($this->validateRequest());
+        $this->validateRequest();
+        $teacher = Teacher::find($id);
+        $teacher->teacherid = $request->get('teacherID');
+        $teacher->name = $request->get('teacherName');
+        $teacher->subject = $request->get('teacherSubject');
+        $teacher->update();
 
-        return redirect($teacher->teacherPath());
+        return Redirect::to('/teachers/' . $id)->with('teacher', $teacher);
 
     }
 
-    public function view(Teacher $teacher)
+    public function view(int $id)
     {
-        return redirect($teacher->teacherPath());
+        $teacher = Teacher::find($id);
+        return \view('teachers.teacherView')->with('teacher', $teacher);
     }
 
-    public function delete(Teacher $teacher)
+    public function delete(int $id)
     {
+        $teacher = teacher::find($id);
         $teacher->delete();
-
-        return redirect('/teachers');
+        return Redirect::to('teachers')->with('deleteMessage', 'open');
     }
 
     /**
@@ -48,9 +71,9 @@ class TeachersController extends Controller
     public function validateRequest(): array
     {
         return request()->validate([
-            'name' => 'required',
-            'teacherid' => 'required',
-            'subject' => 'required'
+            'teacherName' => 'required',
+            'teacherID' => 'required',
+            'teacherSubject' => 'required',
         ]);
     }
 }

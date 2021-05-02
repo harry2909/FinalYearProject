@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Student;
+use App\Models\Subject;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
@@ -17,8 +18,8 @@ class StudentsController extends Controller
     public function index()
     {
         $students = Student::paginate(15);
-
-        return \view('studentsIndex')->with('students', $students);
+        $subjectData = Subject::all();
+        return \view('students.studentsIndex')->with('students', $students)->with('subjects', $subjectData);
     }
 
     /**
@@ -34,6 +35,9 @@ class StudentsController extends Controller
         $student->address = $request->get('studentAddress');
         $student->telephone = $request->get('studentTelephone');
         $student->year = $request->get('studentYear');
+        if($request->get('subjectID')!=null){
+            $student->subject_id = $request->get('subjectID');
+        }
         $student->save();
 
         return Redirect::to('students');
@@ -50,16 +54,22 @@ class StudentsController extends Controller
         $student->address = $request->get('studentAddress');
         $student->telephone = $request->get('studentTelephone');
         $student->year = $request->get('studentYear');
+        $subject = '';
+        if($request->get('subjectID')!=null){
+            $subject = Subject::where('subjectid', $request->get('subjectID'));
+            $student->subject_id = $request->get('subjectID');
+        }
         $student->update();
 
-        return Redirect::to('/students/' . $id)->with('student', $student);
+        return Redirect::to('/students/' . $id)->with('student', $student)->with('subject', $subject);
 
     }
 
     public function view(int $id)
     {
         $student = Student::find($id);
-        return \view('studentView')->with('student', $student);
+        $subjectData = Subject::all();
+        return \view('students.studentView')->with('student', $student)->with('subject', $subjectData);
     }
 
     public function delete(int $id)

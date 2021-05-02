@@ -188,6 +188,16 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/resources/views/Templates/studentTemplate.blade.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/resources/views/Templates/teacherTemplate.blade.php">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/resources/views/addSubject.blade.php">
           <value>
             <set />
@@ -223,7 +233,37 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/resources/views/students/studentView.blade.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/resources/views/students/studentsIndex.blade.php">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/resources/views/studentsIndex.blade.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/resources/views/teachers/mainView.blade.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/resources/views/teachers/teacherView.blade.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/resources/views/teachers/teachersIndex.blade.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/resources/views/teachers/teachersView.blade.php">
           <value>
             <set />
           </value>

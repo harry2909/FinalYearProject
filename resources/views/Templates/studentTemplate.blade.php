@@ -13,6 +13,13 @@
         <p class="text-grey-darker text-base">
             Student Year Group: {{$student->year}}
         </p>
+        @foreach($subjects as $name)
+            @if($student->subject_id == $name->id)
+                <p class="text-grey-darker text-base">
+                    Student Subject: {{$name->name}}
+                </p>
+            @endif
+        @endforeach
         <p class="text-grey-darker text-base">
             @if(Route::current()->getName()!='showSelectedStudent')
                 <button onclick="window.location='{{ url("students/".$student->id) }}'"

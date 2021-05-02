@@ -18,6 +18,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/token', function () {
+    return csrf_token();
+});
+
 Route::post('/auth/token', '\App\Http\Controllers\AuthController@store')->name('getToken');
 
 $studentID = '/students/{student}';

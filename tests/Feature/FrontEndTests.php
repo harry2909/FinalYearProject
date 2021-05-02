@@ -8,6 +8,8 @@ use Tests\TestCase;
 
 class FrontEndTests extends TestCase
 {
+    use RefreshDatabase;
+
     /** @test */
     public function getWelcomeView()
     {
@@ -23,5 +25,18 @@ class FrontEndTests extends TestCase
 
         $response->assertViewIs('studentsIndex');
     }
-    
+
+    /** @test */
+    public function addStudentView()
+    {
+        $response = $this->post('/students', [
+            'name' => 'Example Student Name',
+            'studentid' => '1872',
+            'address' => 'Example student address',
+            'telephone' => '75625845240',
+            'year' => '8'
+        ]);
+        $response->assertRedirect();
+    }
+
 }

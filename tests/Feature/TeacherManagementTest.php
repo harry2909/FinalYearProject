@@ -16,9 +16,9 @@ class TeacherManagementTest extends TestCase
         $this->withoutExceptionHandling();
 
         $this->post('/teachers', [
-            'name' => 'Example teacher name',
-            'teacherid' => '5489',
-            'subject' => 'Example teacher subject'
+            'teacherName' => 'Example teacher name',
+            'teacherID' => '5489',
+            'teacherSubject' => 'Example teacher subject'
         ]);
 
         $this->assertCount(1, Teacher::all());
@@ -30,12 +30,12 @@ class TeacherManagementTest extends TestCase
         //$this->withoutExceptionHandling();
 
         $response = $this->post('/teachers', [
-            'name' => '',
-            'teacherid' => '1872',
-            'subject' => 'Example teacher subject'
+            'teacherName' => '',
+            'teacherID' => '5489',
+            'teacherSubject' => 'Example teacher subject'
         ]);
 
-        $response->assertSessionHasErrors('name');
+        $response->assertSessionHasErrors('teacherName');
 
 
     }
@@ -46,12 +46,12 @@ class TeacherManagementTest extends TestCase
         //$this->withoutExceptionHandling();
 
         $response = $this->post('/teachers', [
-            'name' => 'Example teacher name',
-            'teacherid' => '',
-            'subject' => 'Example teacher subject'
+            'teacherName' => 'Example teacher name',
+            'teacherID' => '',
+            'teacherSubject' => 'Example teacher subject'
         ]);
 
-        $response->assertSessionHasErrors('teacherid');
+        $response->assertSessionHasErrors('teacherID');
 
 
     }
@@ -62,9 +62,9 @@ class TeacherManagementTest extends TestCase
         $this->withoutExceptionHandling();
 
         $this->post('/teachers', [
-            'name' => 'Example teacher Name',
-            'teacherid' => '18724',
-            'subject' => 'Example teacher subject'
+            'teacherName' => 'Example teacher name',
+            'teacherID' => '12',
+            'teacherSubject' => 'Example teacher subject'
         ]);
 
         $teacher = Teacher::first();
@@ -83,17 +83,17 @@ class TeacherManagementTest extends TestCase
         $this->withoutExceptionHandling();
 
         $this->post('/teachers', [
-            'name' => 'Example teacher Name',
-            'teacherid' => '1872',
-            'subject' => 'Example teacher subject'
+            'teacherName' => 'Example teacher name',
+            'teacherID' => '5489',
+            'teacherSubject' => 'Example teacher subject'
         ]);
 
         $teacher = Teacher::first();
 
-        $response = $this->patch($teacher->teacherPath(), [
-            'name' => 'New teacher name',
-            'teacherid' => '1872',
-            'subject' => 'Example teacher subject'
+        $response = $this->patch('/teachers/' . $teacher->id, [
+            'teacherName' => 'New teacher name',
+            'teacherID' => '5489',
+            'teacherSubject' => 'Example teacher subject'
         ]);
 
         $this->assertEquals('New teacher name', Teacher::first()->name);
@@ -107,9 +107,9 @@ class TeacherManagementTest extends TestCase
         $this->withoutExceptionHandling();
 
         $this->post('/teachers', [
-            'name' => 'Example teacher Name',
-            'teacherid' => '1872',
-            'subject' => 'Example teacher subject'
+            'teacherName' => 'Example teacher name',
+            'teacherID' => '5489',
+            'teacherSubject' => 'Example teacher subject'
         ]);
 
         $teacher = Teacher::first();
@@ -117,7 +117,7 @@ class TeacherManagementTest extends TestCase
         $response = $this->get($teacher->teacherPath());
 
         $this->assertCount(1, Teacher::all());
-        $response->assertRedirect($teacher->teacherPath());
+        $response->assertStatus(200);
 
     }
 }

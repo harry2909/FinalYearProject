@@ -20,9 +20,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc22cbdc-2e8c-408c-8571-01a42d49a401" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/4/3401747fc769758d97931473eab6222bc2abf009" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/4/3401747fc769758d97931473eab6222bc2abf009" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/b/6b9a783d9b43fee50fd28f56dbd1856d2608f305" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/b/6b9a783d9b43fee50fd28f56dbd1856d2608f305" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/c/6c50ab3f626e5970cdc66a19cd6045207158abc7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/StudentsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/StudentsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/StudentManagementTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/StudentManagementTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/mainView.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/mainView.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/studentsIndex.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/studentsIndex.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/FrontEndTests.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/FrontEndTests.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -189,7 +196,7 @@
       <recent name="D:\xampp\htdocs\FinalYearProject\app\Http\Controllers\Api" />
     </key>
   </component>
-  <component name="RunManager" selected="PHPUnit.StudentManagementTest.showStudentTest">
+  <component name="RunManager" selected="PHPUnit.FrontEndTests.getIndexViewStudents">
     <configuration name="APITest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Feature\APITest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/APITest.php" scope="Class" />
       <method v="2" />
@@ -216,11 +223,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.FrontEndTests.getIndexViewStudents" />
+        <item itemvalue="PHPUnit.FrontEndTests" />
         <item itemvalue="PHPUnit.StudentManagementTest.showStudentTest" />
         <item itemvalue="PHPUnit.APITest" />
-        <item itemvalue="PHPUnit.FrontEndTests.getIndexViewStudents" />
         <item itemvalue="PHPUnit.FrontEndTests.getWelcomeView" />
-        <item itemvalue="PHPUnit.FrontEndTests" />
       </list>
     </recent_temporary>
   </component>
@@ -243,13 +250,7 @@
       <workItem from="1619172725027" duration="1637000" />
       <workItem from="1619269672199" duration="1258000" />
       <workItem from="1619271014586" duration="1858000" />
-    </task>
-    <task id="LOCAL-00058" summary="Running some more artisan commands on script">
-      <created>1619277059446</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1619277059446</updated>
+      <workItem from="1619956222207" duration="2570000" />
     </task>
     <task id="LOCAL-00059" summary="Trying some more commands">
       <created>1619277299707</created>
@@ -587,7 +588,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619890209031</updated>
     </task>
-    <option name="localTasksCounter" value="107" />
+    <task id="LOCAL-00107" summary="Fixed test">
+      <created>1619892670449</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1619892670449</updated>
+    </task>
+    <option name="localTasksCounter" value="108" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -608,7 +616,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Login is okay. Now testing for registering correctly." />
     <MESSAGE value="Registration seems to be returning okay at the moment. Passing the tests." />
     <MESSAGE value="Testing login, register with POSTman. Getting all the correct responses from the API." />
     <MESSAGE value="Finally got the user-details route to work. Currently. API will accept registration, login and then check user details with the correct personal access token provided." />
@@ -633,7 +640,8 @@
     <MESSAGE value="Removing DUSK" />
     <MESSAGE value="Installed tailwind. Starting to now just make some tests for frontend simple development." />
     <MESSAGE value="Simple view students and view singular students added." />
-    <option name="LAST_COMMIT_MESSAGE" value="Simple view students and view singular students added." />
+    <MESSAGE value="Fixed test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed test" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1206" y="342" key="#Notifications" timestamp="1618237799755">
@@ -657,10 +665,10 @@
     </state>
     <state x="-1200" y="179" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618238251087" />
     <state x="720" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619272090341" />
-    <state x="689" y="273" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1619873605349">
+    <state x="689" y="273" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1619960503898">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="689" y="273" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619873605349" />
+    <state x="689" y="273" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619960503898" />
     <state x="778" y="276" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0" timestamp="1618571704837">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -669,10 +677,10 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1214" y="373" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618568989625" />
-    <state x="184" y="111" width="1297" height="866" key="CommitChangelistDialog2" timestamp="1619890207929">
+    <state x="184" y="111" width="1297" height="866" key="CommitChangelistDialog2" timestamp="1619892669766">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="184" y="111" width="1297" height="866" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619890207929" />
+    <state x="184" y="111" width="1297" height="866" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619892669766" />
     <state x="0" y="35" key="DiffContextDialog" timestamp="1619008537492">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -686,26 +694,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="633" y="399" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618667054118" />
-    <state width="1875" height="245" key="GridCell.Tab.0.bottom" timestamp="1619890741442">
+    <state width="1875" height="245" key="GridCell.Tab.0.bottom" timestamp="1619957225556">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1875" height="281" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618416156286" />
-    <state width="1875" height="245" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619890741442" />
-    <state width="1875" height="245" key="GridCell.Tab.0.center" timestamp="1619890741442">
+    <state width="1875" height="245" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619957225556" />
+    <state width="1875" height="245" key="GridCell.Tab.0.center" timestamp="1619957225556">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1875" height="281" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618416156286" />
-    <state width="1875" height="245" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619890741442" />
-    <state width="1875" height="245" key="GridCell.Tab.0.left" timestamp="1619890741442">
+    <state width="1875" height="245" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619957225556" />
+    <state width="1875" height="245" key="GridCell.Tab.0.left" timestamp="1619957225556">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1875" height="281" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618416156286" />
-    <state width="1875" height="245" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619890741442" />
-    <state width="1875" height="245" key="GridCell.Tab.0.right" timestamp="1619890741442">
+    <state width="1875" height="245" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619957225556" />
+    <state width="1875" height="245" key="GridCell.Tab.0.right" timestamp="1619957225556">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1875" height="281" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618416156286" />
-    <state width="1875" height="245" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619890741442" />
+    <state width="1875" height="245" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619957225556" />
     <state width="1875" height="347" key="GridCell.Tab.1.bottom" timestamp="1619283441085">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -785,9 +793,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618671546907" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1618760592246">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1619892648610">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618760592246" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619892648610" />
   </component>
 </project>

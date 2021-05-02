@@ -7,8 +7,15 @@
     <title>Final year Project @yield(('title'))</title>
 </head>
 <body class="bg-gray-200">
+<div class="flex justify-center w-auto">
+    @yield('showEditErrors')
+</div>
 <div class="max-w-full rounded overflow-hidden flex flex-wrap text-black-500 justify-center">
+    @yield('productTitle')
     @yield('allStudents')
+</div>
+<div class="max-w-full rounded overflow-hidden flex flex-wrap text-black-500 justify-center">
+    @yield('studentAdd')
 </div>
 <div class="max-w-full rounded overflow-hidden flex flex-wrap text-black-500 justify-center">
     @yield('viewStudent')

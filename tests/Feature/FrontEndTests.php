@@ -20,6 +20,8 @@ class FrontEndTests extends TestCase
     public function getIndexViewStudents()
     {
         $response = $this->get('/students');
+
         $response->assertViewIs('studentsIndex');
     }
+    
 }

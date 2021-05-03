@@ -19,18 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc22cbdc-2e8c-408c-8571-01a42d49a401" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/students/navBar.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/teachers/navBar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarIssues.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarIssues.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/students/mainView.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/students/mainView.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/students/studentView.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/students/studentView.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/students/studentsIndex.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/students/studentsIndex.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/teachers/mainView.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/teachers/mainView.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/teachers/teacherView.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/teachers/teacherView.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/teachers/teachersIndex.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/teachers/teachersIndex.blade.php" afterDir="false" />
-    </list>
+    <list default="true" id="fc22cbdc-2e8c-408c-8571-01a42d49a401" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -257,14 +246,7 @@
       <workItem from="1619269672199" duration="1258000" />
       <workItem from="1619271014586" duration="1858000" />
       <workItem from="1619956222207" duration="11743000" />
-      <workItem from="1620042388957" duration="1140000" />
-    </task>
-    <task id="LOCAL-00068" summary="//">
-      <created>1619278395906</created>
-      <option name="number" value="00068" />
-      <option name="presentableId" value="LOCAL-00068" />
-      <option name="project" value="LOCAL" />
-      <updated>1619278395906</updated>
+      <workItem from="1620042388957" duration="1533000" />
     </task>
     <task id="LOCAL-00069" summary="//">
       <created>1619278500961</created>
@@ -602,7 +584,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620042429543</updated>
     </task>
-    <option name="localTasksCounter" value="117" />
+    <task id="LOCAL-00117" summary="Adding simple navbar">
+      <created>1620044437203</created>
+      <option name="number" value="00117" />
+      <option name="presentableId" value="LOCAL-00117" />
+      <option name="project" value="LOCAL" />
+      <updated>1620044437203</updated>
+    </task>
+    <option name="localTasksCounter" value="118" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -623,7 +612,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Seeing if I can somehow send a request from laravel." />
     <MESSAGE value="Can't for the life of me get it so that I can send a request from localhost to the API. Abandoning for now." />
     <MESSAGE value="Installing Laravel Dusk to test out API" />
     <MESSAGE value="Got the Dusk test to work. Had to change my APP URL to the localhost" />
@@ -648,7 +636,8 @@
     <MESSAGE value="Tests working" />
     <MESSAGE value="Went through entire code to clear up as many warnings as I could as well as use SonarLint to check for any code smells. Will go through the PHP conventions next to make sure variable names and so on are all correct." />
     <MESSAGE value="Sonarlint run" />
-    <option name="LAST_COMMIT_MESSAGE" value="Sonarlint run" />
+    <MESSAGE value="Adding simple navbar" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding simple navbar" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1206" y="342" key="#Notifications" timestamp="1618237799755">
@@ -697,10 +686,10 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1214" y="373" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618568989625" />
-    <state x="184" y="111" width="1297" height="866" key="CommitChangelistDialog2" timestamp="1620042428238">
+    <state x="184" y="111" width="1297" height="866" key="CommitChangelistDialog2" timestamp="1620044436247">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="184" y="111" width="1297" height="866" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1620042428238" />
+    <state x="184" y="111" width="1297" height="866" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1620044436247" />
     <state x="0" y="35" key="DiffContextDialog" timestamp="1619008537492">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -791,11 +780,11 @@
     </state>
     <state x="-1460" y="163" key="SettingsEditor/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618568747503" />
     <state x="545" y="198" key="SettingsEditor/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619173464523" />
-    <state x="551" y="251" key="Vcs.Push.Dialog.v2" timestamp="1619975049974">
+    <state x="551" y="251" key="Vcs.Push.Dialog.v2" timestamp="1620044440045">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1369" y="251" key="Vcs.Push.Dialog.v2/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618235266070" />
-    <state x="551" y="251" key="Vcs.Push.Dialog.v2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619975049974" />
+    <state x="551" y="251" key="Vcs.Push.Dialog.v2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1620044440045" />
     <state x="776" y="432" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1619876926645">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

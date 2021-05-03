@@ -28,8 +28,6 @@
 <!-- ABOUT THE PROJECT -->
 ## Tests
 
-![product-screenshot][product-screenshot]
-
 This project aims to evaluate the effectiveness of Test-Driven Development when creating applications. A REST API was built within laravel using TDD that can handle CRUD operations. There are also simple CRUD controllers and views that were also built using TDD.
 
 ### Feature Tests

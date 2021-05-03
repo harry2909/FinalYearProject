@@ -32,36 +32,25 @@ This project aims to evaluate the effectiveness of Test-Driven Development when 
 
 ### Feature Tests
 
-* [Laravel]
-* [Laravel Passport]
-* [HTML]
-* [TailwindCSS]
-* [Test-Driven Development]
+APITest => Tests various aspects of the API functions. Mainly CRUD operations acting as a user with the correct privileges.
+
+AuthController => Tests that a bearer token is successfully generated and returned in the Json response from the API upon registering or login.
+
+FrontEndTests => Used to make sure the correct views are returned upon certain vistits to URLs.
+
+SeederTest => Makes sure seeding works correctly.
+
+StudentManagementTest => Tests all the CRUD operations for students.
+
+TeacherManagementTest => Tests all the CRUD operations for teachers.
 
 ### Test Case
 
-* [Laravel]
-* [Laravel Passport]
-* [HTML]
-* [TailwindCSS]
-* [Test-Driven Development]
+TestCase => Create function when passed with model parameter is used to create a DB entry based on the model that is passed. Uses resource.
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-The below screenshots provide some examples of the usage of the project. The user can simply add, view, edit, delete records from a database.
-
-I have also included screenshots from Postman using requests with a bearer token to perform simple CRUD.
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[product-screenshot]: images/projectScreenshot.jpg
-[product-usage-view]: images/projectUsageView.jpg
-[product-usage-edit]: images/projectUsageEdit.jpg
-[api-register]: images/apiRegister.jpg
-[api-login]: images/apiLogin.jpg
-[api-user-details]: images/apiShowUser.jpg
-[api-add-subject]: images/apiAddSubject.jpg
-[api-view-subjects]: images/apiShowSubjects.jpg
+These tests are vital to creating the application with TDD. I started from scratch with each test failing and then wrote the minimum amount of code to make them pass. I have been refactoring throughout the process. 
 
 

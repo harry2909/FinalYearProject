@@ -40,8 +40,13 @@ This project aims to evaluate the effectiveness of Test-Driven Development when 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
+<p align="center">
+  <h3 align="center">Viewing a student:</h3>  
+</p>
 
 ![product-usage-view][product-usage-view]
+
+<br>
 
 <p align="center">
   <h3 align="center">Editing a student:</h3>  

@@ -55,4 +55,15 @@ The below screenshots provide some examples of the usage of the project. The use
 
 I have also included screenshots from Postman using requests with a bearer token to perform simple CRUD.
 
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[product-screenshot]: images/projectScreenshot.jpg
+[product-usage-view]: images/projectUsageView.jpg
+[product-usage-edit]: images/projectUsageEdit.jpg
+[api-register]: images/apiRegister.jpg
+[api-login]: images/apiLogin.jpg
+[api-user-details]: images/apiShowUser.jpg
+[api-add-subject]: images/apiAddSubject.jpg
+[api-view-subjects]: images/apiShowSubjects.jpg
+
 

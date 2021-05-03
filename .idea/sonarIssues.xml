@@ -183,6 +183,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/public/js/app.js">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/resources/css/app.css">
           <value>
             <set />
@@ -228,7 +233,22 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/resources/views/navBar.blade.php">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/resources/views/studentView.blade.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/resources/views/students/mainView.blade.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/resources/views/students/navBar.blade.php">
           <value>
             <set />
           </value>
@@ -249,6 +269,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/resources/views/teachers/mainView.blade.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/resources/views/teachers/navBar.blade.php">
           <value>
             <set />
           </value>

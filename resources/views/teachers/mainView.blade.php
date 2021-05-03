@@ -7,6 +7,12 @@
     <title>Final year Project @yield(('title'))</title>
 </head>
 <body class="bg-gray-200">
+<div class="w-auto text-white position-absolute">
+    @yield('navBar')
+</div>
+<div class="flex justify-center w-auto">
+    @yield('title')
+</div>
 <div class="flex justify-center w-auto">
     @yield('showEditErrors')
 </div>

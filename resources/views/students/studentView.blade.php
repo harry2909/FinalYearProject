@@ -1,8 +1,11 @@
 <title>Student View</title>
 @extends('students.mainView')
-<div class="max-w-full rounded overflow-hidden flex flex-wrap text-black-500 justify-center">
-    <h1 class="font-bold text-3xl mb-2">View Student</h1>
-</div>
+@include('students.navBar')
+@section('title')
+    <div class="max-w-full rounded overflow-hidden flex flex-wrap text-black-500 justify-center">
+        <h1 class="font-bold text-3xl mb-2">View Student</h1>
+    </div>
+@endsection
 @section('viewStudent')
     @if(Route::current()->getName()=='showSelectedStudent')
         <div class="bg-white shadow overflow-hidden sm:rounded-lg m-3">
@@ -72,10 +75,6 @@
                             {{ Form::close() }}
                         </div>
                     @endif
-                    <div class="flex float-left p-2">
-                        <a href="{{route('showStudents')}}"
-                           class="bg-black hover:bg-blue-700 text-white font-bold py-1 px-2 m-3 float-right rounded">Home</a>
-                    </div>
                 </dl>
             </div>
         </div>

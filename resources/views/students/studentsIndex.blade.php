@@ -1,8 +1,11 @@
 <title>Students</title>
 @extends('students.mainView')
-<div class="max-w-full rounded overflow-hidden flex flex-wrap text-black-500 justify-center">
-    <h1 class="font-bold text-3xl mb-2">Students Index</h1>
-</div>
+@include('students.navBar')
+@section('title')
+    <div class="max-w-full rounded overflow-hidden flex flex-wrap text-black-500 justify-center">
+        <h1 class="font-bold text-3xl mb-2">Students Index</h1>
+    </div>
+@endsection
 @section('showEditErrors')
     @if(Html::ul($errors->all()))
         <div class=" bg-white shadow overflow-hidden sm:rounded-lg m-3">

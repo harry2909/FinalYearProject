@@ -20,7 +20,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc22cbdc-2e8c-408c-8571-01a42d49a401" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/students/navBar.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/teachers/navBar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarIssues.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarIssues.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/students/mainView.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/students/mainView.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/students/studentView.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/students/studentView.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/students/studentsIndex.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/students/studentsIndex.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/teachers/mainView.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/teachers/mainView.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/teachers/teacherView.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/teachers/teacherView.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/teachers/teachersIndex.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/teachers/teachersIndex.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,14 +192,14 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\xampp\htdocs\FinalYearProject\resources\views\teachers" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\xampp\htdocs\FinalYearProject\resources\views\students" />
       <recent name="D:\xampp\htdocs\FinalYearProject\resources\views\Templates" />
       <recent name="D:\xampp\htdocs\FinalYearProject\resources\views" />
       <recent name="D:\xampp\htdocs\FinalYearProject\app\Http\Controllers\Api" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\xampp\htdocs\FinalYearProject\resources\views\teachers" />
     </key>
   </component>
   <component name="RunManager" selected="PHPUnit.StudentManagementTest">
@@ -248,13 +257,7 @@
       <workItem from="1619269672199" duration="1258000" />
       <workItem from="1619271014586" duration="1858000" />
       <workItem from="1619956222207" duration="11743000" />
-    </task>
-    <task id="LOCAL-00067" summary="//">
-      <created>1619278296552</created>
-      <option name="number" value="00067" />
-      <option name="presentableId" value="LOCAL-00067" />
-      <option name="project" value="LOCAL" />
-      <updated>1619278296552</updated>
+      <workItem from="1620042388957" duration="1140000" />
     </task>
     <task id="LOCAL-00068" summary="//">
       <created>1619278395906</created>
@@ -592,7 +595,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619975045767</updated>
     </task>
-    <option name="localTasksCounter" value="116" />
+    <task id="LOCAL-00116" summary="Sonarlint run">
+      <created>1620042429542</created>
+      <option name="number" value="00116" />
+      <option name="presentableId" value="LOCAL-00116" />
+      <option name="project" value="LOCAL" />
+      <updated>1620042429543</updated>
+    </task>
+    <option name="localTasksCounter" value="117" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -613,7 +623,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Adding a simple route to handle the unauthorised request." />
     <MESSAGE value="Seeing if I can somehow send a request from laravel." />
     <MESSAGE value="Can't for the life of me get it so that I can send a request from localhost to the API. Abandoning for now." />
     <MESSAGE value="Installing Laravel Dusk to test out API" />
@@ -638,7 +647,8 @@
     <MESSAGE value="Views for students and teachers working. Now to fix the tests." />
     <MESSAGE value="Tests working" />
     <MESSAGE value="Went through entire code to clear up as many warnings as I could as well as use SonarLint to check for any code smells. Will go through the PHP conventions next to make sure variable names and so on are all correct." />
-    <option name="LAST_COMMIT_MESSAGE" value="Went through entire code to clear up as many warnings as I could as well as use SonarLint to check for any code smells. Will go through the PHP conventions next to make sure variable names and so on are all correct." />
+    <MESSAGE value="Sonarlint run" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sonarlint run" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1206" y="342" key="#Notifications" timestamp="1618237799755">
@@ -687,10 +697,10 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1214" y="373" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618568989625" />
-    <state x="184" y="111" width="1297" height="866" key="CommitChangelistDialog2" timestamp="1619975044338">
+    <state x="184" y="111" width="1297" height="866" key="CommitChangelistDialog2" timestamp="1620042428238">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="184" y="111" width="1297" height="866" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619975044338" />
+    <state x="184" y="111" width="1297" height="866" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1620042428238" />
     <state x="0" y="35" key="DiffContextDialog" timestamp="1619008537492">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -768,10 +778,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="726" y="241" key="NewPhpClassDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1618762321282" />
-    <state x="793" y="442" key="NewPhpFileDialog" timestamp="1619971826309">
+    <state x="793" y="442" key="NewPhpFileDialog" timestamp="1620043975874">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="793" y="442" key="NewPhpFileDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619971826309" />
+    <state x="793" y="442" key="NewPhpFileDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1620043975874" />
     <state x="774" y="452" key="ReplaceDuplicatesPrompt" timestamp="1618571710668">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -40,6 +40,10 @@ This project aims to evaluate the effectiveness of Test-Driven Development when 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
+The below screenshots provide some examples of the usage of the project. The user can simply add, view, edit, delete records from a database.
+
+I have also included screenshots from Postman using requests with a bearer token to perform simple CRUD.
+
 <p align="center">
   <h3 align="center">Viewing a student:</h3>  
 </p>

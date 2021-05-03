@@ -22,7 +22,6 @@ class StudentFactory extends Factory
      */
     public function definition()
     {
-
         return [
             'name' => $this->faker->name,
             'studentid' => $this->faker->randomNumber(5),

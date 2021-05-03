@@ -20,7 +20,8 @@ class APITest extends TestCase
         $this->create('Subject');
         $this->create('Subject');
 
-        $response = $this->actingAs($this->create('User', [], false), 'api')->json('GET', '/api/subjects');
+        $response = $this->actingAs($this->create('User', [], false), 'api')
+            ->json('GET', '/api/subjects');
 
         $response->assertStatus(200)->assertJsonStructure([
             'data' => [
@@ -43,10 +44,11 @@ class APITest extends TestCase
 
         $faker = Factory::create();
 
-        $response = $this->actingAs($this->create('User', [], false), 'api')->json('POST', 'api/subjects', [
-            'name' => $name = $faker->catchPhrase,
-            'subjectid' => $id = $faker->randomNumber()
-        ]);
+        $response = $this->actingAs($this->create('User', [], false), 'api')
+            ->json('POST', 'api/subjects', [
+                'name' => $name = $faker->catchPhrase,
+                'subjectid' => $id = $faker->randomNumber()
+            ]);
 
         Log::info(1, [$response->getContent()]);
 
@@ -61,13 +63,13 @@ class APITest extends TestCase
             'name' => $name,
             'subjectid' => $id
         ]);
-
     }
 
     /** @test */
     public function fail404SubjectNotFound()
     {
-        $response = $this->actingAs($this->create('User', [], false), 'api')->json('GET', "api/subjects/-1");
+        $response = $this->actingAs($this->create('User', [], false), 'api')
+            ->json('GET', "api/subjects/-1");
 
         $response->assertStatus(404);
     }
@@ -79,7 +81,8 @@ class APITest extends TestCase
 
         $subject = $this->create('Subject');
 
-        $response = $this->actingAs($this->create('User', [], false), 'api')->json('GET', "api/subjects/$subject->id");
+        $response = $this->actingAs($this->create('User', [], false), 'api')
+            ->json('GET', "api/subjects/$subject->id");
 
         $response->assertStatus(200);
 
@@ -88,21 +91,15 @@ class APITest extends TestCase
             'name' => $subject->name,
             'subjectid' => $subject->subjectid
         ]);
-
-
     }
 
     /** @test */
     public function fail404IfUpdatedSubjectNotFound()
     {
-
-        //$this->withoutExceptionHandling();
-
-        $response = $this->actingAs($this->create('User', [], false), 'api')->json('PATCH', "api/subjects/-1");
+        $response = $this->actingAs($this->create('User', [], false), 'api')
+            ->json('PATCH', "api/subjects/-1");
 
         $response->assertStatus(404);
-
-
     }
 
     /** @test */
@@ -112,10 +109,11 @@ class APITest extends TestCase
 
         $subject = $this->create('Subject');
 
-        $response = $this->actingAs($this->create('User', [], false), 'api')->json('PATCH', "api/subjects/$subject->id", [
-            'name' => $subject->name . 'Updated',
-            'subjectid' => $subject->subjectid . 0000
-        ]);
+        $response = $this->actingAs($this->create('User', [], false), 'api')
+            ->json('PATCH', "api/subjects/$subject->id", [
+                'name' => $subject->name . 'Updated',
+                'subjectid' => $subject->subjectid . 0000
+            ]);
 
         $response->assertStatus(200)->assertExactJson([
             'id' => $subject->id,
@@ -133,14 +131,10 @@ class APITest extends TestCase
     /** @test */
     public function fail404IfDeleteSubjectNotFound()
     {
-
-        //$this->withoutExceptionHandling();
-
-        $response = $this->actingAs($this->create('User', [], false), 'api')->json('DELETE', "api/subjects/-1");
+        $response = $this->actingAs($this->create('User', [], false), 'api')
+            ->json('DELETE', "api/subjects/-1");
 
         $response->assertStatus(404);
-
-
     }
 
     /** @test */
@@ -150,20 +144,18 @@ class APITest extends TestCase
 
         $subject = $this->create('Subject');
 
-        $response = $this->actingAs($this->create('User', [], false), 'api')->json('DELETE', "api/subjects/$subject->id");
+        $response = $this->actingAs($this->create('User', [], false), 'api')
+            ->json('DELETE', "api/subjects/$subject->id");
 
         $response->assertStatus(204)->assertSee(null);
 
         $this->assertDatabaseMissing('subjects', [
             'id' => $subject->id]);
-
     }
 
     /** @test */
     public function nonAuthenticatedUsersCannotAccessEndpoints()
     {
-        //$this->withoutExceptionHandling();
-
         $create = $this->json('POST', 'api/subjects');
         $create->assertStatus(401);
 

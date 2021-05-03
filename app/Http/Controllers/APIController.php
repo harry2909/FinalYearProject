@@ -43,9 +43,5 @@ class APIController extends Controller
         $subject->delete();
 
         return response()->json(null, 204);
-
     }
-
-
-
 }

@@ -13,7 +13,6 @@ class StudentManagementTest extends TestCase
     /** @test */
     public function showAllStudents()
     {
-        // to get underlying error
         $this->withoutExceptionHandling();
 
         $response = $this->get('/students');
@@ -24,7 +23,6 @@ class StudentManagementTest extends TestCase
     /** @test */
     public function addStudentToDB()
     {
-        // to get underlying error
         $this->withoutExceptionHandling();
 
         $response = $this->post('/students', [
@@ -42,8 +40,6 @@ class StudentManagementTest extends TestCase
     /** @test */
     public function testStudentNameValidation()
     {
-        //$this->withoutExceptionHandling();
-
         $response = $this->post('/students', [
             'studentName' => '',
             'studentID' => '123',
@@ -53,15 +49,11 @@ class StudentManagementTest extends TestCase
         ]);
 
         $response->assertSessionHasErrors('studentName');
-
-
     }
 
     /** @test */
     public function testStudentIDValidation()
     {
-        //$this->withoutExceptionHandling();
-
         $response = $this->post('/students', [
             'studentName' => 'Test',
             'studentID' => '',
@@ -71,8 +63,6 @@ class StudentManagementTest extends TestCase
         ]);
 
         $response->assertSessionHasErrors('studentID');
-
-
     }
 
     /** @test */
@@ -100,7 +90,6 @@ class StudentManagementTest extends TestCase
     /** @test */
     public function updateStudent()
     {
-
         $this->withoutExceptionHandling();
 
         $this->post('/students', [
@@ -123,7 +112,6 @@ class StudentManagementTest extends TestCase
 
         $this->assertEquals('New name', Student::first()->name);
         $response->assertRedirect($student->path());
-
     }
 
     /** @test */
@@ -145,6 +133,5 @@ class StudentManagementTest extends TestCase
 
         $this->assertCount(1, Student::all());
         $response->assertStatus(200);
-
     }
 }

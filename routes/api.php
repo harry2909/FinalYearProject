@@ -1,8 +1,5 @@
 <?php
 
-use App\Models\Student;
-use App\Models\Teacher;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -28,11 +25,11 @@ Route::get('unauthorised', function () {
 
 Route::group(['middleware' => 'auth:api'], function () {
 
-    Route::post('user-details', '\App\Http\Controllers\AuthController@showDetails')->name('getUser');
+    Route::post('user-details', '\App\Http\Controllers\AuthController@showDetails');
 
     $subjectID = 'subjects/{subject}';
 
-    Route::post('subjects', '\App\Http\Controllers\APIController@store')->name('storeSubject');
+    Route::post('subjects', '\App\Http\Controllers\APIController@store');
 
     Route::get($subjectID, '\App\Http\Controllers\APIController@show');
 
@@ -41,9 +38,3 @@ Route::group(['middleware' => 'auth:api'], function () {
     Route::delete($subjectID, '\App\Http\Controllers\APIController@delete');
 
 });
-
-
-
-
-
-

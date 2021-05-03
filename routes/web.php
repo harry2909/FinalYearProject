@@ -48,7 +48,3 @@ Route::get($teacherID, '\App\Http\Controllers\TeachersController@view')->name('s
 Route::patch($teacherID, '\App\Http\Controllers\TeachersController@update')->name('updateSelectedTeacher');
 
 Route::delete($teacherID, '\App\Http\Controllers\TeachersController@delete')->name('deleteSelectedTeacher');
-
-
-
-

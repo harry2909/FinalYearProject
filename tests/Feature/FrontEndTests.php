@@ -37,5 +37,4 @@ class FrontEndTests extends TestCase
         ]);
         $response->assertRedirect();
     }
-
 }

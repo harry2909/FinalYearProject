@@ -1,1 +1,1 @@
-<body>Unauthorised</body>
+<body>You are unauthorised to view this page!</body>

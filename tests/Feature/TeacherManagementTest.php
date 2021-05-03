@@ -11,7 +11,8 @@ class TeacherManagementTest extends TestCase
     use RefreshDatabase;
 
     /** @test */
-    public function createTeacher(){
+    public function createTeacher()
+    {
         $this->withoutExceptionHandling();
 
         $this->post('/teachers', [
@@ -26,8 +27,6 @@ class TeacherManagementTest extends TestCase
     /** @test */
     public function testTeacherNameValidation()
     {
-        //$this->withoutExceptionHandling();
-
         $response = $this->post('/teachers', [
             'teacherName' => '',
             'teacherID' => '5489',
@@ -35,15 +34,11 @@ class TeacherManagementTest extends TestCase
         ]);
 
         $response->assertSessionHasErrors('teacherName');
-
-
     }
 
     /** @test */
     public function testTeacherIDValidation()
     {
-        //$this->withoutExceptionHandling();
-
         $response = $this->post('/teachers', [
             'teacherName' => 'Example teacher name',
             'teacherID' => '',
@@ -51,8 +46,6 @@ class TeacherManagementTest extends TestCase
         ]);
 
         $response->assertSessionHasErrors('teacherID');
-
-
     }
 
     /** @test */
@@ -78,7 +71,6 @@ class TeacherManagementTest extends TestCase
     /** @test */
     public function updateTeacher()
     {
-
         $this->withoutExceptionHandling();
 
         $this->post('/teachers', [
@@ -97,7 +89,6 @@ class TeacherManagementTest extends TestCase
 
         $this->assertEquals('New teacher name', Teacher::first()->name);
         $response->assertRedirect($teacher->teacherPath());
-
     }
 
     /** @test */
@@ -117,6 +108,5 @@ class TeacherManagementTest extends TestCase
 
         $this->assertCount(1, Teacher::all());
         $response->assertStatus(200);
-
     }
 }

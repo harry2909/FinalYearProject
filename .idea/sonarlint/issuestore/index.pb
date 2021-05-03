@@ -99,11 +99,3 @@ B
 webpack.mix.js,7\3\73a5f9e927f70e0292701d67f61dbff4fb17febc
 B
 routes/console.php,d\d\dd5f3b20dd4fb12b39d7a3a0a5e1160fcceeb8c5
-R
-"resources/views/mainView.blade.php,f\b\fbbf399c18259afdf51adcdad1c22086e49bb6dc
-U
-%resources/views/studentView.blade.php,1\1\11f604c2b0a14a9818e75d52689ab368a77fe77d
-R
-"resources/views/template.blade.php,4\d\4db7583f5e5c858044178970ea8bca712d178038
-W
-'resources/views/studentsIndex.blade.php,c\d\cdb2e8b2b0a7d0a21417d088ae616b69f5be0b86

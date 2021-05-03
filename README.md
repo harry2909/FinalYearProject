@@ -3,7 +3,7 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">README for information on the projecte</h3>  
+  <h3 align="center">README for information on the project</h3>  
 </p>
 
 <!-- TABLE OF CONTENTS -->
@@ -25,7 +25,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-![Product Name Screen Shot][product-screenshot]
+![product-screenshot][product-screenshot]
 
 This project aims to evaluate the effectiveness of Test-Driven Development when creating applications. A REST API was built within laravel using TDD that can handle CRUD operations. There are also simple CRUD controllers and views that were also built using TDD.
 
@@ -40,23 +40,71 @@ This project aims to evaluate the effectiveness of Test-Driven Development when 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+The below screenshots provide some examples of the usage of the project. The user can simply add, view, edit, delete records from a database.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+I have also included screenshots from Postman using requests with a bearer token to perform simple CRUD.
+
+<p align="center">
+  <h3 align="center">Viewing a student:</h3>  
+</p>
+
+![product-usage-view][product-usage-view]
+
+<br>
+
+<p align="center">
+  <h3 align="center">Editing a student:</h3>  
+</p>
+
+![product-usage-edit][product-usage-edit]
+
+<br>
+<p align="center">
+  <h3 align="center">Postman API register:</h3>  
+</p>
+
+![api-register][api-register]
+
+<br>
+<p align="center">
+  <h3 align="center">Postman API login:</h3>  
+</p>
+
+![api-login][api-login]
+
+<br>
+<p align="center">
+  <h3 align="center">Postman API view user details:</h3>  
+</p>
+
+![api-user-details][api-user-details]
+
+<br>
+<p align="center">
+  <h3 align="center">Postman API add subject::</h3>  
+</p>
+
+![api-add-subject][api-add-subject]
+
+<br>
+<p align="center">
+  <h3 align="center">Postman API view subjects:</h3>  
+</p>
+
+![api-view-subjects][api-view-subjects]
+
+<br>
+
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/othneildrew
 [product-screenshot]: images/projectScreenshot.jpg
+[product-usage-view]: images/projectUsageView.jpg
+[product-usage-edit]: images/projectUsageEdit.jpg
+[api-register]: images/apiRegister.jpg
+[api-login]: images/apiLogin.jpg
+[api-user-details]: images/apiShowUser.jpg
+[api-add-subject]: images/apiAddSubject.jpg
+[api-view-subjects]: images/apiShowSubjects.jpg
+

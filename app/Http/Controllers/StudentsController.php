@@ -41,7 +41,7 @@ class StudentsController extends Controller
         }
         $student->save();
 
-        return Redirect::to('students');
+        return Redirect::to('students')->with('studentCreateMessage', 'open');
 
     }
 
@@ -62,7 +62,7 @@ class StudentsController extends Controller
         }
         $student->update();
 
-        return Redirect::to('/students/' . $id)->with('student', $student)->with('subject', $subject);
+        return Redirect::to('/students/' . $id)->with('student', $student)->with('subject', $subject)->with('studentUpdatedMessage', 'open');
 
     }
 
@@ -77,7 +77,7 @@ class StudentsController extends Controller
     {
         $student = Student::find($id);
         $student->delete();
-        return Redirect::to('students')->with('deleteMessage', 'open');
+        return Redirect::to('students')->with('deleteMessage', 'open')->with('studentDeletedMessage', 'open');
     }
 
     /**

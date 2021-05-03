@@ -35,7 +35,7 @@ class TeachersController extends Controller
         $teacher->subject = $request->get('teacherSubject');
         $teacher->save();
 
-        return Redirect::to('teachers');
+        return Redirect::to('teachers')->with('teacherCreateMessage', 'open');
 
     }
 
@@ -49,7 +49,7 @@ class TeachersController extends Controller
         $teacher->subject = $request->get('teacherSubject');
         $teacher->update();
 
-        return Redirect::to('/teachers/' . $id)->with('teacher', $teacher);
+        return Redirect::to('/teachers/' . $id)->with('teacher', $teacher)->with('teacherUpdatedMessage', 'open');
 
     }
 
@@ -63,7 +63,7 @@ class TeachersController extends Controller
     {
         $teacher = teacher::find($id);
         $teacher->delete();
-        return Redirect::to('teachers')->with('deleteMessage', 'open');
+        return Redirect::to('teachers')->with('teacherDeletedMessage', 'open');
     }
 
     /**

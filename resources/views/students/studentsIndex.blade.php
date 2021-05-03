@@ -6,6 +6,29 @@
         <h1 class="font-bold text-3xl mb-2">Students Index</h1>
     </div>
 @endsection
+@section('studentDelete')
+    <!-- Setting up session messages based on which controller method is used -->
+    @if (session()->has('studentDeletedMessage'))
+        <div class=" bg-white shadow overflow-hidden sm:rounded-lg m-3">
+            <div class="px-4 py-5 sm:px-6">
+                <h3 class="text-lg leading-6 font-medium text-gray-900">
+                    Student deleted!
+                </h3>
+            </div>
+        </div>
+    @endif
+@endsection
+@section('studentCreate')
+    @if (session()->has('studentCreateMessage'))
+        <div class=" bg-white shadow overflow-hidden sm:rounded-lg m-3">
+            <div class="px-4 py-5 sm:px-6">
+                <h3 class="text-lg leading-6 font-medium text-gray-900">
+                    Student created!
+                </h3>
+            </div>
+        </div>
+    @endif
+@endsection
 @section('showEditErrors')
     @if(Html::ul($errors->all()))
         <div class=" bg-white shadow overflow-hidden sm:rounded-lg m-3">

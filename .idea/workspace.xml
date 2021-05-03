@@ -21,6 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="fc22cbdc-2e8c-408c-8571-01a42d49a401" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/StudentsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/StudentsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/students/mainView.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/students/mainView.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/students/studentsIndex.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/students/studentsIndex.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,14 +186,14 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\xampp\htdocs\FinalYearProject\resources\views\teachers" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\xampp\htdocs\FinalYearProject\resources\views\students" />
       <recent name="D:\xampp\htdocs\FinalYearProject\resources\views\Templates" />
       <recent name="D:\xampp\htdocs\FinalYearProject\resources\views" />
       <recent name="D:\xampp\htdocs\FinalYearProject\app\Http\Controllers\Api" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\xampp\htdocs\FinalYearProject\resources\views\teachers" />
     </key>
   </component>
   <component name="RunManager" selected="PHPUnit.StudentManagementTest">
@@ -249,13 +252,6 @@
       <workItem from="1619271014586" duration="1858000" />
       <workItem from="1619956222207" duration="11743000" />
       <workItem from="1620042388957" duration="1533000" />
-    </task>
-    <task id="LOCAL-00069" summary="//">
-      <created>1619278500961</created>
-      <option name="number" value="00069" />
-      <option name="presentableId" value="LOCAL-00069" />
-      <option name="project" value="LOCAL" />
-      <updated>1619278500961</updated>
     </task>
     <task id="LOCAL-00070" summary="//">
       <created>1619278636802</created>
@@ -593,7 +589,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620044437203</updated>
     </task>
-    <option name="localTasksCounter" value="118" />
+    <task id="LOCAL-00118" summary="//">
+      <created>1620046308442</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
+      <option name="project" value="LOCAL" />
+      <updated>1620046308442</updated>
+    </task>
+    <option name="localTasksCounter" value="119" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -621,7 +624,6 @@
     <MESSAGE value="Added .env.testing file" />
     <MESSAGE value="Running some more artisan commands on script" />
     <MESSAGE value="Trying some more commands" />
-    <MESSAGE value="//" />
     <MESSAGE value="API Test for Dusk are now running" />
     <MESSAGE value="Realising that yes I can use DUSK to test browser navigation, though I need to really test POST requests to my API which you can't do through DUSK." />
     <MESSAGE value="Adding in script to run DUSK stuff too" />
@@ -639,7 +641,8 @@
     <MESSAGE value="Went through entire code to clear up as many warnings as I could as well as use SonarLint to check for any code smells. Will go through the PHP conventions next to make sure variable names and so on are all correct." />
     <MESSAGE value="Sonarlint run" />
     <MESSAGE value="Adding simple navbar" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding simple navbar" />
+    <MESSAGE value="//" />
+    <option name="LAST_COMMIT_MESSAGE" value="//" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1206" y="342" key="#Notifications" timestamp="1618237799755">
@@ -688,10 +691,10 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1214" y="373" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618568989625" />
-    <state x="184" y="111" width="1297" height="866" key="CommitChangelistDialog2" timestamp="1620044436247">
+    <state x="184" y="111" width="1297" height="866" key="CommitChangelistDialog2" timestamp="1620046307621">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="184" y="111" width="1297" height="866" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1620044436247" />
+    <state x="184" y="111" width="1297" height="866" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1620046307621" />
     <state x="0" y="35" key="DiffContextDialog" timestamp="1619008537492">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -782,15 +785,15 @@
     </state>
     <state x="-1460" y="163" key="SettingsEditor/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618568747503" />
     <state x="545" y="198" key="SettingsEditor/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619173464523" />
-    <state x="551" y="251" key="Vcs.Push.Dialog.v2" timestamp="1620044440045">
+    <state x="551" y="251" key="Vcs.Push.Dialog.v2" timestamp="1620046380535">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1369" y="251" key="Vcs.Push.Dialog.v2/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1618235266070" />
-    <state x="551" y="251" key="Vcs.Push.Dialog.v2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1620044440045" />
-    <state x="776" y="432" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1619876926645">
+    <state x="551" y="251" key="Vcs.Push.Dialog.v2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1620046380535" />
+    <state x="776" y="432" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1620046402909">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="776" y="432" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619876926645" />
+    <state x="776" y="432" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1620046402909" />
     <state x="667" y="119" width="585" height="801" key="find.popup" timestamp="1619963291808">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

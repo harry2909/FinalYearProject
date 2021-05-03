@@ -14,6 +14,8 @@
     @yield('title')
 </div>
 <div class="flex justify-center w-auto">
+    @yield('teacherDelete')
+    @yield('teacherCreate')
     @yield('showEditErrors')
 </div>
 <div class="max-w-full rounded overflow-hidden flex flex-wrap text-black-500 justify-center">

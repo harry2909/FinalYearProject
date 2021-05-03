@@ -6,6 +6,29 @@
         <h1 class="font-bold text-3xl mb-2">Teachers Index</h1>
     </div>
 @endsection
+@section('teacherDelete')
+    <!-- Setting up session messages based on which controller method is used -->
+    @if (session()->has('teacherDeletedMessage'))
+        <div class=" bg-white shadow overflow-hidden sm:rounded-lg m-3">
+            <div class="px-4 py-5 sm:px-6">
+                <h3 class="text-lg leading-6 font-medium text-gray-900">
+                    Teacher deleted!
+                </h3>
+            </div>
+        </div>
+    @endif
+@endsection
+@section('teacherCreate')
+    @if (session()->has('teacherCreateMessage'))
+        <div class=" bg-white shadow overflow-hidden sm:rounded-lg m-3">
+            <div class="px-4 py-5 sm:px-6">
+                <h3 class="text-lg leading-6 font-medium text-gray-900">
+                    Teacher created!
+                </h3>
+            </div>
+        </div>
+    @endif
+@endsection
 @section('showEditErrors')
     @if(Html::ul($errors->all()))
         <div class=" bg-white shadow overflow-hidden sm:rounded-lg m-3">

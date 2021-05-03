@@ -3,7 +3,7 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">README for information on the projecte</h3>  
+  <h3 align="center">README for information on the project</h3>  
 </p>
 
 <!-- TABLE OF CONTENTS -->
@@ -40,15 +40,42 @@ This project aims to evaluate the effectiveness of Test-Driven Development when 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
+<p align="center">
+  <h3 align="center">Viewing a student:</h3>  
+</p>
 ![product-usage-view][product-usage-view]
-![product-usage-editw][product-usage-edit]
+<br>
+<p align="center">
+  <h3 align="center">Editing a student:</h3>  
+</p>
+![product-usage-edit][product-usage-edit]
+<br>
+<p align="center">
+  <h3 align="center">Postman API register:</h3>  
+</p>
 ![api-register][api-register]
+<br>
+<p align="center">
+  <h3 align="center">Postman API login:</h3>  
+</p>
 ![api-login][api-login]
+<br>
+<p align="center">
+  <h3 align="center">Postman API view user details:</h3>  
+</p>
 ![api-user-details][api-user-details]
+<br>
+<p align="center">
+  <h3 align="center">Postman API add subject::</h3>  
+</p>
 ![api-add-subject][api-add-subject]
+<br>
+<p align="center">
+  <h3 align="center">Postman API view subjects:</h3>  
+</p>
 ![api-view-subjects][api-view-subjects]
+<br>
+
 
 
 <!-- MARKDOWN LINKS & IMAGES -->

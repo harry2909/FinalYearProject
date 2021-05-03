@@ -25,7 +25,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-![Product Name Screen Shot][product-screenshot]
+![product-screenshot][product-screenshot]
 
 This project aims to evaluate the effectiveness of Test-Driven Development when creating applications. A REST API was built within laravel using TDD that can handle CRUD operations. There are also simple CRUD controllers and views that were also built using TDD.
 
@@ -42,21 +42,23 @@ This project aims to evaluate the effectiveness of Test-Driven Development when 
 
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+![product-usage-view][product-usage-view]
+![product-usage-editw][product-usage-edit]
+![api-register][api-register]
+![api-login][api-login]
+![api-user-details][api-user-details]
+![api-add-subject][api-add-subject]
+![api-view-subjects][api-view-subjects]
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/othneildrew
 [product-screenshot]: images/projectScreenshot.jpg
+[product-usage-view]: images/projectUsageView.jpg
+[product-usage-edit]: images/projectUsageEdit.jpg
+[api-register]: images/apiRegister.jpg
+[api-login]: images/apiLogin.jpg
+[api-user-details]: images/apiShowUser.jpg
+[api-add-subject]: images/apiAddSubject.jpg
+[api-view-subjects]: images/apiShowSubjects.jpg
+

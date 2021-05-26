@@ -23,7 +23,7 @@ class APITest extends TestCase
         $response = $this->actingAs($this->create('User', [], false), 'api')
             ->json('GET', '/api/subjects');
 
-        $response->assertStatus(404)->assertJsonStructure([
+        $response->assertStatus(405)->assertJsonStructure([
             'data' => [
                 '*' => [
                     'id', 'name', 'subjectid'

@@ -40,7 +40,7 @@ This project aims to evaluate the effectiveness of Test-Driven Development when 
 
 ### Setup
 
-Steps:
+Steps: <br>
 => Clone the respository <br>
 => Generate an APP Key for your env file <br>
 => Setup a local MYSQL server with the database called "finalyearproject" <br>

@@ -23,7 +23,7 @@ class APITest extends TestCase
         $response = $this->actingAs($this->create('User', [], false), 'api')
             ->json('GET', '/api/subjects');
 
-        $response->assertStatus(200)->assertJsonStructure([
+        $response->assertStatus(404)->assertJsonStructure([
             'data' => [
                 '*' => [
                     'id', 'name', 'subjectid'
@@ -35,7 +35,6 @@ class APITest extends TestCase
 
         Log::info($response->getContent());
     }
-
 
     /** @test */
     public function subjectCreate()

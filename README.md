@@ -14,6 +14,7 @@
       <a href="#about-the-project">About The Project</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
+        <li><a href="#setup">Setup</a></li>
       </ul>
     </li>    
     <li><a href="#usage">Usage</a></li>    
@@ -36,6 +37,22 @@ This project aims to evaluate the effectiveness of Test-Driven Development when 
 * [HTML]
 * [TailwindCSS]
 * [Test-Driven Development]
+
+### Setup
+
+Steps:
+=> Clone the respository
+=> Generate an APP Key for your env file
+=> Setup a local MYSQL server with the database called "finalyearproject"
+=> Make sure the APP_URL in the env file is set to localhost
+=> Run npm install
+=> Run composer require laravel/passport
+=> Run composer update
+=> Run php artisan cache:clear
+=> Run php artisan config:clear
+=> Run php artisan serve to launch the server
+=> Run php artisan passport:install --force to generate keys
+=> Using PostMan register and login using the bearer token provided in the response
 
 <!-- USAGE EXAMPLES -->
 ## Usage
